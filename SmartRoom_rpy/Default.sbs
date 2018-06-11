@@ -177,9 +177,9 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- reqID = "SMR00";
 		}
 	}
-	- _modifiedTimeWeak = 6.11.2018::9:34:6;
+	- _modifiedTimeWeak = 6.11.2018::10:36:49;
 	- _lastID = 53;
-	- weakCGTime = 6.11.2018::9:34:6;
+	- weakCGTime = 6.11.2018::10:36:49;
 	- strongCGTime = 6.10.2018::17:14:23;
 	- _defaultComposite = GUID a1bd937f-d49a-4655-9fb2-6fd4e1d15cbf;
 	- _eventsBaseID = -1;
@@ -190,8 +190,8 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- _id = GUID a1bd937f-d49a-4655-9fb2-6fd4e1d15cbf;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- _modifiedTimeWeak = 6.10.2018::20:14:3;
-			- weakCGTime = 6.10.2018::20:14:3;
+			- _modifiedTimeWeak = 6.11.2018::9:34:6;
+			- weakCGTime = 6.11.2018::9:34:6;
 			- strongCGTime = 6.10.2018::17:14:23;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -572,7 +572,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
 				}
 			}
-			- _modifiedTimeWeak = 6.11.2018::9:47:14;
+			- _modifiedTimeWeak = 6.11.2018::10:36:49;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "Sensing_System.omd";
@@ -582,11 +582,33 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
 			}
 			- _lastID = 1;
-			- weakCGTime = 6.11.2018::9:47:14;
+			- weakCGTime = 6.11.2018::10:36:49;
 			- strongCGTime = 6.11.2018::9:47:14;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 6dffb8d4-1ad7-40c4-9a07-d6685b2cb7d0;
+					- _myState = 10240;
+					- _name = "itsCommunication_system";
+					- _modifiedTimeWeak = 6.11.2018::10:36:49;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 14cc426e-7827-4a36-83a2-ad3389b597fc;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID b40b3d9f-5f61-4f90-81e1-2f96799b8709;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
 			}
 			- _classModifier = Unspecified;
 		}
@@ -606,7 +628,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
 				}
 			}
-			- _modifiedTimeWeak = 6.10.2018::20:1:46;
+			- _modifiedTimeWeak = 6.11.2018::10:36:49;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "Sensing_System.omd";
@@ -615,11 +637,33 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- _name = "BDD";
 				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
 			}
-			- weakCGTime = 6.10.2018::20:1:46;
+			- weakCGTime = 6.11.2018::10:36:49;
 			- strongCGTime = 6.10.2018::20:1:46;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID b40b3d9f-5f61-4f90-81e1-2f96799b8709;
+					- _myState = 10240;
+					- _name = "itsAuthorization_security_system";
+					- _modifiedTimeWeak = 6.11.2018::10:36:49;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID f1ca5a45-7791-4145-8577-e041d6fe4398;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 6dffb8d4-1ad7-40c4-9a07-d6685b2cb7d0;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
 			}
 			- _classModifier = Unspecified;
 		}
