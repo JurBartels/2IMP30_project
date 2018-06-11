@@ -1,0 +1,1102 @@
+I-Logix-RPY-Archive version 8.13.0 C++ 9794446
+{ ISubsystem 
+	- _id = GUID f852634f-b8c1-401e-96fc-8e0cb48f85cb;
+	- _myState = 8192;
+	- _name = "Default";
+	- Annotations = { IRPYRawContainer 
+		- size = 21;
+		- value = 
+		{ IRequirement 
+			- _id = GUID 68f5a68a-5c95-4a1b-b6ad-0cfc65744f1f;
+			- _myState = 8192;
+			- _name = "Authorization";
+			- _modifiedTimeWeak = 6.10.2018::17:14:23;
+			- _lastID = 1;
+			- _body = "Authorization for SMR";
+			- reqID = "A 00";
+		}
+		{ IRequirement 
+			- _id = GUID 3a5cbb92-9d6a-4eed-be86-7b5e2addcdb3;
+			- _myState = 8192;
+			- _name = "Lighting";
+			- _modifiedTimeWeak = 6.10.2018::17:14:23;
+			- _body = "Lighting control of SMR";
+			- reqID = "L 00";
+		}
+		{ IRequirement 
+			- _id = GUID 6f488901-8e06-4537-941c-576afc69d0c1;
+			- _myState = 8192;
+			- _name = "Temperature control";
+			- _modifiedTimeWeak = 6.10.2018::17:14:23;
+			- _body = "Temperature control of SMR";
+			- reqID = "T 00";
+		}
+		{ IRequirement 
+			- _id = GUID f4bde46f-e216-4dd6-8c16-79bf387af2ed;
+			- _myState = 8192;
+			- _name = "Air quality control";
+			- _modifiedTimeWeak = 6.10.2018::17:14:23;
+			- _body = "Air quality control of SMR";
+			- reqID = "AI 00";
+		}
+		{ IRequirement 
+			- _id = GUID 01da4b45-5d28-4e26-be1e-b8be36547fff;
+			- _myState = 8192;
+			- _name = "Security system";
+			- _modifiedTimeWeak = 6.10.2018::17:14:23;
+			- _body = "Security control of SMR";
+			- reqID = "S 00";
+		}
+		{ IRequirement 
+			- _id = GUID 82e308c5-87c0-4691-a8a8-2abbe5b5bc2d;
+			- _myState = 8192;
+			- _name = "Communication system";
+			- _modifiedTimeWeak = 6.10.2018::17:14:23;
+			- _body = "Communcation system control of SMR";
+			- reqID = "C 00";
+		}
+		{ IRequirement 
+			- _id = GUID dd32a604-0375-48e1-aeef-89e474e8aac7;
+			- _myState = 8192;
+			- _name = "Unauthorized entry";
+			- _modifiedTimeWeak = 6.10.2018::17:14:23;
+			- _body = "If unauthorized user attempts to enter, SMR must notify security personnel.";
+			- reqID = "A 01";
+		}
+		{ IRequirement 
+			- _id = GUID 937e3647-6551-4b17-9c08-47b12d41fe56;
+			- _myState = 8192;
+			- _name = "Only authorized user";
+			- _modifiedTimeWeak = 6.10.2018::17:14:23;
+			- _body = "Only authorized user are allowed to enter SMR";
+			- reqID = "A 02";
+		}
+		{ IRequirement 
+			- _id = GUID d00e4adc-9675-4d61-b320-50275ac7b1c6;
+			- _myState = 8192;
+			- _name = "Light Auto ON";
+			- _modifiedTimeWeak = 6.10.2018::17:14:23;
+			- _body = "SMR must turn ON lights, if user enters the room.
+";
+			- reqID = "L 01";
+		}
+		{ IRequirement 
+			- _id = GUID 0996531f-8ee8-400e-aa09-274a6171df5e;
+			- _myState = 10240;
+			- _name = "requirement_10";
+			- _modifiedTimeWeak = 6.10.2018::17:14:23;
+			- _body = "SMR must turn OFF lights, if no user is present in the room.";
+			- reqID = "L 02";
+		}
+		{ IRequirement 
+			- _id = GUID da33a867-befb-4241-b3e7-fd76e8e695e8;
+			- _myState = 10240;
+			- _name = "requirement_11";
+			- _modifiedTimeWeak = 6.10.2018::17:14:23;
+			- _body = "User can manually turn ON/OFF lights through control panel.";
+			- reqID = "L 03";
+		}
+		{ IRequirement 
+			- _id = GUID 8d3eefd8-df5c-43aa-8c4e-2b1f0d735665;
+			- _myState = 10240;
+			- _name = "requirement_12";
+			- _modifiedTimeWeak = 6.10.2018::17:14:23;
+			- _body = "A user should be able to control the temperature within the room using the touch panels.";
+			- reqID = "T 01";
+		}
+		{ IRequirement 
+			- _id = GUID 266914be-74ab-4356-805e-2cb13eb139b7;
+			- _myState = 10240;
+			- _name = "requirement_13";
+			- _modifiedTimeWeak = 6.10.2018::17:14:23;
+			- _body = "A user should be able to control the temperature remotely.";
+			- reqID = "T 02";
+		}
+		{ IRequirement 
+			- _id = GUID bdb7f887-f8cd-4f93-ba3a-30a43e0c4fb8;
+			- _myState = 10240;
+			- _name = "requirement_14";
+			- _modifiedTimeWeak = 6.10.2018::17:14:23;
+			- _body = "The SMR should automatically adjust the temperature in the room to keep it at a set temperature.";
+			- reqID = "T 03";
+		}
+		{ IRequirement 
+			- _id = GUID 1d0c2556-2d30-4ebb-8331-af498b18f256;
+			- _myState = 10240;
+			- _name = "requirement_15";
+			- _modifiedTimeWeak = 6.10.2018::17:14:23;
+			- _body = "The SMR must monitor the air quality within the room.";
+			- reqID = "AI 01";
+		}
+		{ IRequirement 
+			- _id = GUID e8ac13fb-ee8b-450c-86e5-122795096108;
+			- _myState = 10240;
+			- _name = "requirement_16";
+			- _modifiedTimeWeak = 6.10.2018::17:14:23;
+			- _body = "The SMR must keep the air quality above some set value. ";
+			- reqID = "AI 02";
+		}
+		{ IRequirement 
+			- _id = GUID 8e71e0a9-dbf2-46da-874d-9f6dc177f056;
+			- _myState = 10240;
+			- _name = "requirement_17";
+			- _modifiedTimeWeak = 6.10.2018::17:14:23;
+			- _body = "The fire sensor should detect fire/smoke related to fire and cause an alarm";
+			- reqID = "S 01";
+		}
+		{ IRequirement 
+			- _id = GUID 1d1fccab-90c1-42a6-80f6-26f6ba8af284;
+			- _myState = 10240;
+			- _name = "requirement_18";
+			- _modifiedTimeWeak = 6.10.2018::17:14:23;
+			- _body = "A CCTV should record the ongoings in the room 7*24";
+			- reqID = "S 02";
+		}
+		{ IRequirement 
+			- _id = GUID e506afd4-24dd-4ac0-b6bf-68b0a7d1d16f;
+			- _myState = 10240;
+			- _name = "requirement_19";
+			- _modifiedTimeWeak = 6.10.2018::17:14:23;
+			- _body = "The SMR should warn users and security personnel if the CO2 level in the room reaches some set level";
+			- reqID = "S 03";
+		}
+		{ IRequirement 
+			- _id = GUID e6131804-4ff8-4357-a346-2ad575fb3d72;
+			- _myState = 10240;
+			- _name = "requirement_20";
+			- _modifiedTimeWeak = 6.10.2018::17:14:23;
+			- _body = "The SMR should be able to create a connection to another user over an audio-video channel.";
+			- reqID = "C 01";
+		}
+		{ IRequirement 
+			- _id = GUID c507ac51-6530-4c70-b157-a10747ed2d39;
+			- _myState = 8192;
+			- _name = "SMR";
+			- _modifiedTimeWeak = 6.10.2018::17:16:23;
+			- _body = "Smart Room Specifications";
+			- reqID = "SMR00";
+		}
+	}
+	- _modifiedTimeWeak = 6.11.2018::9:34:6;
+	- _lastID = 53;
+	- weakCGTime = 6.11.2018::9:34:6;
+	- strongCGTime = 6.10.2018::17:14:23;
+	- _defaultComposite = GUID a1bd937f-d49a-4655-9fb2-6fd4e1d15cbf;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 14;
+		- value = 
+		{ IClass 
+			- _id = GUID a1bd937f-d49a-4655-9fb2-6fd4e1d15cbf;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- _modifiedTimeWeak = 6.10.2018::20:14:3;
+			- weakCGTime = 6.10.2018::20:14:3;
+			- strongCGTime = 6.10.2018::17:14:23;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID b42c0310-ec93-48d6-ae47-47e29533995e;
+			- _myState = 8192;
+			- _name = "sensing_system";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+					- _subsystem = "SysML::Blocks";
+					- _class = "";
+					- _name = "Block";
+					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
+				}
+			}
+			- _modifiedTimeWeak = 6.11.2018::7:45:13;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Sensing_System.omd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "BDD";
+				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
+			}
+			- weakCGTime = 6.11.2018::7:45:13;
+			- strongCGTime = 6.10.2018::20:0:36;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 4;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 22cc18a4-d589-49c2-958c-a1b378fe5663;
+					- _myState = 10240;
+					- _name = "itsSensing_system";
+					- _modifiedTimeWeak = 6.10.2018::20:12:48;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID b42c0310-ec93-48d6-ae47-47e29533995e;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID e2284aa6-7fa9-4b01-846a-d09ce9552b26;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID e2284aa6-7fa9-4b01-846a-d09ce9552b26;
+					- _myState = 10240;
+					- _name = "itsSensing_system_1";
+					- _modifiedTimeWeak = 6.10.2018::20:12:48;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID b42c0310-ec93-48d6-ae47-47e29533995e;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 22cc18a4-d589-49c2-958c-a1b378fe5663;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID eb245684-122a-4c3f-be5c-73fdd5791e18;
+					- _myState = 10240;
+					- _name = "itsControl_system";
+					- _modifiedTimeWeak = 6.10.2018::20:13:34;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID e3de5109-742a-4b9f-8782-3b3e34af96aa;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 50c0b5b7-9948-441d-b11c-c057d3026c5e;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 08347ec3-b1e7-4e4d-9410-a0e2ce6fd905;
+					- _myState = 10240;
+					- _name = "itsControl_system_1";
+					- _modifiedTimeWeak = 6.11.2018::7:45:13;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID e3de5109-742a-4b9f-8782-3b3e34af96aa;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID e9acfea0-da9f-4736-a31d-574f491d350a;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID e3de5109-742a-4b9f-8782-3b3e34af96aa;
+			- _myState = 8192;
+			- _name = "Control_system";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+					- _subsystem = "SysML::Blocks";
+					- _class = "";
+					- _name = "Block";
+					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
+				}
+			}
+			- _modifiedTimeWeak = 6.11.2018::9:42:1;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Sensing_System.omd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "BDD";
+				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
+			}
+			- _description = { IDescription 
+				- _text = "The control system gets input from the sensing system and sends appropriate actuation to actuation system";
+			}
+			- weakCGTime = 6.11.2018::9:42:1;
+			- strongCGTime = 6.10.2018::20:0:57;
+			- Inheritances = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IGeneralization 
+					- _id = GUID 6baf29ad-340b-4de2-bcf8-7334339482b6;
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _id = GUID b42c0310-ec93-48d6-ae47-47e29533995e;
+					}
+					- _inheritanceType = iPublic;
+					- _isVirtual = 0;
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 10;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 50c0b5b7-9948-441d-b11c-c057d3026c5e;
+					- _myState = 10240;
+					- _name = "itsSensing_system";
+					- _modifiedTimeWeak = 6.10.2018::20:13:34;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID b42c0310-ec93-48d6-ae47-47e29533995e;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID eb245684-122a-4c3f-be5c-73fdd5791e18;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 11ed19b5-64e0-4c82-8127-28a923e8d126;
+					- _myState = 10240;
+					- _name = "itsActuation_system";
+					- _modifiedTimeWeak = 6.11.2018::7:44:33;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID cf18e874-a0a8-45e0-a534-0a2c6db1a6e9;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 952ace8c-667e-44ef-b443-6620b6941d37;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID e9acfea0-da9f-4736-a31d-574f491d350a;
+					- _myState = 10240;
+					- _name = "itsSensing_system_2";
+					- _modifiedTimeWeak = 6.11.2018::7:45:13;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID b42c0310-ec93-48d6-ae47-47e29533995e;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 08347ec3-b1e7-4e4d-9410-a0e2ce6fd905;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID d06f8f09-14ec-43e8-bff7-06bf308a36c8;
+					- _myState = 10240;
+					- _name = "itsLight_sensor";
+					- _modifiedTimeWeak = 6.11.2018::9:26:11;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 921d34c3-eee1-4d83-8f79-7a1b6c2aa94d;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 70dff296-7698-489e-88b1-8e28d960bb9c;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID ba4f6966-79da-435f-9df7-dab1a2c9367f;
+					- _myState = 10240;
+					- _name = "itsLighting_system";
+					- _modifiedTimeWeak = 6.11.2018::9:26:20;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID b3e3e0be-111c-4378-9048-7851205df723;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 07a577c3-db4e-4fa9-9f13-c81e82d651a9;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 04b323e8-1285-446f-b307-e29998b90373;
+					- _myState = 10240;
+					- _name = "itsAir_Q_sensor";
+					- _modifiedTimeWeak = 6.11.2018::9:26:45;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID c233f500-3bc8-4556-937b-9168ceca50a7;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 76bba34a-abd5-469b-b150-56a87f3a4714;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 4e780f9e-843e-41f5-8393-f762edb5afd9;
+					- _myState = 10240;
+					- _name = "itsAir_Q_control";
+					- _modifiedTimeWeak = 6.11.2018::9:26:58;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 3436ad49-d486-4726-9367-3a3c49c1f99d;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 3c9fece0-614f-4d53-bac5-70358d1290c4;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 416d38dc-065f-4cef-b64a-4ed7b8f9ea57;
+					- _myState = 10240;
+					- _name = "itsFire_sensor";
+					- _modifiedTimeWeak = 6.11.2018::9:37:43;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 7490dbff-1cc2-4e64-a41e-1be4cfddcdca;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID cc1b53ca-f77f-4e14-9d4c-4ab973d07d7a;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 4f587911-5399-4474-a2ca-6f1e35711b39;
+					- _myState = 10240;
+					- _name = "itsTemperature_sensor";
+					- _modifiedTimeWeak = 6.11.2018::9:41:41;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID cbccade3-69d6-46a0-949f-7924e3e28376;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID c9342f79-b6e7-43b1-b93d-dbc0edd2c26e;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 6c8e7127-16c1-44f4-9a75-371188092b29;
+					- _myState = 10240;
+					- _name = "itsHVAC_system";
+					- _modifiedTimeWeak = 6.11.2018::9:42:1;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID c5ce2907-5b70-40d7-a86f-da283258ab1c;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID c41b8a21-314f-41f4-891d-eea76577f95d;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID f1ca5a45-7791-4145-8577-e041d6fe4398;
+			- _myState = 8192;
+			- _name = "Authorization_security_system";
+			- Dependencies = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IDependency 
+					- _id = GUID eea7d485-0843-4d70-9eb9-83ae28a11f19;
+					- _myState = 2048;
+					- _name = "sensing_system";
+					- _modifiedTimeWeak = 6.10.2018::20:23:11;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _id = GUID b42c0310-ec93-48d6-ae47-47e29533995e;
+					}
+				}
+			}
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+					- _subsystem = "SysML::Blocks";
+					- _class = "";
+					- _name = "Block";
+					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
+				}
+			}
+			- _modifiedTimeWeak = 6.11.2018::9:47:14;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Sensing_System.omd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "BDD";
+				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
+			}
+			- _lastID = 1;
+			- weakCGTime = 6.11.2018::9:47:14;
+			- strongCGTime = 6.11.2018::9:47:14;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 14cc426e-7827-4a36-83a2-ad3389b597fc;
+			- _myState = 8192;
+			- _name = "Communication_system";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+					- _subsystem = "SysML::Blocks";
+					- _class = "";
+					- _name = "Block";
+					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
+				}
+			}
+			- _modifiedTimeWeak = 6.10.2018::20:1:46;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Sensing_System.omd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "BDD";
+				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
+			}
+			- weakCGTime = 6.10.2018::20:1:46;
+			- strongCGTime = 6.10.2018::20:1:46;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID cf18e874-a0a8-45e0-a534-0a2c6db1a6e9;
+			- _myState = 8192;
+			- _name = "Actuation_system";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+					- _subsystem = "SysML::Blocks";
+					- _class = "";
+					- _name = "Block";
+					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
+				}
+			}
+			- _modifiedTimeWeak = 6.11.2018::7:44:33;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Sensing_System.omd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "BDD";
+				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
+			}
+			- weakCGTime = 6.11.2018::7:44:33;
+			- strongCGTime = 6.10.2018::20:14:18;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 952ace8c-667e-44ef-b443-6620b6941d37;
+					- _myState = 10240;
+					- _name = "itsControl_system";
+					- _modifiedTimeWeak = 6.11.2018::7:44:33;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID e3de5109-742a-4b9f-8782-3b3e34af96aa;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 11ed19b5-64e0-4c82-8127-28a923e8d126;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 3436ad49-d486-4726-9367-3a3c49c1f99d;
+			- _myState = 8192;
+			- _name = "Air_Q_control";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+					- _subsystem = "SysML::Blocks";
+					- _class = "";
+					- _name = "Block";
+					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
+				}
+			}
+			- _modifiedTimeWeak = 6.11.2018::9:26:58;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Sensing_System.omd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "BDD";
+				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
+			}
+			- weakCGTime = 6.11.2018::9:26:58;
+			- strongCGTime = 6.11.2018::9:17:22;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 3c9fece0-614f-4d53-bac5-70358d1290c4;
+					- _myState = 10240;
+					- _name = "itsControl_system";
+					- _modifiedTimeWeak = 6.11.2018::9:26:58;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID e3de5109-742a-4b9f-8782-3b3e34af96aa;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 4e780f9e-843e-41f5-8393-f762edb5afd9;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID cbccade3-69d6-46a0-949f-7924e3e28376;
+			- _myState = 8192;
+			- _name = "Temperature_sensor";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+					- _subsystem = "SysML::Blocks";
+					- _class = "";
+					- _name = "Block";
+					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
+				}
+			}
+			- _modifiedTimeWeak = 6.11.2018::9:41:41;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Sensing_System.omd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "BDD";
+				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
+			}
+			- weakCGTime = 6.11.2018::9:41:41;
+			- strongCGTime = 6.11.2018::9:38:13;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID c9342f79-b6e7-43b1-b93d-dbc0edd2c26e;
+					- _myState = 10240;
+					- _name = "itsControl_system";
+					- _modifiedTimeWeak = 6.11.2018::9:41:41;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID e3de5109-742a-4b9f-8782-3b3e34af96aa;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 4f587911-5399-4474-a2ca-6f1e35711b39;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID b3e3e0be-111c-4378-9048-7851205df723;
+			- _myState = 8192;
+			- _name = "Lighting_system";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+					- _subsystem = "SysML::Blocks";
+					- _class = "";
+					- _name = "Block";
+					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
+				}
+			}
+			- _modifiedTimeWeak = 6.11.2018::9:26:20;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Sensing_System.omd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "BDD";
+				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
+			}
+			- weakCGTime = 6.11.2018::9:26:20;
+			- strongCGTime = 6.11.2018::9:17:57;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 07a577c3-db4e-4fa9-9f13-c81e82d651a9;
+					- _myState = 10240;
+					- _name = "itsControl_system";
+					- _modifiedTimeWeak = 6.11.2018::9:26:20;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID e3de5109-742a-4b9f-8782-3b3e34af96aa;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID ba4f6966-79da-435f-9df7-dab1a2c9367f;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 921d34c3-eee1-4d83-8f79-7a1b6c2aa94d;
+			- _myState = 8192;
+			- _name = "Light_sensor";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+					- _subsystem = "SysML::Blocks";
+					- _class = "";
+					- _name = "Block";
+					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
+				}
+			}
+			- _modifiedTimeWeak = 6.11.2018::9:26:11;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Sensing_System.omd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "BDD";
+				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
+			}
+			- weakCGTime = 6.11.2018::9:26:11;
+			- strongCGTime = 6.11.2018::9:22:26;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 70dff296-7698-489e-88b1-8e28d960bb9c;
+					- _myState = 10240;
+					- _name = "itsControl_system";
+					- _modifiedTimeWeak = 6.11.2018::9:26:11;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID e3de5109-742a-4b9f-8782-3b3e34af96aa;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID d06f8f09-14ec-43e8-bff7-06bf308a36c8;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID c233f500-3bc8-4556-937b-9168ceca50a7;
+			- _myState = 8192;
+			- _name = "Air_Q_sensor";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+					- _subsystem = "SysML::Blocks";
+					- _class = "";
+					- _name = "Block";
+					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
+				}
+			}
+			- _modifiedTimeWeak = 6.11.2018::9:26:45;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Sensing_System.omd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "BDD";
+				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
+			}
+			- weakCGTime = 6.11.2018::9:26:45;
+			- strongCGTime = 6.11.2018::9:23:38;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 76bba34a-abd5-469b-b150-56a87f3a4714;
+					- _myState = 10240;
+					- _name = "itsControl_system";
+					- _modifiedTimeWeak = 6.11.2018::9:26:45;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID e3de5109-742a-4b9f-8782-3b3e34af96aa;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 04b323e8-1285-446f-b307-e29998b90373;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 7490dbff-1cc2-4e64-a41e-1be4cfddcdca;
+			- _myState = 8192;
+			- _name = "Fire_sensor";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+					- _subsystem = "SysML::Blocks";
+					- _class = "";
+					- _name = "Block";
+					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
+				}
+			}
+			- _modifiedTimeWeak = 6.11.2018::9:37:43;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Sensing_System.omd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "BDD";
+				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
+			}
+			- weakCGTime = 6.11.2018::9:37:43;
+			- strongCGTime = 6.11.2018::9:24:29;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID cc1b53ca-f77f-4e14-9d4c-4ab973d07d7a;
+					- _myState = 10240;
+					- _name = "itsControl_system";
+					- _modifiedTimeWeak = 6.11.2018::9:37:43;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID e3de5109-742a-4b9f-8782-3b3e34af96aa;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 416d38dc-065f-4cef-b64a-4ed7b8f9ea57;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 48f4344a-87ff-43bc-bd84-d132518ba718;
+			- _myState = 8192;
+			- _name = "Security_system";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+					- _subsystem = "SysML::Blocks";
+					- _class = "";
+					- _name = "Block";
+					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
+				}
+			}
+			- _modifiedTimeWeak = 6.11.2018::9:29:16;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Sensing_System.omd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "BDD";
+				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
+			}
+			- weakCGTime = 6.11.2018::9:29:16;
+			- strongCGTime = 6.11.2018::9:29:16;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID c5ce2907-5b70-40d7-a86f-da283258ab1c;
+			- _myState = 8192;
+			- _name = "HVAC_system";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+					- _subsystem = "SysML::Blocks";
+					- _class = "";
+					- _name = "Block";
+					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
+				}
+			}
+			- _modifiedTimeWeak = 6.11.2018::9:42:1;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Sensing_System.omd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "BDD";
+				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
+			}
+			- weakCGTime = 6.11.2018::9:42:1;
+			- strongCGTime = 6.11.2018::9:34:20;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID c41b8a21-314f-41f4-891d-eea76577f95d;
+					- _myState = 10240;
+					- _name = "itsControl_system";
+					- _modifiedTimeWeak = 6.11.2018::9:42:1;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID e3de5109-742a-4b9f-8782-3b3e34af96aa;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 6c8e7127-16c1-44f4-9a75-371188092b29;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 6.11.2018::9:16:47;
+}
+
