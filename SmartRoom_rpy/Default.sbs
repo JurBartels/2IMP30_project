@@ -4,7 +4,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 	- _myState = 8192;
 	- _name = "Default";
 	- Annotations = { IRPYRawContainer 
-		- size = 21;
+		- size = 22;
 		- value = 
 		{ IRequirement 
 			- _id = GUID 68f5a68a-5c95-4a1b-b6ad-0cfc65744f1f;
@@ -176,10 +176,17 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- _body = "Smart Room Specifications";
 			- reqID = "SMR00";
 		}
+		{ IRequirement 
+			- _id = GUID a0d120f7-6c57-4f4d-a3ac-23861188bfe2;
+			- _myState = 10240;
+			- _name = "requirement_53";
+			- _modifiedTimeWeak = 6.11.2018::10:23:44;
+			- _body = "ok";
+		}
 	}
-	- _modifiedTimeWeak = 6.11.2018::9:34:6;
-	- _lastID = 53;
-	- weakCGTime = 6.11.2018::9:34:6;
+	- _modifiedTimeWeak = 6.11.2018::10:23:44;
+	- _lastID = 54;
+	- weakCGTime = 6.11.2018::10:23:44;
 	- strongCGTime = 6.10.2018::17:14:23;
 	- _defaultComposite = GUID a1bd937f-d49a-4655-9fb2-6fd4e1d15cbf;
 	- _eventsBaseID = -1;
@@ -190,8 +197,8 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- _id = GUID a1bd937f-d49a-4655-9fb2-6fd4e1d15cbf;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- _modifiedTimeWeak = 6.10.2018::20:14:3;
-			- weakCGTime = 6.10.2018::20:14:3;
+			- _modifiedTimeWeak = 6.11.2018::9:34:6;
+			- weakCGTime = 6.11.2018::9:34:6;
 			- strongCGTime = 6.10.2018::17:14:23;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
