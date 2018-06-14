@@ -1,7 +1,8 @@
 I-Logix-RPY-Archive version 8.13.0 * 9794446
 { CGEMdiWorkspace 
 	- stubList = { IRPYRawContainer 
-		- size = 0;
+		- size = 1;
+		- value = GUID f852634f-b8c1-401e-96fc-8e0cb48f85cb; 
 	}
 	- isLoadOnDemand = 0;
 	- myViewsWithID = { IRPYRawContainer 
@@ -30,8 +31,8 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- _name = "BDD";
 				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
 			}
-			- _UpLeft = 14 0 ;
-			- _DownRight = 906 512 ;
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1390 813 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
 			- m_bIsActiveView = 1;

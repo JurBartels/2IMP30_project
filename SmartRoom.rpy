@@ -41,7 +41,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- _id = GUID 052b8171-a32b-4f45-a829-5585f79f9deb;
 		}
 	}
-	- _modifiedTimeWeak = 6.10.2018::19:53:49;
+	- _modifiedTimeWeak = 6.11.2018::10:23:28;
 	- _lastID = 8;
 	- _UserColors = { IRPYRawContainer 
 		- size = 16;
@@ -622,7 +622,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				}
 			}
 			- _modifiedTimeWeak = 1.2.1990::0:0:0;
-			- _lastModifiedTime = "6.10.2018::19:33:3";
+			- _lastModifiedTime = "6.11.2018::10:23:49";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 3e78bcdc-5926-492b-8388-9d1ca324e566;
 				- m_type = 0;
@@ -646,7 +646,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				}
 				- m_drawBehavior = 0;
 				- m_bIsPreferencesInitialized = 0;
-				- elementList = 107;
+				- elementList = 108;
 				{ CGIClass 
 					- _id = GUID fc122657-cb7b-438d-9491-713e947ae7f6;
 					- m_type = 78;
@@ -4915,6 +4915,103 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_transform = 1 0 0 1 551 -193 ;
 					- m_bIsPreferencesInitialized = 1;
 					- m_points = 2 356 306  370 306  ;
+				}
+				{ CGIAnnotation 
+					- _id = GUID 3685b7ae-2476-4f01-a1dd-39d73f078b40;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "General";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Graphics";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "FitBoxToItsTextuals";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+							{ IPropertySubject 
+								- _Name = "ObjectModelGe";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Requirement";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "Compartments";
+												- _Value = "ID, Specification";
+												- _Type = MultiLine;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- m_type = 176;
+					- m_pModelObject = { IHandle 
+						- _m2Class = "IRequirement";
+						- _filename = "Default.sbs";
+						- _subsystem = "Default";
+						- _class = "";
+						- _name = "requirement_53";
+						- _id = GUID a0d120f7-6c57-4f4d-a3ac-23861188bfe2;
+					}
+					- m_pParent = GUID fc122657-cb7b-438d-9491-713e947ae7f6;
+					- m_name = { CGIText 
+						- m_str = "requirement_53";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nOrientationCtrlPt = 5;
+					}
+					- m_drawBehavior = 4104;
+					- m_transform = 0.107011 0 0 0.0686813 514 49.794 ;
+					- m_bIsPreferencesInitialized = 1;
+					- m_AdditionalLabel = { CGIText 
+						- m_str = "";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nOrientationCtrlPt = 1;
+					}
+					- m_polygon = 4 0 3  0 1095  1084 1095  1084 3  ;
+					- m_nNameFormat = 0;
+					- m_nIsNameFormat = 0;
+					- frameset = "<frameset rows=50%,50%>
+<frame name=IDTextCompartment>
+<frame name=SpecificationTextCompartment>";
+					- Compartments = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _iTempdisplayTextFlag = 1;
+					- m_bIsBoxStyle = 1;
 				}
 				
 				- m_access = 'Z';
