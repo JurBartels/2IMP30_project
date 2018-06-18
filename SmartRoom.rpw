@@ -5,7 +5,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 	}
 	- isLoadOnDemand = 0;
 	- myViewsWithID = { IRPYRawContainer 
-		- size = 5;
+		- size = 4;
 		- value = 
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -16,24 +16,53 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
 				- m_ptMaxPositionY = -31;
-				- m_nLeft = 32;
-				- m_nTop = 32;
-				- m_nRight = 789;
-				- m_nBottom = 409;
+				- m_nLeft = 182;
+				- m_nTop = 182;
+				- m_nRight = 1311;
+				- m_nBottom = 758;
 			}
 			- _wasOpenedOnCloseProject = 1;
 			- _theDiagram = { IHandle 
-				- _m2Class = "IDiagram";
-				- _filename = "Sensing_System.omd";
-				- _subsystem = "";
-				- _class = "";
-				- _name = "BDD";
-				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Humidity_sensor";
+				- _name = "StatechartDiagram";
+				- _id = GUID 7706b733-eea0-4e6c-8b42-729217bd127a;
 			}
-			- _UpLeft = 134 0 ;
-			- _DownRight = 854 317 ;
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1092 516 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 5;
+			- m_nDiagramIndex = 1;
+			- m_bIsActiveView = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 208;
+				- m_nTop = 208;
+				- m_nRight = 1337;
+				- m_nBottom = 784;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Pressure_sensor";
+				- _name = "StatechartDiagram";
+				- _id = GUID 22e1536e-5643-4130-a717-7123cdbe0fec;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1092 516 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 0;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -59,10 +88,10 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- _name = "Smartroom panel";
 				- _id = GUID 2c2c1882-b427-4c1d-849a-15c82f0ca063;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 1099 772 ;
+			- _UpLeft = 4 0 ;
+			- _DownRight = 1862 1121 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 0;
+			- m_nDiagramIndex = 3;
 			- m_bIsActiveView = 1;
 		}
 		{ CGEMdiDiagramParams 
@@ -74,87 +103,29 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
 				- m_ptMaxPositionY = -31;
-				- m_nLeft = 104;
-				- m_nTop = 104;
-				- m_nRight = 1019;
-				- m_nBottom = 676;
+				- m_nLeft = 156;
+				- m_nTop = 156;
+				- m_nRight = 1285;
+				- m_nBottom = 732;
 			}
 			- _wasOpenedOnCloseProject = 1;
 			- _theDiagram = { IHandle 
-				- _m2Class = "IDiagram";
-				- _filename = "";
-				- _subsystem = "";
-				- _class = "";
-				- _name = "Smartroom";
-				- _id = GUID 6fe4a937-8a84-493b-b95a-90c9a193d3ca;
-			}
-			- _UpLeft = 1195 172 ;
-			- _DownRight = 2015 650 ;
-			- _instanceName = "";
-			- m_nDiagramIndex = 3;
-			- m_bIsActiveView = 0;
-		}
-		{ CGEMdiDiagramParams 
-			- _placement = { CCommon_WINDOWPLACEMENT 
-				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
-				- m_ptMinPositionX = -1;
-				- m_ptMinPositionY = -1;
-				- m_ptMaxPositionX = -8;
-				- m_ptMaxPositionY = -31;
-				- m_nLeft = 52;
-				- m_nTop = 52;
-				- m_nRight = 967;
-				- m_nBottom = 624;
-			}
-			- _wasOpenedOnCloseProject = 1;
-			- _theDiagram = { IHandle 
-				- _m2Class = "IStructureDiagram";
-				- _filename = "";
-				- _subsystem = "";
-				- _class = "";
-				- _name = "Structure1";
-				- _id = GUID 752ba7a1-157d-4616-9a0b-74d385967b1e;
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Temperature_sensor";
+				- _name = "StatechartDiagram";
+				- _id = GUID 3139ba3a-dab1-4abd-bb0d-b1543ba81b7f;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 878 512 ;
-			- _instanceName = "";
-			- m_nDiagramIndex = 4;
-			- m_bIsActiveView = 0;
-		}
-		{ CGEMdiDiagramParams 
-			- _placement = { CCommon_WINDOWPLACEMENT 
-				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
-				- m_ptMinPositionX = -1;
-				- m_ptMinPositionY = -1;
-				- m_ptMaxPositionX = -8;
-				- m_ptMaxPositionY = -31;
-				- m_nLeft = 130;
-				- m_nTop = 130;
-				- m_nRight = 1045;
-				- m_nBottom = 702;
-			}
-			- _wasOpenedOnCloseProject = 1;
-			- _theDiagram = { IHandle 
-				- _m2Class = "IDiagram";
-				- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
-				- _subsystem = "SysML";
-				- _class = "";
-				- _name = "ProfileStructure";
-				- _id = GUID f40e5421-bc8c-49b6-b0dd-cc8f0bb8c145;
-			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 1846 1077 ;
+			- _DownRight = 1092 516 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 2;
 			- m_bIsActiveView = 0;
 		}
 	}
-	- _fullName = "\\\\Mac\\Home\\Desktop\\2IMP30_project\\SmartRoom";
-	- _selectedPerspective = "Basic";
+	- _fullName = "C:\\Users\\jlta\\Documents\\GitHub\\2IMP30_project\\SmartRoom";
+	- _selectedPerspective = "Advanced";
 	- m_SearchScopeList = { IRPYRawContainer 
 		- size = 0;
 	}

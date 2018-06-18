@@ -245,7 +245,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 		}
 	}
 	- _modifiedTimeWeak = 1.2.1990::0:0:0;
-	- _lastModifiedTime = "6.11.2018::10:36:49";
+	- _lastModifiedTime = "6.18.2018::6:28:57";
 	- _graphicChart = { CGIClassChart 
 		- _id = GUID e8c79b25-8c2f-49de-b861-679a062f8f91;
 		- m_type = 0;
@@ -871,7 +871,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- m_nOrientationCtrlPt = 5;
 			}
 			- m_drawBehavior = 2056;
-			- m_transform = 0.245515 0 0 0.0766488 465.509 497.783 ;
+			- m_transform = 0.245515 0 0 0.139037 421.509 413.258 ;
 			- m_bIsPreferencesInitialized = 1;
 			- m_AdditionalLabel = { CGIText 
 				- m_str = "";
@@ -902,8 +902,19 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_bShowInherited = 0;
 					- m_bOrdered = 0;
 					- Items = { IRPYRawContainer 
-						- size = 0;
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IAttribute";
+							- _filename = "Default.sbs";
+							- _subsystem = "Default";
+							- _class = "Temperature_sensor";
+							- _name = "temp";
+							- _id = GUID d1700d35-a4a6-4f84-97b2-fe9d19b862ec;
+						}
 					}
+					- _itemValueOfFontPropertiesMapCount = 1;
+					- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 				}
 				{ CGICompartment 
 					- _id = GUID e99d5b8c-670c-45d0-8c28-b0bd68a25e32;
@@ -1274,7 +1285,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- m_nOrientationCtrlPt = 5;
 			}
 			- m_drawBehavior = 2056;
-			- m_transform = 0.203966 0 0 0.101604 465.592 211.572 ;
+			- m_transform = 0.203966 0 0 0.101604 469.592 153.572 ;
 			- m_bIsPreferencesInitialized = 1;
 			- m_AdditionalLabel = { CGIText 
 				- m_str = "";
@@ -1542,7 +1553,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- m_nOrientationCtrlPt = 5;
 			}
 			- m_drawBehavior = 2056;
-			- m_transform = 0.245515 0 0 0.101604 463.509 345.572 ;
+			- m_transform = 0.245515 0 0 0.101604 366.509 300.572 ;
 			- m_bIsPreferencesInitialized = 1;
 			- m_AdditionalLabel = { CGIText 
 				- m_str = "";
@@ -1664,7 +1675,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- m_bImplicitSetRectPoints = 0;
 				- m_nOrientationCtrlPt = 7;
 			}
-			- m_arrow = 2 718 290  718 282  ;
+			- m_arrow = 2 722 232  722 282  ;
 			- m_anglePoint1 = 0 0 ;
 			- m_anglePoint2 = 0 0 ;
 			- m_line_style = 2;
@@ -2513,7 +2524,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- m_bImplicitSetRectPoints = 0;
 				- m_nOrientationCtrlPt = 7;
 			}
-			- m_arrow = 1 771 434  ;
+			- m_arrow = 1 771 389  ;
 			- m_anglePoint1 = 0 0 ;
 			- m_anglePoint2 = 0 0 ;
 			- m_line_style = 2;
@@ -2692,11 +2703,11 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- m_bImplicitSetRectPoints = 0;
 				- m_nOrientationCtrlPt = 7;
 			}
-			- m_arrow = 1 838 567  ;
+			- m_arrow = 1 838 540  ;
 			- m_anglePoint1 = 0 0 ;
 			- m_anglePoint2 = 0 0 ;
 			- m_line_style = 2;
-			- m_SourcePort = 1061 903 ;
+			- m_SourcePort = 1061 912 ;
 			- m_TargetPort = 453 1451 ;
 			- m_pInverseModelObject = { IAssociationEndHandle 
 				- _m2Class = "IAssociationEnd";
