@@ -43,11 +43,11 @@ class Heating;
 //## classInstance HumiditySensorPart
 class HumiditySensor;
 
-//## auto_generated
-class Light_sensor;
+//## classInstance LightingControllerPart
+class LightingController;
 
-//## auto_generated
-class Lighting_system;
+//## classInstance PresenceSensorPart
+class PresenceSensor;
 
 //## auto_generated
 class Pressure_sensor;
@@ -82,6 +82,8 @@ class Ventilation;
 #define ventilationOn_Default_id 18608
 
 #define ventilationOff_Default_id 18609
+
+#define itsPre_Default_id 18610
 //#]
 
 //## package Default
@@ -101,6 +103,12 @@ extern Heating HeatingPart;
 
 //## classInstance HumiditySensorPart
 extern HumiditySensor HumiditySensorPart;
+
+//## classInstance LightingControllerPart
+extern LightingController LightingControllerPart;
+
+//## classInstance PresenceSensorPart
+extern PresenceSensor PresenceSensorPart;
 
 //## classInstance TemperatureControllerPart
 extern TemperatureController TemperatureControllerPart;
@@ -388,6 +396,35 @@ public :
 //#[ ignore
 class OMAnimatedventilationOff : virtual public AOMEvent {
     DECLARE_META_EVENT(ventilationOff)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event itsPre()
+class itsPre : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimateditsPre;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    itsPre();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimateditsPre : virtual public AOMEvent {
+    DECLARE_META_EVENT(itsPre)
 };
 //#]
 #endif // _OMINSTRUMENT

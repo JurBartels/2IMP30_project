@@ -5,7 +5,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 	}
 	- isLoadOnDemand = 0;
 	- myViewsWithID = { IRPYRawContainer 
-		- size = 9;
+		- size = 10;
 		- value = 
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -33,7 +33,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 0 ;
 			- _DownRight = 1046 367 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 4;
+			- m_nDiagramIndex = 7;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -59,10 +59,10 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- _name = "BDD";
 				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
 			}
-			- _UpLeft = 64 30 ;
-			- _DownRight = 1110 397 ;
+			- _UpLeft = 64 0 ;
+			- _DownRight = 1110 367 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 5;
+			- m_nDiagramIndex = 8;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -91,7 +91,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 0 ;
 			- _DownRight = 1046 367 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 3;
+			- m_nDiagramIndex = 6;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -120,7 +120,36 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 0 ;
 			- _DownRight = 1046 367 ;
 			- _instanceName = "AirQualityControllerPart";
-			- m_nDiagramIndex = 2;
+			- m_nDiagramIndex = 5;
+			- m_bIsActiveView = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 104;
+				- m_nTop = 104;
+				- m_nRight = 1187;
+				- m_nBottom = 531;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "LightingController";
+				- _name = "StatechartDiagram";
+				- _id = GUID 5947de7b-4255-4aae-a074-a5df61a1ae17;
+			}
+			- _UpLeft = 0 -8 ;
+			- _DownRight = 1046 359 ;
+			- _instanceName = "LightingControllerPart";
+			- m_nDiagramIndex = 0;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -147,9 +176,9 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- _id = GUID 2c2c1882-b427-4c1d-849a-15c82f0ca063;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 1244 588 ;
+			- _DownRight = 1238 582 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 0;
+			- m_nDiagramIndex = 3;
 			- m_bIsActiveView = 1;
 		}
 		{ CGEMdiDiagramParams 
@@ -178,7 +207,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 0 ;
 			- _DownRight = 1046 367 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 6;
+			- m_nDiagramIndex = 9;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -207,7 +236,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 12 0 ;
 			- _DownRight = 1156 410 ;
 			- _instanceName = "ControlSystemPart";
-			- m_nDiagramIndex = 7;
+			- m_nDiagramIndex = 1;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -236,7 +265,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 0 ;
 			- _DownRight = 1046 367 ;
 			- _instanceName = "VentilationPart";
-			- m_nDiagramIndex = 1;
+			- m_nDiagramIndex = 4;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -265,7 +294,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 0 ;
 			- _DownRight = 1144 410 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 8;
+			- m_nDiagramIndex = 2;
 			- m_bIsActiveView = 0;
 		}
 	}

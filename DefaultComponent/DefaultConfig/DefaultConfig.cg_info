@@ -1,7 +1,7 @@
 I-Logix-RPY-Archive version 8.13.0 * 9794446
 
 - m_fileModifyTime = { IRPYRawContainer 
-	- size = 84;
+	- size = 88;
 	- value = "DefaultComponent/DefaultConfig/Actuation_system.cpp" 6.19.2018::10:7:48
 	"DefaultComponent/DefaultConfig/Actuation_system.h" 6.19.2018::10:7:48
 	"DefaultComponent/DefaultConfig/Air_Q_control.cpp" 6.19.2018::10:7:49
@@ -52,8 +52,8 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 	"DefaultComponent\\DefaultConfig\\ControlSystem.h" 6.19.2018::20:38:53
 	"DefaultComponent\\DefaultConfig\\Control_system.cpp" 6.19.2018::17:46:33
 	"DefaultComponent\\DefaultConfig\\Control_system.h" 6.19.2018::17:46:32
-	"DefaultComponent\\DefaultConfig\\Default.cpp" 6.19.2018::21:3:0
-	"DefaultComponent\\DefaultConfig\\Default.h" 6.19.2018::21:3:0
+	"DefaultComponent\\DefaultConfig\\Default.cpp" 6.19.2018::21:45:30
+	"DefaultComponent\\DefaultConfig\\Default.h" 6.19.2018::21:45:29
 	"DefaultComponent\\DefaultConfig\\Fire_sensor.cpp" 6.19.2018::18:9:0
 	"DefaultComponent\\DefaultConfig\\Fire_sensor.h" 6.19.2018::18:9:0
 	"DefaultComponent\\DefaultConfig\\HVAC.cpp" 6.19.2018::21:3:1
@@ -68,8 +68,12 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 	"DefaultComponent\\DefaultConfig\\Humidity_sensor.h" 6.19.2018::10:9:43
 	"DefaultComponent\\DefaultConfig\\Light_sensor.cpp" 6.19.2018::18:9:0
 	"DefaultComponent\\DefaultConfig\\Light_sensor.h" 6.19.2018::18:9:0
+	"DefaultComponent\\DefaultConfig\\LightingController.cpp" 6.19.2018::22:0:28
+	"DefaultComponent\\DefaultConfig\\LightingController.h" 6.19.2018::21:56:38
 	"DefaultComponent\\DefaultConfig\\Lighting_system.cpp" 6.19.2018::18:9:0
 	"DefaultComponent\\DefaultConfig\\Lighting_system.h" 6.19.2018::18:9:0
+	"DefaultComponent\\DefaultConfig\\PresenceSensor.cpp" 6.19.2018::22:1:15
+	"DefaultComponent\\DefaultConfig\\PresenceSensor.h" 6.19.2018::21:24:45
 	"DefaultComponent\\DefaultConfig\\Pressure_sensor.cpp" 6.19.2018::10:9:43
 	"DefaultComponent\\DefaultConfig\\Pressure_sensor.h" 6.19.2018::10:9:43
 	"DefaultComponent\\DefaultConfig\\Security_system.cpp" 6.19.2018::10:9:12
@@ -94,16 +98,16 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 	"GUID f852634f-b8c1-401e-96fc-8e0cb48f85cb" "GUID 6e1545ca-119b-4ff4-8644-ea35cedd114e"
 	
 }
-- size = 17;
+- size = 18;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = "Default.sbs";
 	- _subsystem = "Default";
 	- _class = "";
-	- _name = "Lighting_system";
+	- _name = "LightingController";
 	- _id = GUID b3e3e0be-111c-4378-9048-7851205df723;
 }
-- genTime = 6.19.2018::19:45:35;
+- genTime = 6.19.2018::22:0:28;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = "Default.sbs";
@@ -132,11 +136,11 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 }
 - genTime = 6.19.2018::19:45:35;
 - hElement = { IHandle 
-	- _m2Class = "IClass";
-	- _filename = "Default.sbs";
-	- _subsystem = "Default";
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
 	- _class = "";
-	- _name = "Light_sensor";
+	- _name = "";
 	- _id = GUID 921d34c3-eee1-4d83-8f79-7a1b6c2aa94d;
 }
 - genTime = 6.19.2018::19:45:35;
@@ -202,7 +206,16 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 	- _name = "Default";
 	- _id = GUID f852634f-b8c1-401e-96fc-8e0cb48f85cb;
 }
-- genTime = 6.19.2018::21:5:16;
+- genTime = 6.19.2018::22:0:28;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "";
+	- _name = "PresenceSensor";
+	- _id = GUID a8b82c4d-c763-4c07-9a8c-376294d359f0;
+}
+- genTime = 6.19.2018::22:1:15;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = "Default.sbs";
@@ -238,7 +251,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 	- _name = "DefaultComponent\\DefaultConfig";
 	- _id = GUID acc81c51-8173-49b2-9d38-e107d86839b4;
 }
-- genTime = 6.19.2018::21:6:5;
+- genTime = 6.19.2018::22:1:15;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = "Default.sbs";

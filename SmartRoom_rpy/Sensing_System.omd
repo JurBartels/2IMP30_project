@@ -299,7 +299,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 		}
 	}
 	- _modifiedTimeWeak = 1.2.1990::0:0:0;
-	- _lastModifiedTime = "6.19.2018::21:0:27";
+	- _lastModifiedTime = "6.19.2018::21:21:6";
 	- _graphicChart = { CGIClassChart 
 		- _id = GUID e8c79b25-8c2f-49de-b861-679a062f8f91;
 		- m_type = 0;
@@ -323,7 +323,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 		}
 		- m_drawBehavior = 0;
 		- m_bIsPreferencesInitialized = 0;
-		- elementList = 21;
+		- elementList = 22;
 		{ CGIClass 
 			- _id = GUID 1d70f31d-9739-47d9-a6fa-be6e7edb35fe;
 			- m_type = 78;
@@ -1052,12 +1052,12 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- _filename = "Default.sbs";
 				- _subsystem = "Default";
 				- _class = "";
-				- _name = "Lighting_system";
+				- _name = "LightingController";
 				- _id = GUID b3e3e0be-111c-4378-9048-7851205df723;
 			}
 			- m_pParent = GUID 1d70f31d-9739-47d9-a6fa-be6e7edb35fe;
 			- m_name = { CGIText 
-				- m_str = "Lighting_system";
+				- m_str = "LightingController";
 				- m_style = "Arial" 10 0 0 0 1 ;
 				- m_color = { IColor 
 					- m_fgColor = 0;
@@ -1070,7 +1070,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- m_nOrientationCtrlPt = 5;
 			}
 			- m_drawBehavior = 2056;
-			- m_transform = 0.188857 0 0 0.101604 818.62 13.572 ;
+			- m_transform = 0.104816 0 0 0.101604 825.789 13.572 ;
 			- m_bIsPreferencesInitialized = 1;
 			- m_AdditionalLabel = { CGIText 
 				- m_str = "";
@@ -1106,140 +1106,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				}
 				{ CGICompartment 
 					- _id = GUID b81f8f19-2ee6-4003-b6ba-dc69afb83c2f;
-					- m_name = "Operation";
-					- m_displayOption = Explicit;
-					- m_bShowInherited = 0;
-					- m_bOrdered = 0;
-					- Items = { IRPYRawContainer 
-						- size = 0;
-					}
-				}
-			}
-			- Attrs = { IRPYRawContainer 
-				- size = 0;
-			}
-			- Operations = { IRPYRawContainer 
-				- size = 0;
-			}
-		}
-		{ CGIClass 
-			- _id = GUID e9159231-58b9-4dae-ad9f-1a551adb356a;
-			- _properties = { IPropertyContainer 
-				- Subjects = { IRPYRawContainer 
-					- size = 2;
-					- value = 
-					{ IPropertySubject 
-						- _Name = "General";
-						- Metaclasses = { IRPYRawContainer 
-							- size = 1;
-							- value = 
-							{ IPropertyMetaclass 
-								- _Name = "Graphics";
-								- Properties = { IRPYRawContainer 
-									- size = 1;
-									- value = 
-									{ IProperty 
-										- _Name = "FitBoxToItsTextuals";
-										- _Value = "False";
-										- _Type = Bool;
-									}
-								}
-							}
-						}
-					}
-					{ IPropertySubject 
-						- _Name = "ObjectModelGe";
-						- Metaclasses = { IRPYRawContainer 
-							- size = 2;
-							- value = 
-							{ IPropertyMetaclass 
-								- _Name = "Block";
-								- Properties = { IRPYRawContainer 
-									- size = 1;
-									- value = 
-									{ IProperty 
-										- _Name = "Compartments";
-										- _Value = "";
-										- _Type = MultiLine;
-									}
-								}
-							}
-							{ IPropertyMetaclass 
-								- _Name = "Class";
-								- Properties = { IRPYRawContainer 
-									- size = 1;
-									- value = 
-									{ IProperty 
-										- _Name = "Compartments";
-										- _Value = "";
-										- _Type = MultiLine;
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-			- m_type = 87;
-			- m_pModelObject = { IHandle 
-				- _m2Class = "IClass";
-				- _filename = "Default.sbs";
-				- _subsystem = "Default";
-				- _class = "";
-				- _name = "Light_sensor";
-				- _id = GUID 921d34c3-eee1-4d83-8f79-7a1b6c2aa94d;
-			}
-			- m_pParent = GUID 1d70f31d-9739-47d9-a6fa-be6e7edb35fe;
-			- m_name = { CGIText 
-				- m_str = "Light_sensor";
-				- m_style = "Arial" 10 0 0 0 1 ;
-				- m_color = { IColor 
-					- m_fgColor = 0;
-					- m_bgColor = 0;
-					- m_bgFlag = 0;
-				}
-				- m_position = 1 0 0  ;
-				- m_nIdent = 0;
-				- m_bImplicitSetRectPoints = 0;
-				- m_nOrientationCtrlPt = 5;
-			}
-			- m_drawBehavior = 2056;
-			- m_transform = 0.101983 0 0 0.101604 465.796 13.572 ;
-			- m_bIsPreferencesInitialized = 1;
-			- m_AdditionalLabel = { CGIText 
-				- m_str = "";
-				- m_style = "Arial" 10 0 0 0 1 ;
-				- m_color = { IColor 
-					- m_fgColor = 0;
-					- m_bgColor = 0;
-					- m_bgFlag = 0;
-				}
-				- m_position = 1 0 0  ;
-				- m_nIdent = 0;
-				- m_bImplicitSetRectPoints = 0;
-				- m_nOrientationCtrlPt = 1;
-			}
-			- m_polygon = 4 2 329  2 1451  1061 1451  1061 329  ;
-			- m_nNameFormat = 0;
-			- m_nIsNameFormat = 0;
-			- frameset = "<frameset rows=50%,50%>
-<frame name=AttributeListCompartment>
-<frame name=OperationListCompartment>";
-			- Compartments = { IRPYRawContainer 
-				- size = 2;
-				- value = 
-				{ CGICompartment 
-					- _id = GUID 29a621d3-a690-46dd-bbee-81699ec17eb7;
-					- m_name = "Attribute";
-					- m_displayOption = Explicit;
-					- m_bShowInherited = 0;
-					- m_bOrdered = 0;
-					- Items = { IRPYRawContainer 
-						- size = 0;
-					}
-				}
-				{ CGICompartment 
-					- _id = GUID a139ed34-6a9d-4aa4-9393-b57a0305b14f;
 					- m_name = "Operation";
 					- m_displayOption = Explicit;
 					- m_bShowInherited = 0;
@@ -3083,6 +2949,302 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- _class = "AirQualityController";
 				- _name = "itsHumiditySensor";
 				- _id = GUID 21107947-8926-4274-be36-9cac10e786c1;
+			}
+			- m_pInstance = { IObjectLinkHandle 
+				- _m2Class = "";
+			}
+			- m_pInverseInstance = { IObjectLinkHandle 
+				- _m2Class = "";
+			}
+			- m_bShowSourceMultiplicity = 0;
+			- m_bShowSourceRole = 0;
+			- m_bShowTargetMultiplicity = 0;
+			- m_bShowTargetRole = 0;
+			- m_bShowLinkName = 1;
+			- m_bShowSpecificType = 0;
+			- m_bInstance = 0;
+			- m_bShowQualifier1 = 0;
+			- m_bShowQualifier2 = 0;
+			- m_sourceRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 2;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 3;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 4;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 5;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 6;
+				- m_bImplicitSetRectPoints = 0;
+				- m_nOrientationCtrlPt = 8;
+			}
+			- m_targetQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 7;
+				- m_bImplicitSetRectPoints = 0;
+				- m_nOrientationCtrlPt = 8;
+			}
+			- m_specificType = symmetric_type;
+		}
+		{ CGIClass 
+			- _id = GUID 7e153552-c856-46b3-b850-c79aeebecde1;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 2;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "General";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Graphics";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "FitBoxToItsTextuals";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "ObjectModelGe";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Block";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "Compartments";
+										- _Value = "";
+										- _Type = MultiLine;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- m_type = 87;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "PresenceSensor";
+				- _id = GUID a8b82c4d-c763-4c07-9a8c-376294d359f0;
+			}
+			- m_pParent = GUID 1d70f31d-9739-47d9-a6fa-be6e7edb35fe;
+			- m_name = { CGIText 
+				- m_str = "PresenceSensor";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+				- m_nOrientationCtrlPt = 5;
+			}
+			- m_drawBehavior = 2056;
+			- m_transform = 0.101983 0 0 0.0811052 1057.8 32.3164 ;
+			- m_bIsPreferencesInitialized = 1;
+			- m_AdditionalLabel = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+				- m_nOrientationCtrlPt = 1;
+			}
+			- m_polygon = 4 2 329  2 1451  1061 1451  1061 329  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- frameset = "<frameset rows=50%,50%>
+<frame name=AttributeListCompartment>
+<frame name=OperationListCompartment>";
+			- Compartments = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ CGICompartment 
+					- _id = GUID 466ee167-8a8d-45a8-9c33-0fedaa5d9544;
+					- m_name = "Attribute";
+					- m_displayOption = Explicit;
+					- m_bShowInherited = 0;
+					- m_bOrdered = 0;
+					- Items = { IRPYRawContainer 
+						- size = 0;
+					}
+				}
+				{ CGICompartment 
+					- _id = GUID c59fd116-3a65-4aa9-a3c3-9847f18d9e03;
+					- m_name = "Operation";
+					- m_displayOption = Explicit;
+					- m_bShowInherited = 0;
+					- m_bOrdered = 0;
+					- Items = { IRPYRawContainer 
+						- size = 0;
+					}
+				}
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+		}
+		{ CGIAssociationEnd 
+			- _id = GUID b8ec46f8-3c40-43dd-a28a-9353c21dd7a7;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "General";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Graphics";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "ShowLabels";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- m_type = 92;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "LightingController";
+				- _name = "itsPresenceSensor";
+				- _id = GUID 37ebbe00-c9b3-4de8-9a6a-46399548d6d0;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+				- m_nOrientationCtrlPt = 8;
+			}
+			- m_drawBehavior = 4096;
+			- m_bIsPreferencesInitialized = 1;
+			- m_pSource = GUID 096ebe43-9466-4ccd-9472-453d61f46fcd;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID 7e153552-c856-46b3-b850-c79aeebecde1;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+				- m_nOrientationCtrlPt = 7;
+			}
+			- m_anglePoint1 = 0 0 ;
+			- m_anglePoint2 = 0 0 ;
+			- m_line_style = 2;
+			- m_SourcePort = 1061 831 ;
+			- m_TargetPort = 2 810 ;
+			- m_pInverseModelObject = { IAssociationEndHandle 
+				- _m2Class = "IAssociationEnd";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "PresenceSensor";
+				- _name = "itsLightingController";
+				- _id = GUID 0f23e738-6af7-4798-be0f-898da0e073d0;
 			}
 			- m_pInstance = { IObjectLinkHandle 
 				- _m2Class = "";

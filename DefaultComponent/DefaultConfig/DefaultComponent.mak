@@ -88,8 +88,7 @@ OBJS= \
   Authorization_security_system.obj \
   Communication_system.obj \
   TemperatureSensor.obj \
-  Lighting_system.obj \
-  Light_sensor.obj \
+  LightingController.obj \
   Fire_sensor.obj \
   Security_system.obj \
   HVAC.obj \
@@ -99,6 +98,7 @@ OBJS= \
   AirConditioning.obj \
   Ventilation.obj \
   AirQualityController.obj \
+  PresenceSensor.obj \
   Default.obj
 
 
@@ -206,15 +206,9 @@ TemperatureSensor.obj : TemperatureSensor.cpp TemperatureSensor.h    Default.h T
 
 
 
-Lighting_system.obj : Lighting_system.cpp Lighting_system.h    Default.h 
+LightingController.obj : LightingController.cpp LightingController.h    Default.h PresenceSensor.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Lighting_system.obj" "Lighting_system.cpp" 
-
-
-
-Light_sensor.obj : Light_sensor.cpp Light_sensor.h    Default.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Light_sensor.obj" "Light_sensor.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"LightingController.obj" "LightingController.cpp" 
 
 
 
@@ -272,7 +266,13 @@ AirQualityController.obj : AirQualityController.cpp AirQualityController.h    De
 
 
 
-Default.obj : Default.cpp Default.h    TemperatureController.h Authorization_security_system.h Communication_system.h TemperatureSensor.h Lighting_system.h Light_sensor.h Fire_sensor.h Security_system.h HVAC.h Pressure_sensor.h HumiditySensor.h Heating.h AirConditioning.h Ventilation.h AirQualityController.h 
+PresenceSensor.obj : PresenceSensor.cpp PresenceSensor.h    Default.h LightingController.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"PresenceSensor.obj" "PresenceSensor.cpp" 
+
+
+
+Default.obj : Default.cpp Default.h    TemperatureController.h Authorization_security_system.h Communication_system.h TemperatureSensor.h LightingController.h Fire_sensor.h Security_system.h HVAC.h Pressure_sensor.h HumiditySensor.h Heating.h AirConditioning.h Ventilation.h AirQualityController.h PresenceSensor.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Default.obj" "Default.cpp" 
 
@@ -309,8 +309,7 @@ clean:
 	if exist Authorization_security_system.obj erase Authorization_security_system.obj
 	if exist Communication_system.obj erase Communication_system.obj
 	if exist TemperatureSensor.obj erase TemperatureSensor.obj
-	if exist Lighting_system.obj erase Lighting_system.obj
-	if exist Light_sensor.obj erase Light_sensor.obj
+	if exist LightingController.obj erase LightingController.obj
 	if exist Fire_sensor.obj erase Fire_sensor.obj
 	if exist Security_system.obj erase Security_system.obj
 	if exist HVAC.obj erase HVAC.obj
@@ -320,6 +319,7 @@ clean:
 	if exist AirConditioning.obj erase AirConditioning.obj
 	if exist Ventilation.obj erase Ventilation.obj
 	if exist AirQualityController.obj erase AirQualityController.obj
+	if exist PresenceSensor.obj erase PresenceSensor.obj
 	if exist Default.obj erase Default.obj
 	if exist $(TARGET_MAIN)$(OBJ_EXT) erase $(TARGET_MAIN)$(OBJ_EXT)
 	if exist *$(OBJ_EXT) erase *$(OBJ_EXT)
