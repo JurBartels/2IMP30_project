@@ -16,22 +16,26 @@
 #include "Default.h"
 //## classInstance AirConditioningPart
 #include "AirConditioning.h"
-//## classInstance ControlSystemPart
-#include "ControlSystem.h"
+//## classInstance AirQualityControllerPart
+#include "AirQualityController.h"
 //## classInstance HeatingPart
 #include "Heating.h"
+//## classInstance HumiditySensorPart
+#include "HumiditySensor.h"
 //## classInstance HVACPart
 #include "HVAC.h"
+//## classInstance TemperatureControllerPart
+#include "TemperatureController.h"
 //## classInstance TemperatureSensorPart
 #include "TemperatureSensor.h"
+//## classInstance VentilationPart
+#include "Ventilation.h"
 //## auto_generated
 #include "Authorization_security_system.h"
 //## auto_generated
 #include "Communication_system.h"
 //## auto_generated
 #include "Fire_sensor.h"
-//## auto_generated
-#include "Humidity_sensor.h"
 //## auto_generated
 #include "Light_sensor.h"
 //## auto_generated
@@ -40,8 +44,6 @@
 #include "Pressure_sensor.h"
 //## auto_generated
 #include "Security_system.h"
-//## auto_generated
-#include "Ventilation.h"
 //#[ ignore
 #define heatingOn_SERIALIZE OM_NO_OP
 
@@ -84,6 +86,18 @@
 #define okTemp_UNSERIALIZE OM_NO_OP
 
 #define okTemp_CONSTRUCTOR okTemp()
+
+#define ventilationOn_SERIALIZE OM_NO_OP
+
+#define ventilationOn_UNSERIALIZE OM_NO_OP
+
+#define ventilationOn_CONSTRUCTOR ventilationOn()
+
+#define ventilationOff_SERIALIZE OM_NO_OP
+
+#define ventilationOff_UNSERIALIZE OM_NO_OP
+
+#define ventilationOff_CONSTRUCTOR ventilationOff()
 //#]
 
 //## package Default
@@ -92,8 +106,8 @@
 //## classInstance AirConditioningPart
 AirConditioning AirConditioningPart;
 
-//## classInstance ControlSystemPart
-ControlSystem ControlSystemPart;
+//## classInstance AirQualityControllerPart
+AirQualityController AirQualityControllerPart;
 
 //## classInstance HVACPart
 HVAC HVACPart;
@@ -101,8 +115,17 @@ HVAC HVACPart;
 //## classInstance HeatingPart
 Heating HeatingPart;
 
+//## classInstance HumiditySensorPart
+HumiditySensor HumiditySensorPart;
+
+//## classInstance TemperatureControllerPart
+TemperatureController TemperatureControllerPart;
+
 //## classInstance TemperatureSensorPart
 TemperatureSensor TemperatureSensorPart;
+
+//## classInstance VentilationPart
+Ventilation VentilationPart;
 
 #ifdef _OMINSTRUMENT
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
@@ -115,7 +138,7 @@ IMPLEMENT_META_PACKAGE(Default, Default)
 void Default_initRelations() {
     {
         {
-            ControlSystemPart.setShouldDelete(false);
+            TemperatureControllerPart.setShouldDelete(false);
         }
         {
             HVACPart.setShouldDelete(false);
@@ -126,11 +149,19 @@ void Default_initRelations() {
         {
             AirConditioningPart.setShouldDelete(false);
         }
+        {
+            VentilationPart.setShouldDelete(false);
+        }
+        {
+            AirQualityControllerPart.setShouldDelete(false);
+        }
     }
-    ControlSystemPart.setItsHVAC(&HVACPart);
-    ControlSystemPart.setItsTemperatureSensor(&TemperatureSensorPart);
+    TemperatureControllerPart.setItsHVAC(&HVACPart);
+    TemperatureControllerPart.setItsTemperatureSensor(&TemperatureSensorPart);
     HeatingPart.setItsHVAC(&HVACPart);
     AirConditioningPart.setItsHVAC(&HVACPart);
+    VentilationPart.setItsAirQualityController(&AirQualityControllerPart);
+    HumiditySensorPart.setItsAirQualityController(&AirQualityControllerPart);
     
     #ifdef _OMINSTRUMENT
     RenameGlobalInstances();
@@ -140,9 +171,11 @@ void Default_initRelations() {
 bool Default_startBehavior() {
     bool done = true;
     done &= AirConditioningPart.startBehavior();
-    done &= ControlSystemPart.startBehavior();
+    done &= AirQualityControllerPart.startBehavior();
     done &= HVACPart.startBehavior();
     done &= HeatingPart.startBehavior();
+    done &= TemperatureControllerPart.startBehavior();
+    done &= VentilationPart.startBehavior();
     return done;
 }
 
@@ -151,11 +184,14 @@ static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 }
 
 static void RenameGlobalInstances() {
-    OM_SET_INSTANCE_NAME(&ControlSystemPart, ControlSystem, "ControlSystemPart", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&TemperatureControllerPart, TemperatureController, "TemperatureControllerPart", AOMNoMultiplicity);
     OM_SET_INSTANCE_NAME(&TemperatureSensorPart, TemperatureSensor, "TemperatureSensorPart", AOMNoMultiplicity);
     OM_SET_INSTANCE_NAME(&HVACPart, HVAC, "HVACPart", AOMNoMultiplicity);
     OM_SET_INSTANCE_NAME(&HeatingPart, Heating, "HeatingPart", AOMNoMultiplicity);
     OM_SET_INSTANCE_NAME(&AirConditioningPart, AirConditioning, "AirConditioningPart", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&VentilationPart, Ventilation, "VentilationPart", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&HumiditySensorPart, HumiditySensor, "HumiditySensorPart", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&AirQualityControllerPart, AirQualityController, "AirQualityControllerPart", AOMNoMultiplicity);
 }
 #endif // _OMINSTRUMENT
 
@@ -252,6 +288,30 @@ bool okTemp::isTypeOf(const short id) const {
 }
 
 IMPLEMENT_META_EVENT_P(okTemp, Default, Default, okTemp())
+
+//## event ventilationOn()
+ventilationOn::ventilationOn() {
+    NOTIFY_EVENT_CONSTRUCTOR(ventilationOn)
+    setId(ventilationOn_Default_id);
+}
+
+bool ventilationOn::isTypeOf(const short id) const {
+    return (ventilationOn_Default_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(ventilationOn, Default, Default, ventilationOn())
+
+//## event ventilationOff()
+ventilationOff::ventilationOff() {
+    NOTIFY_EVENT_CONSTRUCTOR(ventilationOff)
+    setId(ventilationOff_Default_id);
+}
+
+bool ventilationOff::isTypeOf(const short id) const {
+    return (ventilationOff_Default_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(ventilationOff, Default, Default, ventilationOff())
 
 /*********************************************************************
 	File Path	: DefaultComponent\DefaultConfig\Default.cpp

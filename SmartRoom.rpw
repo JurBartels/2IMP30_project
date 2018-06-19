@@ -5,8 +5,37 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 	}
 	- isLoadOnDemand = 0;
 	- myViewsWithID = { IRPYRawContainer 
-		- size = 5;
+		- size = 9;
 		- value = 
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 52;
+				- m_nTop = 52;
+				- m_nRight = 1135;
+				- m_nBottom = 479;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "AirQualitySystem";
+				- _id = GUID df214fff-9740-4d34-8473-156ef1794136;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1046 367 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 4;
+			- m_bIsActiveView = 0;
+		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
@@ -18,8 +47,8 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- m_ptMaxPositionY = -31;
 				- m_nLeft = 0;
 				- m_nTop = 0;
-				- m_nRight = 1181;
-				- m_nBottom = 470;
+				- m_nRight = 1083;
+				- m_nBottom = 427;
 			}
 			- _wasOpenedOnCloseProject = 1;
 			- _theDiagram = { IHandle 
@@ -30,37 +59,37 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- _name = "BDD";
 				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 1144 410 ;
+			- _UpLeft = 64 30 ;
+			- _DownRight = 1110 397 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 4;
+			- m_nDiagramIndex = 5;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 2;
-				- m_showCmd = 2;
-				- m_ptMinPositionX = 0;
-				- m_ptMinPositionY = 676;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
 				- m_ptMaxPositionY = -31;
-				- m_nLeft = 26;
-				- m_nTop = 26;
-				- m_nRight = 1207;
-				- m_nBottom = 496;
+				- m_nLeft = 104;
+				- m_nTop = 104;
+				- m_nRight = 1187;
+				- m_nBottom = 531;
 			}
 			- _wasOpenedOnCloseProject = 1;
 			- _theDiagram = { IHandle 
 				- _m2Class = "IStateChartDiagram";
 				- _filename = "Default.sbs";
 				- _subsystem = "Default";
-				- _class = "ControlSystem";
+				- _class = "AirQualityController";
 				- _name = "StatechartDiagram";
-				- _id = GUID ccbe300d-0704-414b-adb1-861ebf5bd9d7;
+				- _id = GUID 95a75170-2e92-4d97-9852-a727cf2bec94;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 1394 683 ;
+			- _DownRight = 1046 367 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 3;
 			- m_bIsActiveView = 0;
@@ -74,53 +103,24 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
 				- m_ptMaxPositionY = -31;
-				- m_nLeft = 208;
-				- m_nTop = 208;
-				- m_nRight = 1389;
-				- m_nBottom = 678;
+				- m_nLeft = 156;
+				- m_nTop = 156;
+				- m_nRight = 1239;
+				- m_nBottom = 583;
 			}
 			- _wasOpenedOnCloseProject = 1;
 			- _theDiagram = { IHandle 
 				- _m2Class = "IStateChartDiagram";
 				- _filename = "Default.sbs";
 				- _subsystem = "Default";
-				- _class = "ControlSystem";
+				- _class = "AirQualityController";
 				- _name = "StatechartDiagram";
-				- _id = GUID ccbe300d-0704-414b-adb1-861ebf5bd9d7;
+				- _id = GUID 95a75170-2e92-4d97-9852-a727cf2bec94;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 1144 410 ;
-			- _instanceName = "ControlSystemPart";
-			- m_nDiagramIndex = 1;
-			- m_bIsActiveView = 0;
-		}
-		{ CGEMdiDiagramParams 
-			- _placement = { CCommon_WINDOWPLACEMENT 
-				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
-				- m_ptMinPositionX = -1;
-				- m_ptMinPositionY = -1;
-				- m_ptMaxPositionX = -8;
-				- m_ptMaxPositionY = -31;
-				- m_nLeft = 234;
-				- m_nTop = 234;
-				- m_nRight = 1415;
-				- m_nBottom = 704;
-			}
-			- _wasOpenedOnCloseProject = 1;
-			- _theDiagram = { IHandle 
-				- _m2Class = "IStateChartDiagram";
-				- _filename = "Default.sbs";
-				- _subsystem = "Default";
-				- _class = "HVAC";
-				- _name = "StatechartDiagram";
-				- _id = GUID c528be85-fcd9-465b-987a-c076a65f0db9;
-			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 1144 410 ;
-			- _instanceName = "HVACPart";
-			- m_nDiagramIndex = 0;
+			- _DownRight = 1046 367 ;
+			- _instanceName = "AirQualityControllerPart";
+			- m_nDiagramIndex = 2;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -147,10 +147,126 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- _id = GUID 2c2c1882-b427-4c1d-849a-15c82f0ca063;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 1394 683 ;
+			- _DownRight = 1244 588 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 2;
+			- m_nDiagramIndex = 0;
 			- m_bIsActiveView = 1;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 156;
+				- m_nTop = 156;
+				- m_nRight = 1239;
+				- m_nBottom = 583;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "TemperatureController";
+				- _name = "StatechartDiagram";
+				- _id = GUID ccbe300d-0704-414b-adb1-861ebf5bd9d7;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1046 367 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 6;
+			- m_bIsActiveView = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 182;
+				- m_nTop = 182;
+				- m_nRight = 1363;
+				- m_nBottom = 652;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "TemperatureController";
+				- _name = "StatechartDiagram";
+				- _id = GUID ccbe300d-0704-414b-adb1-861ebf5bd9d7;
+			}
+			- _UpLeft = 12 0 ;
+			- _DownRight = 1156 410 ;
+			- _instanceName = "ControlSystemPart";
+			- m_nDiagramIndex = 7;
+			- m_bIsActiveView = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 182;
+				- m_nTop = 182;
+				- m_nRight = 1265;
+				- m_nBottom = 609;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Ventilation";
+				- _name = "StatechartDiagram";
+				- _id = GUID 13e470f9-60b8-4346-89f1-e1a32f289e61;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1046 367 ;
+			- _instanceName = "VentilationPart";
+			- m_nDiagramIndex = 1;
+			- m_bIsActiveView = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 78;
+				- m_nTop = 78;
+				- m_nRight = 1259;
+				- m_nBottom = 548;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "TemperatureSystem";
+				- _id = GUID 65b207d3-01d8-47ee-8d41-df4d7d863bc6;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1144 410 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 8;
+			- m_bIsActiveView = 0;
 		}
 	}
 	- _fullName = "C:\\Users\\jlta\\Documents\\GitHub\\2IMP30_project\\SmartRoom";

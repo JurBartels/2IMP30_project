@@ -8,7 +8,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			{ IPropertySubject 
 				- _Name = "Format";
 				- Metaclasses = { IRPYRawContainer 
-					- size = 7;
+					- size = 8;
 					- value = 
 					{ IPropertyMetaclass 
 						- _Name = "Aggregation";
@@ -103,6 +103,33 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 								- _Name = "Line.LineStyle";
 								- _Value = "0";
 								- _Type = Int;
+							}
+							{ IProperty 
+								- _Name = "Line.LineWidth";
+								- _Value = "1";
+								- _Type = Int;
+							}
+						}
+					}
+					{ IPropertyMetaclass 
+						- _Name = "Composition";
+						- Properties = { IRPYRawContainer 
+							- size = 4;
+							- value = 
+							{ IProperty 
+								- _Name = "Font.Font";
+								- _Value = "Tahoma";
+								- _Type = String;
+							}
+							{ IProperty 
+								- _Name = "Font.Size";
+								- _Value = "8";
+								- _Type = Int;
+							}
+							{ IProperty 
+								- _Name = "Line.LineColor";
+								- _Value = "128,128,128";
+								- _Type = Color;
 							}
 							{ IProperty 
 								- _Name = "Line.LineWidth";
@@ -272,7 +299,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 		}
 	}
 	- _modifiedTimeWeak = 1.2.1990::0:0:0;
-	- _lastModifiedTime = "6.19.2018::19:44:49";
+	- _lastModifiedTime = "6.19.2018::21:0:27";
 	- _graphicChart = { CGIClassChart 
 		- _id = GUID e8c79b25-8c2f-49de-b861-679a062f8f91;
 		- m_type = 0;
@@ -296,7 +323,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 		}
 		- m_drawBehavior = 0;
 		- m_bIsPreferencesInitialized = 0;
-		- elementList = 18;
+		- elementList = 21;
 		{ CGIClass 
 			- _id = GUID 1d70f31d-9739-47d9-a6fa-be6e7edb35fe;
 			- m_type = 78;
@@ -392,7 +419,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- m_nOrientationCtrlPt = 8;
 			}
 			- m_drawBehavior = 4096;
-			- m_transform = 5.87037 0 0 5.34091 20 20 ;
+			- m_transform = 5.87037 0 0 4.2803 20 20 ;
 			- m_bIsPreferencesInitialized = 1;
 			- m_AdditionalLabel = { CGIText 
 				- m_str = "";
@@ -478,12 +505,12 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- _filename = "Default.sbs";
 				- _subsystem = "Default";
 				- _class = "";
-				- _name = "ControlSystem";
+				- _name = "TemperatureController";
 				- _id = GUID e3de5109-742a-4b9f-8782-3b3e34af96aa;
 			}
 			- m_pParent = GUID 1d70f31d-9739-47d9-a6fa-be6e7edb35fe;
 			- m_name = { CGIText 
-				- m_str = "ControlSystem";
+				- m_str = "TemperatureController";
 				- m_style = "Arial" 10 0 0 0 1 ;
 				- m_color = { IColor 
 					- m_fgColor = 0;
@@ -496,7 +523,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- m_nOrientationCtrlPt = 5;
 			}
 			- m_drawBehavior = 2056;
-			- m_transform = 0.184136 0 0 0.139037 681.632 213.258 ;
+			- m_transform = 0.184136 0 0 0.139037 783.632 192.258 ;
 			- m_bIsPreferencesInitialized = 1;
 			- m_AdditionalLabel = { CGIText 
 				- m_str = "";
@@ -898,7 +925,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- m_nOrientationCtrlPt = 5;
 			}
 			- m_drawBehavior = 2056;
-			- m_transform = 0.12559 0 0 0.139037 502.749 400.258 ;
+			- m_transform = 0.12559 0 0 0.114973 745.749 408.175 ;
 			- m_bIsPreferencesInitialized = 1;
 			- m_AdditionalLabel = { CGIText 
 				- m_str = "";
@@ -933,7 +960,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- value = 
 						{ IHandle 
 							- _m2Class = "IAttribute";
-							- _filename = "";
+							- _filename = "Default.sbs";
 							- _subsystem = "Default";
 							- _class = "TemperatureSensor";
 							- _name = "temp";
@@ -1311,7 +1338,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- m_nOrientationCtrlPt = 5;
 			}
 			- m_drawBehavior = 2056;
-			- m_transform = 0.101983 0 0 0.101604 447.796 225.572 ;
+			- m_transform = 0.101983 0 0 0.101604 168.796 225.572 ;
 			- m_bIsPreferencesInitialized = 1;
 			- m_AdditionalLabel = { CGIText 
 				- m_str = "";
@@ -1445,7 +1472,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- m_nOrientationCtrlPt = 5;
 			}
 			- m_drawBehavior = 2056;
-			- m_transform = 0.101983 0 0 0.101604 949.798 412.572 ;
+			- m_transform = 0.101983 0 0 0.101604 949.798 419.572 ;
 			- m_bIsPreferencesInitialized = 1;
 			- m_AdditionalLabel = { CGIText 
 				- m_str = "";
@@ -1809,7 +1836,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- m_nOrientationCtrlPt = 5;
 			}
 			- m_drawBehavior = 2056;
-			- m_transform = 0.101983 0 0 0.101604 1169.8 567.572 ;
+			- m_transform = 0.101983 0 0 0.101604 339.8 360.572 ;
 			- m_bIsPreferencesInitialized = 1;
 			- m_AdditionalLabel = { CGIText 
 				- m_str = "";
@@ -1931,7 +1958,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- m_bImplicitSetRectPoints = 0;
 				- m_nOrientationCtrlPt = 7;
 			}
-			- m_arrow = 2 1112 490  1112 375  ;
+			- m_arrow = 2 1112 497  1112 375  ;
 			- m_anglePoint1 = 0 0 ;
 			- m_anglePoint2 = 0 0 ;
 			- m_line_style = 2;
@@ -2106,7 +2133,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- m_bImplicitSetRectPoints = 0;
 				- m_nOrientationCtrlPt = 7;
 			}
-			- m_arrow = 2 1111 506  1111 514  ;
+			- m_arrow = 2 1111 513  1111 514  ;
 			- m_anglePoint1 = 0 0 ;
 			- m_anglePoint2 = 0 0 ;
 			- m_line_style = 2;
@@ -2119,181 +2146,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- _class = "AirConditioning";
 				- _name = "itsHVAC";
 				- _id = GUID 32f64d01-3312-42b1-96ee-682948dd3e4f;
-			}
-			- m_pInstance = { IObjectLinkHandle 
-				- _m2Class = "";
-			}
-			- m_pInverseInstance = { IObjectLinkHandle 
-				- _m2Class = "";
-			}
-			- m_bShowSourceMultiplicity = 0;
-			- m_bShowSourceRole = 0;
-			- m_bShowTargetMultiplicity = 0;
-			- m_bShowTargetRole = 0;
-			- m_bShowLinkName = 1;
-			- m_bShowSpecificType = 0;
-			- m_bInstance = 0;
-			- m_bShowQualifier1 = 0;
-			- m_bShowQualifier2 = 0;
-			- m_sourceRole = { CGIText 
-				- m_str = "";
-				- m_style = "Arial" 10 0 0 0 1 ;
-				- m_color = { IColor 
-					- m_fgColor = 0;
-					- m_bgColor = 0;
-					- m_bgFlag = 0;
-				}
-				- m_position = 1 0 0  ;
-				- m_nIdent = 2;
-				- m_bImplicitSetRectPoints = 0;
-			}
-			- m_targetRole = { CGIText 
-				- m_str = "";
-				- m_style = "Arial" 10 0 0 0 1 ;
-				- m_color = { IColor 
-					- m_fgColor = 0;
-					- m_bgColor = 0;
-					- m_bgFlag = 0;
-				}
-				- m_position = 1 0 0  ;
-				- m_nIdent = 3;
-				- m_bImplicitSetRectPoints = 0;
-			}
-			- m_sourceMultiplicity = { CGIText 
-				- m_str = "";
-				- m_style = "Arial" 10 0 0 0 1 ;
-				- m_color = { IColor 
-					- m_fgColor = 0;
-					- m_bgColor = 0;
-					- m_bgFlag = 0;
-				}
-				- m_position = 1 0 0  ;
-				- m_nIdent = 4;
-				- m_bImplicitSetRectPoints = 0;
-			}
-			- m_targetMultiplicity = { CGIText 
-				- m_str = "";
-				- m_style = "Arial" 10 0 0 0 1 ;
-				- m_color = { IColor 
-					- m_fgColor = 0;
-					- m_bgColor = 0;
-					- m_bgFlag = 0;
-				}
-				- m_position = 1 0 0  ;
-				- m_nIdent = 5;
-				- m_bImplicitSetRectPoints = 0;
-			}
-			- m_sourceQualifier = { CGIText 
-				- m_str = "";
-				- m_style = "Arial" 10 0 0 0 1 ;
-				- m_color = { IColor 
-					- m_fgColor = 0;
-					- m_bgColor = 0;
-					- m_bgFlag = 0;
-				}
-				- m_position = 1 0 0  ;
-				- m_nIdent = 6;
-				- m_bImplicitSetRectPoints = 0;
-				- m_nOrientationCtrlPt = 8;
-			}
-			- m_targetQualifier = { CGIText 
-				- m_str = "";
-				- m_style = "Arial" 10 0 0 0 1 ;
-				- m_color = { IColor 
-					- m_fgColor = 0;
-					- m_bgColor = 0;
-					- m_bgFlag = 0;
-				}
-				- m_position = 1 0 0  ;
-				- m_nIdent = 7;
-				- m_bImplicitSetRectPoints = 0;
-				- m_nOrientationCtrlPt = 8;
-			}
-			- m_specificType = symmetric_type;
-		}
-		{ CGIAssociationEnd 
-			- _id = GUID ba16ddf5-0b9c-4043-94b5-f8c6f47ce954;
-			- _properties = { IPropertyContainer 
-				- Subjects = { IRPYRawContainer 
-					- size = 1;
-					- value = 
-					{ IPropertySubject 
-						- _Name = "General";
-						- Metaclasses = { IRPYRawContainer 
-							- size = 1;
-							- value = 
-							{ IPropertyMetaclass 
-								- _Name = "Graphics";
-								- Properties = { IRPYRawContainer 
-									- size = 1;
-									- value = 
-									{ IProperty 
-										- _Name = "ShowLabels";
-										- _Value = "False";
-										- _Type = Bool;
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-			- m_type = 93;
-			- m_pModelObject = { IHandle 
-				- _m2Class = "IAssociationEnd";
-				- _filename = "Default.sbs";
-				- _subsystem = "Default";
-				- _class = "HVAC";
-				- _name = "itsVentilation";
-				- _id = GUID 3291bb15-e5b7-4f5a-9a3c-86b656ecd829;
-			}
-			- m_pParent = ;
-			- m_name = { CGIText 
-				- m_str = "";
-				- m_style = "Arial" 10 0 0 0 1 ;
-				- m_color = { IColor 
-					- m_fgColor = 0;
-					- m_bgColor = 0;
-					- m_bgFlag = 0;
-				}
-				- m_position = 1 0 0  ;
-				- m_nIdent = 0;
-				- m_bImplicitSetRectPoints = 0;
-				- m_nOrientationCtrlPt = 8;
-			}
-			- m_drawBehavior = 4096;
-			- m_bIsPreferencesInitialized = 1;
-			- m_pSource = GUID 466473d0-6a7d-4f0e-aba7-5c4043185a51;
-			- m_sourceType = 'F';
-			- m_pTarget = GUID 72b55a6d-030b-4938-8647-57e4306621cd;
-			- m_targetType = 'T';
-			- m_direction = ' ';
-			- m_rpn = { CGIText 
-				- m_str = "";
-				- m_style = "Arial" 10 0 0 0 1 ;
-				- m_color = { IColor 
-					- m_fgColor = 0;
-					- m_bgColor = 0;
-					- m_bgFlag = 0;
-				}
-				- m_position = 1 0 0  ;
-				- m_nIdent = 0;
-				- m_bImplicitSetRectPoints = 0;
-				- m_nOrientationCtrlPt = 7;
-			}
-			- m_arrow = 2 1111 539  1111 649  ;
-			- m_anglePoint1 = 0 0 ;
-			- m_anglePoint2 = 0 0 ;
-			- m_line_style = 2;
-			- m_SourcePort = 1061 1244 ;
-			- m_TargetPort = 2 801 ;
-			- m_pInverseModelObject = { IAssociationEndHandle 
-				- _m2Class = "IAssociationEnd";
-				- _filename = "Default.sbs";
-				- _subsystem = "Default";
-				- _class = "Ventilation";
-				- _name = "itsHVAC";
-				- _id = GUID 3b463022-e7fe-471b-85c6-65c2fff5394e;
 			}
 			- m_pInstance = { IObjectLinkHandle 
 				- _m2Class = "";
@@ -2418,7 +2270,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- _m2Class = "IAssociationEnd";
 				- _filename = "Default.sbs";
 				- _subsystem = "Default";
-				- _class = "ControlSystem";
+				- _class = "TemperatureController";
 				- _name = "itsHVAC";
 				- _id = GUID fe4f3dd6-a311-4082-816b-9e9d5045fbcb;
 			}
@@ -2456,18 +2308,18 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- m_bImplicitSetRectPoints = 0;
 				- m_nOrientationCtrlPt = 7;
 			}
-			- m_arrow = 2 870 430  967 430  ;
+			- m_arrow = 2 927 425  967 425  ;
 			- m_anglePoint1 = 0 0 ;
 			- m_anglePoint2 = 0 0 ;
 			- m_line_style = 2;
-			- m_SourcePort = 1023 1451 ;
+			- m_SourcePort = 779 1451 ;
 			- m_TargetPort = 169 329 ;
 			- m_pInverseModelObject = { IAssociationEndHandle 
 				- _m2Class = "IAssociationEnd";
 				- _filename = "Default.sbs";
 				- _subsystem = "Default";
 				- _class = "HVAC";
-				- _name = "itsControlSystem";
+				- _name = "itsTemperatureController";
 				- _id = GUID cba43a44-e5e3-441c-8352-e2d59446e442;
 			}
 			- m_pInstance = { IObjectLinkHandle 
@@ -2594,7 +2446,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- _filename = "Default.sbs";
 				- _subsystem = "Default";
 				- _class = "TemperatureSensor";
-				- _name = "itsControlSystem";
+				- _name = "itsTemperatureController";
 				- _id = GUID 16e6b92c-a1d2-4ecb-8aab-64df34989f6b;
 			}
 			- m_pParent = ;
@@ -2631,19 +2483,606 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- m_bImplicitSetRectPoints = 0;
 				- m_nOrientationCtrlPt = 7;
 			}
-			- m_arrow = 2 601 430  735 430  ;
+			- m_arrow = 2 844 420  878 420  ;
 			- m_anglePoint1 = 0 0 ;
 			- m_anglePoint2 = 0 0 ;
 			- m_line_style = 2;
 			- m_SourcePort = 782 329 ;
-			- m_TargetPort = 290 1451 ;
+			- m_TargetPort = 512 1451 ;
 			- m_pInverseModelObject = { IAssociationEndHandle 
 				- _m2Class = "IAssociationEnd";
 				- _filename = "Default.sbs";
 				- _subsystem = "Default";
-				- _class = "ControlSystem";
+				- _class = "TemperatureController";
 				- _name = "itsTemperatureSensor";
 				- _id = GUID e280044f-5d1b-4d37-b0ea-104a903b376c;
+			}
+			- m_pInstance = { IObjectLinkHandle 
+				- _m2Class = "";
+			}
+			- m_pInverseInstance = { IObjectLinkHandle 
+				- _m2Class = "";
+			}
+			- m_bShowSourceMultiplicity = 0;
+			- m_bShowSourceRole = 0;
+			- m_bShowTargetMultiplicity = 0;
+			- m_bShowTargetRole = 0;
+			- m_bShowLinkName = 1;
+			- m_bShowSpecificType = 0;
+			- m_bInstance = 0;
+			- m_bShowQualifier1 = 0;
+			- m_bShowQualifier2 = 0;
+			- m_sourceRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 2;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 3;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 4;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 5;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 6;
+				- m_bImplicitSetRectPoints = 0;
+				- m_nOrientationCtrlPt = 8;
+			}
+			- m_targetQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 7;
+				- m_bImplicitSetRectPoints = 0;
+				- m_nOrientationCtrlPt = 8;
+			}
+			- m_specificType = symmetric_type;
+		}
+		{ CGIClass 
+			- _id = GUID 4f4e449b-d5e5-421f-92fb-ede3bd14c459;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 2;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "General";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Graphics";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "FitBoxToItsTextuals";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "ObjectModelGe";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Block";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "Compartments";
+										- _Value = "";
+										- _Type = MultiLine;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- m_type = 87;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "HumiditySensor";
+				- _id = GUID 89ac2f13-03fe-4c31-ab3f-1167f59f9c55;
+			}
+			- m_pParent = GUID 1d70f31d-9739-47d9-a6fa-be6e7edb35fe;
+			- m_name = { CGIText 
+				- m_str = "HumiditySensor";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+				- m_nOrientationCtrlPt = 5;
+			}
+			- m_drawBehavior = 2056;
+			- m_transform = 0.12559 0 0 0.101604 492.749 360.572 ;
+			- m_bIsPreferencesInitialized = 1;
+			- m_AdditionalLabel = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+				- m_nOrientationCtrlPt = 1;
+			}
+			- m_polygon = 4 2 329  2 1451  1061 1451  1061 329  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- frameset = "<frameset rows=50%,50%>
+<frame name=AttributeListCompartment>
+<frame name=OperationListCompartment>";
+			- Compartments = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ CGICompartment 
+					- _id = GUID 1bc3872b-2c26-4529-8d8c-b0469556f40e;
+					- m_name = "Attribute";
+					- m_displayOption = Explicit;
+					- m_bShowInherited = 0;
+					- m_bOrdered = 0;
+					- Items = { IRPYRawContainer 
+						- size = 0;
+					}
+				}
+				{ CGICompartment 
+					- _id = GUID 736cd43d-e485-4b45-97ee-44d21aa87bde;
+					- m_name = "Operation";
+					- m_displayOption = Explicit;
+					- m_bShowInherited = 0;
+					- m_bOrdered = 0;
+					- Items = { IRPYRawContainer 
+						- size = 0;
+					}
+				}
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+		}
+		{ CGIClass 
+			- _id = GUID e31762bf-7022-466d-8fa5-7f252c05c696;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "ObjectModelGe";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Block";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "Compartments";
+										- _Value = "";
+										- _Type = MultiLine;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "Compartments";
+										- _Value = "";
+										- _Type = MultiLine;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- m_type = 87;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "AirQualityController";
+				- _id = GUID 77490d42-26de-440e-b151-c61ed8df8b51;
+			}
+			- m_pParent = GUID 1d70f31d-9739-47d9-a6fa-be6e7edb35fe;
+			- m_name = { CGIText 
+				- m_str = "AirQualityController";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+				- m_nOrientationCtrlPt = 5;
+			}
+			- m_drawBehavior = 2056;
+			- m_transform = 0.131256 0 0 0.101604 415.738 204.572 ;
+			- m_bIsPreferencesInitialized = 1;
+			- m_AdditionalLabel = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+				- m_nOrientationCtrlPt = 1;
+			}
+			- m_polygon = 4 2 329  2 1451  1061 1451  1061 329  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- frameset = "<frameset rows=50%,50%>
+<frame name=AttributeListCompartment>
+<frame name=OperationListCompartment>";
+			- Compartments = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ CGICompartment 
+					- _id = GUID 0440b889-fe05-4eb1-8c3c-7aa0eefb35eb;
+					- m_name = "Attribute";
+					- m_displayOption = Explicit;
+					- m_bShowInherited = 0;
+					- m_bOrdered = 0;
+					- Items = { IRPYRawContainer 
+						- size = 0;
+					}
+				}
+				{ CGICompartment 
+					- _id = GUID 09e7ae7b-8e75-4673-97e4-2bb3b8280a76;
+					- m_name = "Operation";
+					- m_displayOption = Explicit;
+					- m_bShowInherited = 0;
+					- m_bOrdered = 0;
+					- Items = { IRPYRawContainer 
+						- size = 0;
+					}
+				}
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+		}
+		{ CGIAssociationEnd 
+			- _id = GUID ff8b870a-7902-4575-bcd2-2be15e3e6740;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "General";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Graphics";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "ShowLabels";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- m_type = 92;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Ventilation";
+				- _name = "itsAirQualityController";
+				- _id = GUID 9cdf4652-c06a-4875-ad66-d6109bbb79f8;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+				- m_nOrientationCtrlPt = 8;
+			}
+			- m_drawBehavior = 4096;
+			- m_bIsPreferencesInitialized = 1;
+			- m_pSource = GUID 72b55a6d-030b-4938-8647-57e4306621cd;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID e31762bf-7022-466d-8fa5-7f252c05c696;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+				- m_nOrientationCtrlPt = 7;
+			}
+			- m_arrow = 2 398 373  466 373  ;
+			- m_anglePoint1 = 0 0 ;
+			- m_anglePoint2 = 0 0 ;
+			- m_line_style = 2;
+			- m_SourcePort = 571 329 ;
+			- m_TargetPort = 383 1451 ;
+			- m_pInverseModelObject = { IAssociationEndHandle 
+				- _m2Class = "IAssociationEnd";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "AirQualityController";
+				- _name = "itsVentilation";
+				- _id = GUID 9380f136-08d4-491d-b472-0f6f9e0eb5b2;
+			}
+			- m_pInstance = { IObjectLinkHandle 
+				- _m2Class = "";
+			}
+			- m_pInverseInstance = { IObjectLinkHandle 
+				- _m2Class = "";
+			}
+			- m_bShowSourceMultiplicity = 0;
+			- m_bShowSourceRole = 0;
+			- m_bShowTargetMultiplicity = 0;
+			- m_bShowTargetRole = 0;
+			- m_bShowLinkName = 1;
+			- m_bShowSpecificType = 0;
+			- m_bInstance = 0;
+			- m_bShowQualifier1 = 0;
+			- m_bShowQualifier2 = 0;
+			- m_sourceRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 2;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 3;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 4;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 5;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 6;
+				- m_bImplicitSetRectPoints = 0;
+				- m_nOrientationCtrlPt = 8;
+			}
+			- m_targetQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 7;
+				- m_bImplicitSetRectPoints = 0;
+				- m_nOrientationCtrlPt = 8;
+			}
+			- m_specificType = symmetric_type;
+		}
+		{ CGIAssociationEnd 
+			- _id = GUID b0825e45-462a-4024-8665-03ea5139f3ac;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "General";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Graphics";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "ShowLabels";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- m_type = 92;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IAssociationEnd";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "HumiditySensor";
+				- _name = "itsAirQualityController";
+				- _id = GUID 2dce8964-7e30-4683-9028-df9a90609cd5;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+				- m_nOrientationCtrlPt = 8;
+			}
+			- m_drawBehavior = 4096;
+			- m_bIsPreferencesInitialized = 1;
+			- m_pSource = GUID 4f4e449b-d5e5-421f-92fb-ede3bd14c459;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID e31762bf-7022-466d-8fa5-7f252c05c696;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+				- m_nOrientationCtrlPt = 7;
+			}
+			- m_arrow = 2 538 373  497 373  ;
+			- m_anglePoint1 = 0 0 ;
+			- m_anglePoint2 = 0 0 ;
+			- m_line_style = 2;
+			- m_SourcePort = 360 329 ;
+			- m_TargetPort = 619 1451 ;
+			- m_pInverseModelObject = { IAssociationEndHandle 
+				- _m2Class = "IAssociationEnd";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "AirQualityController";
+				- _name = "itsHumiditySensor";
+				- _id = GUID 21107947-8926-4274-be36-9cac10e786c1;
 			}
 			- m_pInstance = { IObjectLinkHandle 
 				- _m2Class = "";

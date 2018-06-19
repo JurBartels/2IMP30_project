@@ -84,7 +84,7 @@ INCLUDE_PATH= \
 ADDITIONAL_OBJS=
 
 OBJS= \
-  ControlSystem.obj \
+  TemperatureController.obj \
   Authorization_security_system.obj \
   Communication_system.obj \
   TemperatureSensor.obj \
@@ -94,10 +94,11 @@ OBJS= \
   Security_system.obj \
   HVAC.obj \
   Pressure_sensor.obj \
-  Humidity_sensor.obj \
+  HumiditySensor.obj \
   Heating.obj \
   AirConditioning.obj \
   Ventilation.obj \
+  AirQualityController.obj \
   Default.obj
 
 
@@ -181,9 +182,9 @@ SOCK_LIB=
 
 
 
-ControlSystem.obj : ControlSystem.cpp ControlSystem.h    Default.h HVAC.h TemperatureSensor.h 
+TemperatureController.obj : TemperatureController.cpp TemperatureController.h    Default.h HVAC.h TemperatureSensor.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ControlSystem.obj" "ControlSystem.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"TemperatureController.obj" "TemperatureController.cpp" 
 
 
 
@@ -199,7 +200,7 @@ Communication_system.obj : Communication_system.cpp Communication_system.h    De
 
 
 
-TemperatureSensor.obj : TemperatureSensor.cpp TemperatureSensor.h    Default.h ControlSystem.h 
+TemperatureSensor.obj : TemperatureSensor.cpp TemperatureSensor.h    Default.h TemperatureController.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"TemperatureSensor.obj" "TemperatureSensor.cpp" 
 
@@ -229,7 +230,7 @@ Security_system.obj : Security_system.cpp Security_system.h    Default.h
 
 
 
-HVAC.obj : HVAC.cpp HVAC.h    Default.h Heating.h AirConditioning.h Ventilation.h ControlSystem.h 
+HVAC.obj : HVAC.cpp HVAC.h    Default.h Heating.h AirConditioning.h TemperatureController.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"HVAC.obj" "HVAC.cpp" 
 
@@ -241,9 +242,9 @@ Pressure_sensor.obj : Pressure_sensor.cpp Pressure_sensor.h    Default.h
 
 
 
-Humidity_sensor.obj : Humidity_sensor.cpp Humidity_sensor.h    Default.h 
+HumiditySensor.obj : HumiditySensor.cpp HumiditySensor.h    Default.h AirQualityController.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Humidity_sensor.obj" "Humidity_sensor.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"HumiditySensor.obj" "HumiditySensor.cpp" 
 
 
 
@@ -259,13 +260,19 @@ AirConditioning.obj : AirConditioning.cpp AirConditioning.h    Default.h HVAC.h
 
 
 
-Ventilation.obj : Ventilation.cpp Ventilation.h    Default.h HVAC.h 
+Ventilation.obj : Ventilation.cpp Ventilation.h    Default.h AirQualityController.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Ventilation.obj" "Ventilation.cpp" 
 
 
 
-Default.obj : Default.cpp Default.h    ControlSystem.h Authorization_security_system.h Communication_system.h TemperatureSensor.h Lighting_system.h Light_sensor.h Fire_sensor.h Security_system.h HVAC.h Pressure_sensor.h Humidity_sensor.h Heating.h AirConditioning.h Ventilation.h 
+AirQualityController.obj : AirQualityController.cpp AirQualityController.h    Default.h Ventilation.h HumiditySensor.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"AirQualityController.obj" "AirQualityController.cpp" 
+
+
+
+Default.obj : Default.cpp Default.h    TemperatureController.h Authorization_security_system.h Communication_system.h TemperatureSensor.h Lighting_system.h Light_sensor.h Fire_sensor.h Security_system.h HVAC.h Pressure_sensor.h HumiditySensor.h Heating.h AirConditioning.h Ventilation.h AirQualityController.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Default.obj" "Default.cpp" 
 
@@ -298,7 +305,7 @@ $(TARGET_NAME)$(LIB_EXT) : $(OBJS) $(ADDITIONAL_OBJS) DefaultComponent.mak
 
 clean:
 	@echo Cleanup
-	if exist ControlSystem.obj erase ControlSystem.obj
+	if exist TemperatureController.obj erase TemperatureController.obj
 	if exist Authorization_security_system.obj erase Authorization_security_system.obj
 	if exist Communication_system.obj erase Communication_system.obj
 	if exist TemperatureSensor.obj erase TemperatureSensor.obj
@@ -308,10 +315,11 @@ clean:
 	if exist Security_system.obj erase Security_system.obj
 	if exist HVAC.obj erase HVAC.obj
 	if exist Pressure_sensor.obj erase Pressure_sensor.obj
-	if exist Humidity_sensor.obj erase Humidity_sensor.obj
+	if exist HumiditySensor.obj erase HumiditySensor.obj
 	if exist Heating.obj erase Heating.obj
 	if exist AirConditioning.obj erase AirConditioning.obj
 	if exist Ventilation.obj erase Ventilation.obj
+	if exist AirQualityController.obj erase AirQualityController.obj
 	if exist Default.obj erase Default.obj
 	if exist $(TARGET_MAIN)$(OBJ_EXT) erase $(TARGET_MAIN)$(OBJ_EXT)
 	if exist *$(OBJ_EXT) erase *$(OBJ_EXT)

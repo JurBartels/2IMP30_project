@@ -22,14 +22,14 @@
 //## classInstance AirConditioningPart
 class AirConditioning;
 
+//## classInstance AirQualityControllerPart
+class AirQualityController;
+
 //## auto_generated
 class Authorization_security_system;
 
 //## auto_generated
 class Communication_system;
-
-//## classInstance ControlSystemPart
-class ControlSystem;
 
 //## auto_generated
 class Fire_sensor;
@@ -40,8 +40,8 @@ class HVAC;
 //## classInstance HeatingPart
 class Heating;
 
-//## auto_generated
-class Humidity_sensor;
+//## classInstance HumiditySensorPart
+class HumiditySensor;
 
 //## auto_generated
 class Light_sensor;
@@ -55,10 +55,13 @@ class Pressure_sensor;
 //## auto_generated
 class Security_system;
 
+//## classInstance TemperatureControllerPart
+class TemperatureController;
+
 //## classInstance TemperatureSensorPart
 class TemperatureSensor;
 
-//## auto_generated
+//## classInstance VentilationPart
 class Ventilation;
 
 //#[ ignore
@@ -75,6 +78,10 @@ class Ventilation;
 #define acOff_Default_id 18606
 
 #define okTemp_Default_id 18607
+
+#define ventilationOn_Default_id 18608
+
+#define ventilationOff_Default_id 18609
 //#]
 
 //## package Default
@@ -83,8 +90,8 @@ class Ventilation;
 //## classInstance AirConditioningPart
 extern AirConditioning AirConditioningPart;
 
-//## classInstance ControlSystemPart
-extern ControlSystem ControlSystemPart;
+//## classInstance AirQualityControllerPart
+extern AirQualityController AirQualityControllerPart;
 
 //## classInstance HVACPart
 extern HVAC HVACPart;
@@ -92,8 +99,17 @@ extern HVAC HVACPart;
 //## classInstance HeatingPart
 extern Heating HeatingPart;
 
+//## classInstance HumiditySensorPart
+extern HumiditySensor HumiditySensorPart;
+
+//## classInstance TemperatureControllerPart
+extern TemperatureController TemperatureControllerPart;
+
 //## classInstance TemperatureSensorPart
 extern TemperatureSensor TemperatureSensorPart;
+
+//## classInstance VentilationPart
+extern Ventilation VentilationPart;
 
 //## auto_generated
 void Default_initRelations();
@@ -314,6 +330,64 @@ public :
 //#[ ignore
 class OMAnimatedokTemp : virtual public AOMEvent {
     DECLARE_META_EVENT(okTemp)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event ventilationOn()
+class ventilationOn : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedventilationOn;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    ventilationOn();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedventilationOn : virtual public AOMEvent {
+    DECLARE_META_EVENT(ventilationOn)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event ventilationOff()
+class ventilationOff : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedventilationOff;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    ventilationOff();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedventilationOff : virtual public AOMEvent {
+    DECLARE_META_EVENT(ventilationOff)
 };
 //#]
 #endif // _OMINSTRUMENT
