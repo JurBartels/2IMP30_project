@@ -30,6 +30,10 @@
 //## link itsControl_system
 class Control_system;
 
+//#[ ignore
+#define OMAnim_Default_Temperature_sensor_setGoal_temp_int_ARGS_DECLARATION int p_goal_temp;
+//#]
+
 //## package Default
 
 //## class Temperature_sensor
@@ -51,6 +55,12 @@ public :
     ~Temperature_sensor();
     
     ////    Additional operations    ////
+    
+    //## auto_generated
+    int getGoal_temp() const;
+    
+    //## auto_generated
+    void setGoal_temp(int p_goal_temp);
     
     //## auto_generated
     int getTemp() const;
@@ -82,6 +92,8 @@ protected :
     bool cancelTimeout(const IOxfTimeout* arg);
     
     ////    Attributes    ////
+    
+    int goal_temp;		//## attribute goal_temp
     
     int temp;		//## attribute temp
     
@@ -140,9 +152,13 @@ protected :
 };
 
 #ifdef _OMINSTRUMENT
+DECLARE_OPERATION_CLASS(Default_Temperature_sensor_setGoal_temp_int)
+
 //#[ ignore
 class OMAnimatedTemperature_sensor : virtual public AOMInstance {
     DECLARE_REACTIVE_META(Temperature_sensor, OMAnimatedTemperature_sensor)
+    
+    DECLARE_META_OP(Default_Temperature_sensor_setGoal_temp_int)
     
     ////    Framework operations    ////
     

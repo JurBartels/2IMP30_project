@@ -177,7 +177,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- reqID = "SMR00";
 		}
 	}
-	- _modifiedTimeWeak = 6.19.2018::10:12:44;
+	- _modifiedTimeWeak = 6.19.2018::10:15:52;
 	- _lastID = 56;
 	- Declaratives = { IRPYRawContainer 
 		- size = 1;
@@ -348,7 +348,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			}
 			- _name = "Smartroom panel";
 			- _modifiedTimeWeak = 1.2.1990::0:0:0;
-			- _lastModifiedTime = "6.19.2018::10:11:17";
+			- _lastModifiedTime = "6.19.2018::10:16:12";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID b4ae8950-6c88-4977-b966-7b9beada116a;
 				- m_type = 0;
@@ -372,7 +372,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				}
 				- m_drawBehavior = 0;
 				- m_bIsPreferencesInitialized = 0;
-				- elementList = 30;
+				- elementList = 27;
 				{ CGIBox 
 					- _id = GUID d926b008-890a-4b45-8f3b-e2c406e7362e;
 					- m_type = 215;
@@ -715,7 +715,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							{ IPropertySubject 
 								- _Name = "Format";
 								- Metaclasses = { IRPYRawContainer 
-									- size = 1;
+									- size = 2;
 									- value = 
 									{ IPropertyMetaclass 
 										- _Name = "Knob";
@@ -724,7 +724,19 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 											- value = 
 											{ IProperty 
 												- _Name = "ActiveXProperties@Child.ActiveXControl";
-												- _Value = "";
+												- _Value = "BackGroundColor;12632256;DivisionLineThickness;2;DotColor;16711680;EndAngle;-45;Font;Arial;;8,25;0;0;0;0;400;0;GradientFactor;0,7;LineColor;4210752;MaximumValue;30;MinimumValue;15;NumberOfDivisions;10;NumberOfSubdivisions;1;RelativeBubbleRadius;0,6;RelativeDotPositionRadius;0,75;RelativeDotRadius;0,11;RelativeExternalRadius;1,1;RelativeInternalRadius;1;RelativeTextRadius;0,98;StartAngle;225;SubdivisionLineThickness;1;TextColor;4210752;Value;15;ValueFormatString;%.0f;";
+												- _Type = String;
+											}
+										}
+									}
+									{ IPropertyMetaclass 
+										- _Name = "ValueProperty";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "ActiveXProperties@Child.ActiveXControl";
+												- _Value = "BackGroundColor;12632256;DivisionLineThickness;2;DotColor;16711680;EndAngle;-45;Font;Arial;;8,25;0;0;0;0;400;0;GradientFactor;0,7;LineColor;4210752;MaximumValue;30;MinimumValue;15;NumberOfDivisions;10;NumberOfSubdivisions;1;RelativeBubbleRadius;0,6;RelativeDotPositionRadius;0,75;RelativeDotRadius;0,11;RelativeExternalRadius;1,1;RelativeInternalRadius;1;RelativeTextRadius;0,98;StartAngle;225;SubdivisionLineThickness;1;TextColor;4210752;Value;20;ValueFormatString;%.0f;";
 												- _Type = String;
 											}
 										}
@@ -734,7 +746,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							{ IPropertySubject 
 								- _Name = "PanelDiagram";
 								- Metaclasses = { IRPYRawContainer 
-									- size = 1;
+									- size = 2;
 									- value = 
 									{ IPropertyMetaclass 
 										- _Name = "Knob";
@@ -743,7 +755,20 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 											- value = 
 											{ IProperty 
 												- _Name = "Direction";
-												- _Value = "InOut";
+												- _Value = "In";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "";
+											}
+										}
+									}
+									{ IPropertyMetaclass 
+										- _Name = "ValueProperty";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "Direction";
+												- _Value = "In";
 												- _Type = Enum;
 												- _ExtraTypeInfo = "";
 											}
@@ -755,11 +780,12 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					}
 					- m_type = 216;
 					- m_pModelObject = { IHandle 
-						- _m2Class = "";
+						- _m2Class = "IAttribute";
+						- _id = GUID 9954fba2-34d9-459c-836a-fcda2f066195;
 					}
 					- m_pParent = GUID aa99140e-e9ba-44a8-9dce-cb4e44df5089;
 					- m_name = { CGIText 
-						- m_str = "knob_0";
+						- m_str = "Goal temperature";
 						- m_style = "Arial" 10 0 0 0 1 ;
 						- m_color = { IColor 
 							- m_fgColor = 0;
@@ -780,10 +806,15 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- Compartments = { IRPYRawContainer 
 						- size = 0;
 					}
-					- m_csModelObjPath = "";
-					- m_csName = "knob_0";
+					- m_csModelObjPath = "Default.Temperature_sensor[0].goal_temp";
+					- m_csName = "Goal temperature";
 					- m_PartsArray = { IRPYRawContainer 
-						- size = 0;
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IClass";
+							- _id = GUID cbccade3-69d6-46a0-949f-7924e3e28376;
+						}
 					}
 				}
 				{ CGIActiveX 
@@ -832,7 +863,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					}
 					- m_pParent = GUID 775a6c9c-9daa-465c-8cb1-28cda5a6ac0d;
 					- m_name = { CGIText 
-						- m_str = "digitaldisplay_0";
+						- m_str = "Temperature";
 						- m_style = "Arial" 10 0 0 0 1 ;
 						- m_color = { IColor 
 							- m_fgColor = 0;
@@ -854,7 +885,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- size = 0;
 					}
 					- m_csModelObjPath = "Default.Temperature_sensor[0].temp";
-					- m_csName = "digitaldisplay_0";
+					- m_csName = "Temperature";
 					- m_PartsArray = { IRPYRawContainer 
 						- size = 1;
 						- value = 
@@ -898,7 +929,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					}
 					- m_pParent = GUID 775a6c9c-9daa-465c-8cb1-28cda5a6ac0d;
 					- m_name = { CGIText 
-						- m_str = "digitaldisplay_1";
+						- m_str = "Pressure";
 						- m_style = "Arial" 10 0 0 0 1 ;
 						- m_color = { IColor 
 							- m_fgColor = 0;
@@ -920,7 +951,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- size = 0;
 					}
 					- m_csModelObjPath = "Default.Pressure_sensor[0].pressure";
-					- m_csName = "digitaldisplay_1";
+					- m_csName = "Pressure";
 					- m_PartsArray = { IRPYRawContainer 
 						- size = 1;
 						- value = 
@@ -964,7 +995,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					}
 					- m_pParent = GUID 775a6c9c-9daa-465c-8cb1-28cda5a6ac0d;
 					- m_name = { CGIText 
-						- m_str = "digitaldisplay_2";
+						- m_str = "Humidity";
 						- m_style = "Arial" 10 0 0 0 1 ;
 						- m_color = { IColor 
 							- m_fgColor = 0;
@@ -986,7 +1017,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- size = 0;
 					}
 					- m_csModelObjPath = "Default.Humidity_sensor[0].humidity";
-					- m_csName = "digitaldisplay_2";
+					- m_csName = "Humidity";
 					- m_PartsArray = { IRPYRawContainer 
 						- size = 1;
 						- value = 
@@ -1060,159 +1091,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_PartsArray = { IRPYRawContainer 
 						- size = 0;
 					}
-				}
-				{ CGIFreeText 
-					- _id = GUID ae29f834-4fc2-4a86-bba8-d96d2c8b2a32;
-					- _properties = { IPropertyContainer 
-						- Subjects = { IRPYRawContainer 
-							- size = 1;
-							- value = 
-							{ IPropertySubject 
-								- _Name = "Format";
-								- Metaclasses = { IRPYRawContainer 
-									- size = 1;
-									- value = 
-									{ IPropertyMetaclass 
-										- _Name = "FreeText";
-										- Properties = { IRPYRawContainer 
-											- size = 1;
-											- value = 
-											{ IProperty 
-												- _Name = "Font.FontColor";
-												- _Value = "255,0,0";
-												- _Type = Color;
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-					- m_type = 189;
-					- m_pModelObject = { IHandle 
-						- _m2Class = "";
-					}
-					- m_pParent = GUID d926b008-890a-4b45-8f3b-e2c406e7362e;
-					- m_name = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nOrientationCtrlPt = 8;
-					}
-					- m_drawBehavior = 4096;
-					- m_transform = 1 0 0 1 162 28 ;
-					- m_bIsPreferencesInitialized = 1;
-					- m_points = 4 560 109  598 109  598 127  560 127  ;
-					- m_text = "Temperature";
-				}
-				{ CGIFreeText 
-					- _id = GUID 866a0da6-df40-4e86-8bb0-a9b09957dc86;
-					- _properties = { IPropertyContainer 
-						- Subjects = { IRPYRawContainer 
-							- size = 1;
-							- value = 
-							{ IPropertySubject 
-								- _Name = "Format";
-								- Metaclasses = { IRPYRawContainer 
-									- size = 1;
-									- value = 
-									{ IPropertyMetaclass 
-										- _Name = "FreeText";
-										- Properties = { IRPYRawContainer 
-											- size = 1;
-											- value = 
-											{ IProperty 
-												- _Name = "Font.FontColor";
-												- _Value = "255,0,0";
-												- _Type = Color;
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-					- m_type = 189;
-					- m_pModelObject = { IHandle 
-						- _m2Class = "";
-					}
-					- m_pParent = GUID d926b008-890a-4b45-8f3b-e2c406e7362e;
-					- m_name = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nOrientationCtrlPt = 8;
-					}
-					- m_drawBehavior = 4096;
-					- m_transform = 1 0 0 1 170 109 ;
-					- m_bIsPreferencesInitialized = 1;
-					- m_points = 4 560 109  644 109  644 127  560 127  ;
-					- m_text = "Pressure";
-				}
-				{ CGIFreeText 
-					- _id = GUID c7fe7a08-43d4-433d-8307-94b90e6d602f;
-					- _properties = { IPropertyContainer 
-						- Subjects = { IRPYRawContainer 
-							- size = 1;
-							- value = 
-							{ IPropertySubject 
-								- _Name = "Format";
-								- Metaclasses = { IRPYRawContainer 
-									- size = 1;
-									- value = 
-									{ IPropertyMetaclass 
-										- _Name = "FreeText";
-										- Properties = { IRPYRawContainer 
-											- size = 1;
-											- value = 
-											{ IProperty 
-												- _Name = "Font.FontColor";
-												- _Value = "255,0,0";
-												- _Type = Color;
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-					- m_type = 189;
-					- m_pModelObject = { IHandle 
-						- _m2Class = "";
-					}
-					- m_pParent = GUID d926b008-890a-4b45-8f3b-e2c406e7362e;
-					- m_name = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nOrientationCtrlPt = 8;
-					}
-					- m_drawBehavior = 4096;
-					- m_transform = 1 0 0 1 174 195 ;
-					- m_bIsPreferencesInitialized = 1;
-					- m_points = 4 560 109  644 109  644 127  560 127  ;
-					- m_text = "Humidity";
 				}
 				{ CGIFreeText 
 					- _id = GUID c5382190-3f0b-411e-8dd9-100a7bf06f16;
@@ -1990,7 +1868,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			}
 		}
 	}
-	- weakCGTime = 6.19.2018::10:12:44;
+	- weakCGTime = 6.19.2018::10:15:52;
 	- strongCGTime = 6.17.2018::14:43:4;
 	- _defaultComposite = GUID a1bd937f-d49a-4655-9fb2-6fd4e1d15cbf;
 	- _eventsBaseID = -1;
@@ -2604,7 +2482,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
 				}
 			}
-			- _modifiedTimeWeak = 6.19.2018::10:12:50;
+			- _modifiedTimeWeak = 6.19.2018::10:14:45;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "Sensing_System.omd";
@@ -2613,11 +2491,11 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- _name = "BDD";
 				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
 			}
-			- _lastID = 2;
-			- weakCGTime = 6.19.2018::10:12:50;
+			- _lastID = 3;
+			- weakCGTime = 6.19.2018::10:14:45;
 			- strongCGTime = 6.18.2018::6:28:57;
 			- Attrs = { IRPYRawContainer 
-				- size = 1;
+				- size = 2;
 				- value = 
 				{ IAttribute 
 					- _id = GUID d1700d35-a4a6-4f84-97b2-fe9d19b862ec;
@@ -2645,6 +2523,37 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- _value = "25";
 						}
 					}
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "int";
+						- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+					}
+					- _isOrdered = 0;
+					- _protection = iPublic;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 9954fba2-34d9-459c-836a-fcda2f066195;
+					- _myState = 8192;
+					- _name = "goal_temp";
+					- Stereotypes = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IStereotype";
+							- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+							- _subsystem = "SysML::Blocks";
+							- _class = "";
+							- _name = "ValueProperty";
+							- _id = GUID 04164f8c-01a3-4eab-b4a4-c37aae7a46e9;
+						}
+					}
+					- _modifiedTimeWeak = 6.19.2018::10:14:45;
 					- _typeOf = { IHandle 
 						- _m2Class = "IType";
 						- _filename = "PredefinedTypesC++.sbs";
@@ -2758,7 +2667,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- _durationTime = "1000";
 						}
 					}
-					- _version = 6.19.2018::12:12:50;
+					- _version = 6.19.2018::12:14:50;
 					- _baseVersion = 1.2.1990::0:0:0;
 					- _diagram = GUID 3139ba3a-dab1-4abd-bb0d-b1543ba81b7f;
 					- Views = { IRPYRawContainer 

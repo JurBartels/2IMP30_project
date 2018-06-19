@@ -62,8 +62,8 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 	"DefaultComponent\\DefaultConfig\\Pressure_sensor.h" 6.19.2018::10:9:43
 	"DefaultComponent\\DefaultConfig\\Security_system.cpp" 6.19.2018::10:9:12
 	"DefaultComponent\\DefaultConfig\\Security_system.h" 6.19.2018::10:9:12
-	"DefaultComponent\\DefaultConfig\\Temperature_sensor.cpp" 6.19.2018::10:12:57
-	"DefaultComponent\\DefaultConfig\\Temperature_sensor.h" 6.19.2018::10:9:12
+	"DefaultComponent\\DefaultConfig\\Temperature_sensor.cpp" 6.19.2018::10:14:50
+	"DefaultComponent\\DefaultConfig\\Temperature_sensor.h" 6.19.2018::10:14:50
 	"DefaultComponent\\DefaultConfig\\sensing_system.cpp" 6.19.2018::10:9:11
 	"DefaultComponent\\DefaultConfig\\sensing_system.h" 6.19.2018::10:9:11
 	
@@ -182,7 +182,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 	- _name = "Default";
 	- _id = GUID f852634f-b8c1-401e-96fc-8e0cb48f85cb;
 }
-- genTime = 6.19.2018::10:12:57;
+- genTime = 6.19.2018::10:14:50;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = "Default.sbs";
@@ -209,7 +209,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 	- _name = "Temperature_sensor";
 	- _id = GUID cbccade3-69d6-46a0-949f-7924e3e28376;
 }
-- genTime = 6.19.2018::10:12:57;
+- genTime = 6.19.2018::10:14:50;
 - hElement = { IHandle 
 	- _m2Class = "ICodeGenConfigInfo";
 	- _filename = "DefaultComponent.cmp";
@@ -218,7 +218,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 	- _name = "DefaultComponent\\DefaultConfig";
 	- _id = GUID acc81c51-8173-49b2-9d38-e107d86839b4;
 }
-- genTime = 6.19.2018::10:12:57;
+- genTime = 6.19.2018::10:14:50;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = "Default.sbs";

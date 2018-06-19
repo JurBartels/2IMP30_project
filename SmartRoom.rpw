@@ -10,8 +10,8 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
@@ -30,17 +30,17 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- _name = "Smartroom panel";
 				- _id = GUID 2c2c1882-b427-4c1d-849a-15c82f0ca063;
 			}
-			- _UpLeft = 192 0 ;
-			- _DownRight = 1070 512 ;
+			- _UpLeft = 64 0 ;
+			- _DownRight = 904 417 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
-			- m_bIsActiveView = 0;
+			- m_bIsActiveView = 1;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 2;
-				- m_showCmd = 3;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
@@ -60,10 +60,10 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- _id = GUID 3139ba3a-dab1-4abd-bb0d-b1543ba81b7f;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 840 417 ;
+			- _DownRight = 1092 516 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 1;
-			- m_bIsActiveView = 1;
+			- m_bIsActiveView = 0;
 		}
 	}
 	- _fullName = "C:\\Users\\jlta\\Documents\\GitHub\\2IMP30_project\\SmartRoom";
