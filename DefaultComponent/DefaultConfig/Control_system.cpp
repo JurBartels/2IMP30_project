@@ -10,6 +10,8 @@
 
 //#[ ignore
 #define NAMESPACE_PREFIX
+
+#define _OMSTATECHART_ANIMATED
 //#]
 
 //## auto_generated
@@ -41,8 +43,9 @@
 //## package Default
 
 //## class Control_system
-Control_system::Control_system() {
-    NOTIFY_CONSTRUCTOR(Control_system, Control_system(), 0, Default_Control_system_Control_system_SERIALIZE);
+Control_system::Control_system(IOxfActive* theActiveContext) : goal_temp(20) {
+    NOTIFY_REACTIVE_CONSTRUCTOR(Control_system, Control_system(), 0, Default_Control_system_Control_system_SERIALIZE);
+    setActiveContext(theActiveContext, false);
     itsActuation_system = NULL;
     itsAir_Q_control = NULL;
     itsAir_Q_sensor = NULL;
@@ -53,6 +56,7 @@ Control_system::Control_system() {
     itsSensing_system = NULL;
     itsSensing_system_2 = NULL;
     itsTemperature_sensor = NULL;
+    initStatechart();
 }
 
 Control_system::~Control_system() {
@@ -182,11 +186,26 @@ Temperature_sensor* Control_system::getItsTemperature_sensor() const {
 }
 
 void Control_system::setItsTemperature_sensor(Temperature_sensor* p_Temperature_sensor) {
+    itsTemperature_sensor = p_Temperature_sensor;
     if(p_Temperature_sensor != NULL)
         {
-            p_Temperature_sensor->_setItsControl_system(this);
+            NOTIFY_RELATION_ITEM_ADDED("itsTemperature_sensor", p_Temperature_sensor, false, true);
         }
-    _setItsTemperature_sensor(p_Temperature_sensor);
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsTemperature_sensor");
+        }
+}
+
+bool Control_system::startBehavior() {
+    bool done = false;
+    done = OMReactive::startBehavior();
+    return done;
+}
+
+void Control_system::initStatechart() {
+    rootState_subState = OMNonState;
+    rootState_active = OMNonState;
 }
 
 void Control_system::cleanUpRelations() {
@@ -283,11 +302,6 @@ void Control_system::cleanUpRelations() {
     if(itsTemperature_sensor != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsTemperature_sensor");
-            Control_system* p_Control_system = itsTemperature_sensor->getItsControl_system();
-            if(p_Control_system != NULL)
-                {
-                    itsTemperature_sensor->__setItsControl_system(NULL);
-                }
             itsTemperature_sensor = NULL;
         }
 }
@@ -517,29 +531,173 @@ void Control_system::_clearItsSensing_system_2() {
     itsSensing_system_2 = NULL;
 }
 
-void Control_system::__setItsTemperature_sensor(Temperature_sensor* p_Temperature_sensor) {
-    itsTemperature_sensor = p_Temperature_sensor;
-    if(p_Temperature_sensor != NULL)
-        {
-            NOTIFY_RELATION_ITEM_ADDED("itsTemperature_sensor", p_Temperature_sensor, false, true);
-        }
-    else
-        {
-            NOTIFY_RELATION_CLEARED("itsTemperature_sensor");
-        }
+void Control_system::rootState_entDef() {
+    {
+        NOTIFY_STATE_ENTERED("ROOT");
+        NOTIFY_TRANSITION_STARTED("0");
+        NOTIFY_STATE_ENTERED("ROOT.Idle");
+        pushNullTransition();
+        rootState_subState = Idle;
+        rootState_active = Idle;
+        NOTIFY_TRANSITION_TERMINATED("0");
+    }
 }
 
-void Control_system::_setItsTemperature_sensor(Temperature_sensor* p_Temperature_sensor) {
-    if(itsTemperature_sensor != NULL)
+IOxfReactive::TakeEventStatus Control_system::rootState_processEvent() {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    switch (rootState_active) {
+        // State Idle
+        case Idle:
         {
-            itsTemperature_sensor->__setItsControl_system(NULL);
+            if(IS_EVENT_TYPE_OF(OMNullEventId))
+                {
+                    //## transition 1 
+                    if(itsTemperature_sensor->getTemp() < goal_temp)
+                        {
+                            NOTIFY_TRANSITION_STARTED("1");
+                            popNullTransition();
+                            NOTIFY_STATE_EXITED("ROOT.Idle");
+                            NOTIFY_STATE_ENTERED("ROOT.sendaction_5");
+                            pushNullTransition();
+                            rootState_subState = sendaction_5;
+                            rootState_active = sendaction_5;
+                            //#[ state sendaction_5.(Entry) 
+                            itsHVAC_system->GEN(heatRoom);
+                            //#]
+                            NOTIFY_TRANSITION_TERMINATED("1");
+                            res = eventConsumed;
+                        }
+                    else
+                        {
+                            //## transition 3 
+                            if(itsTemperature_sensor->getTemp() > goal_temp)
+                                {
+                                    NOTIFY_TRANSITION_STARTED("3");
+                                    popNullTransition();
+                                    NOTIFY_STATE_EXITED("ROOT.Idle");
+                                    NOTIFY_STATE_ENTERED("ROOT.sendaction_4");
+                                    pushNullTransition();
+                                    rootState_subState = sendaction_4;
+                                    rootState_active = sendaction_4;
+                                    //#[ state sendaction_4.(Entry) 
+                                    itsHVAC_system->GEN(coolRoom);
+                                    //#]
+                                    NOTIFY_TRANSITION_TERMINATED("3");
+                                    res = eventConsumed;
+                                }
+                        }
+                }
+            
         }
-    __setItsTemperature_sensor(p_Temperature_sensor);
-}
-
-void Control_system::_clearItsTemperature_sensor() {
-    NOTIFY_RELATION_CLEARED("itsTemperature_sensor");
-    itsTemperature_sensor = NULL;
+        break;
+        // State HeatRoom
+        case HeatRoom:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId))
+                {
+                    //## transition 2 
+                    if((itsTemperature_sensor->getTemp() - goal_temp) < 1)
+                        {
+                            NOTIFY_TRANSITION_STARTED("2");
+                            popNullTransition();
+                            NOTIFY_STATE_EXITED("ROOT.HeatRoom");
+                            NOTIFY_STATE_ENTERED("ROOT.sendaction_6");
+                            pushNullTransition();
+                            rootState_subState = sendaction_6;
+                            rootState_active = sendaction_6;
+                            //#[ state sendaction_6.(Entry) 
+                            itsHVAC_system->GEN(okTemp);
+                            //#]
+                            NOTIFY_TRANSITION_TERMINATED("2");
+                            res = eventConsumed;
+                        }
+                }
+            
+        }
+        break;
+        // State CoolRoom
+        case CoolRoom:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId))
+                {
+                    //## transition 4 
+                    if((itsTemperature_sensor->getTemp() - goal_temp) < 1)
+                        {
+                            NOTIFY_TRANSITION_STARTED("4");
+                            popNullTransition();
+                            NOTIFY_STATE_EXITED("ROOT.CoolRoom");
+                            NOTIFY_STATE_ENTERED("ROOT.sendaction_6");
+                            pushNullTransition();
+                            rootState_subState = sendaction_6;
+                            rootState_active = sendaction_6;
+                            //#[ state sendaction_6.(Entry) 
+                            itsHVAC_system->GEN(okTemp);
+                            //#]
+                            NOTIFY_TRANSITION_TERMINATED("4");
+                            res = eventConsumed;
+                        }
+                }
+            
+        }
+        break;
+        // State sendaction_4
+        case sendaction_4:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId))
+                {
+                    NOTIFY_TRANSITION_STARTED("5");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.sendaction_4");
+                    NOTIFY_STATE_ENTERED("ROOT.CoolRoom");
+                    pushNullTransition();
+                    rootState_subState = CoolRoom;
+                    rootState_active = CoolRoom;
+                    NOTIFY_TRANSITION_TERMINATED("5");
+                    res = eventConsumed;
+                }
+            
+        }
+        break;
+        // State sendaction_5
+        case sendaction_5:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId))
+                {
+                    NOTIFY_TRANSITION_STARTED("6");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.sendaction_5");
+                    NOTIFY_STATE_ENTERED("ROOT.HeatRoom");
+                    pushNullTransition();
+                    rootState_subState = HeatRoom;
+                    rootState_active = HeatRoom;
+                    NOTIFY_TRANSITION_TERMINATED("6");
+                    res = eventConsumed;
+                }
+            
+        }
+        break;
+        // State sendaction_6
+        case sendaction_6:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId))
+                {
+                    NOTIFY_TRANSITION_STARTED("7");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.sendaction_6");
+                    NOTIFY_STATE_ENTERED("ROOT.Idle");
+                    pushNullTransition();
+                    rootState_subState = Idle;
+                    rootState_active = Idle;
+                    NOTIFY_TRANSITION_TERMINATED("7");
+                    res = eventConsumed;
+                }
+            
+        }
+        break;
+        default:
+            break;
+    }
+    return res;
 }
 
 #ifdef _OMINSTRUMENT
@@ -590,25 +748,87 @@ void OMAnimatedControl_system::serializeRelations(AOMSRelations* aomsRelations) 
         {
             aomsRelations->ADD_ITEM(myReal->itsFire_sensor);
         }
-    aomsRelations->addRelation("itsTemperature_sensor", false, true);
-    if(myReal->itsTemperature_sensor)
-        {
-            aomsRelations->ADD_ITEM(myReal->itsTemperature_sensor);
-        }
     aomsRelations->addRelation("itsHVAC_system", false, true);
     if(myReal->itsHVAC_system)
         {
             aomsRelations->ADD_ITEM(myReal->itsHVAC_system);
         }
+    aomsRelations->addRelation("itsTemperature_sensor", false, true);
+    if(myReal->itsTemperature_sensor)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsTemperature_sensor);
+        }
     OMAnimatedsensing_system::serializeRelations(aomsRelations);
+}
+
+void OMAnimatedControl_system::rootState_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT");
+    switch (myReal->rootState_subState) {
+        case Control_system::Idle:
+        {
+            Idle_serializeStates(aomsState);
+        }
+        break;
+        case Control_system::HeatRoom:
+        {
+            HeatRoom_serializeStates(aomsState);
+        }
+        break;
+        case Control_system::CoolRoom:
+        {
+            CoolRoom_serializeStates(aomsState);
+        }
+        break;
+        case Control_system::sendaction_4:
+        {
+            sendaction_4_serializeStates(aomsState);
+        }
+        break;
+        case Control_system::sendaction_5:
+        {
+            sendaction_5_serializeStates(aomsState);
+        }
+        break;
+        case Control_system::sendaction_6:
+        {
+            sendaction_6_serializeStates(aomsState);
+        }
+        break;
+        default:
+            break;
+    }
+}
+
+void OMAnimatedControl_system::sendaction_6_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.sendaction_6");
+}
+
+void OMAnimatedControl_system::sendaction_5_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.sendaction_5");
+}
+
+void OMAnimatedControl_system::sendaction_4_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.sendaction_4");
+}
+
+void OMAnimatedControl_system::Idle_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.Idle");
+}
+
+void OMAnimatedControl_system::HeatRoom_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.HeatRoom");
+}
+
+void OMAnimatedControl_system::CoolRoom_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.CoolRoom");
 }
 //#]
 
-IMPLEMENT_META_S_P(Control_system, Default, false, sensing_system, OMAnimatedsensing_system, OMAnimatedControl_system)
+IMPLEMENT_REACTIVE_META_S_P(Control_system, Default, false, sensing_system, OMAnimatedsensing_system, OMAnimatedControl_system)
 
 OMINIT_SUPERCLASS(sensing_system, OMAnimatedsensing_system)
 
-OMREGISTER_CLASS
+OMREGISTER_REACTIVE_CLASS
 
 IMPLEMENT_META_OP(OMAnimatedControl_system, Default_Control_system_setGoal_temp_int, "setGoal_temp", FALSE, "setGoal_temp(int)", 1)
 

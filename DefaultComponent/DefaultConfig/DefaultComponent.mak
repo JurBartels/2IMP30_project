@@ -84,20 +84,15 @@ INCLUDE_PATH= \
 ADDITIONAL_OBJS=
 
 OBJS= \
-  part_0.obj \
-  sensing_system.obj \
-  Control_system.obj \
+  ControlSystem.obj \
   Authorization_security_system.obj \
   Communication_system.obj \
-  Actuation_system.obj \
-  Air_Q_control.obj \
-  Temperature_sensor.obj \
+  TemperatureSensor.obj \
   Lighting_system.obj \
   Light_sensor.obj \
-  Air_Q_sensor.obj \
   Fire_sensor.obj \
   Security_system.obj \
-  HVAC_system.obj \
+  HVAC.obj \
   Pressure_sensor.obj \
   Humidity_sensor.obj \
   Heating.obj \
@@ -186,73 +181,43 @@ SOCK_LIB=
 
 
 
-part_0.obj : part_0.cpp part_0.h    Default.h 
+ControlSystem.obj : ControlSystem.cpp ControlSystem.h    Default.h HVAC.h TemperatureSensor.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"part_0.obj" "part_0.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ControlSystem.obj" "ControlSystem.cpp" 
 
 
 
-sensing_system.obj : sensing_system.cpp sensing_system.h    Default.h Control_system.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"sensing_system.obj" "sensing_system.cpp" 
-
-
-
-Control_system.obj : Control_system.cpp Control_system.h    Default.h sensing_system.h Actuation_system.h Light_sensor.h Lighting_system.h Air_Q_sensor.h Air_Q_control.h Fire_sensor.h Temperature_sensor.h HVAC_system.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Control_system.obj" "Control_system.cpp" 
-
-
-
-Authorization_security_system.obj : Authorization_security_system.cpp Authorization_security_system.h    Default.h Communication_system.h 
+Authorization_security_system.obj : Authorization_security_system.cpp Authorization_security_system.h    Default.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Authorization_security_system.obj" "Authorization_security_system.cpp" 
 
 
 
-Communication_system.obj : Communication_system.cpp Communication_system.h    Default.h Authorization_security_system.h 
+Communication_system.obj : Communication_system.cpp Communication_system.h    Default.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Communication_system.obj" "Communication_system.cpp" 
 
 
 
-Actuation_system.obj : Actuation_system.cpp Actuation_system.h    Default.h Control_system.h 
+TemperatureSensor.obj : TemperatureSensor.cpp TemperatureSensor.h    Default.h ControlSystem.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Actuation_system.obj" "Actuation_system.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"TemperatureSensor.obj" "TemperatureSensor.cpp" 
 
 
 
-Air_Q_control.obj : Air_Q_control.cpp Air_Q_control.h    Default.h Control_system.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Air_Q_control.obj" "Air_Q_control.cpp" 
-
-
-
-Temperature_sensor.obj : Temperature_sensor.cpp Temperature_sensor.h    Default.h Control_system.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Temperature_sensor.obj" "Temperature_sensor.cpp" 
-
-
-
-Lighting_system.obj : Lighting_system.cpp Lighting_system.h    Default.h Control_system.h 
+Lighting_system.obj : Lighting_system.cpp Lighting_system.h    Default.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Lighting_system.obj" "Lighting_system.cpp" 
 
 
 
-Light_sensor.obj : Light_sensor.cpp Light_sensor.h    Default.h Control_system.h 
+Light_sensor.obj : Light_sensor.cpp Light_sensor.h    Default.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Light_sensor.obj" "Light_sensor.cpp" 
 
 
 
-Air_Q_sensor.obj : Air_Q_sensor.cpp Air_Q_sensor.h    Default.h Control_system.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Air_Q_sensor.obj" "Air_Q_sensor.cpp" 
-
-
-
-Fire_sensor.obj : Fire_sensor.cpp Fire_sensor.h    Default.h Control_system.h 
+Fire_sensor.obj : Fire_sensor.cpp Fire_sensor.h    Default.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Fire_sensor.obj" "Fire_sensor.cpp" 
 
@@ -264,9 +229,9 @@ Security_system.obj : Security_system.cpp Security_system.h    Default.h
 
 
 
-HVAC_system.obj : HVAC_system.cpp HVAC_system.h    Default.h Control_system.h Heating.h AirConditioning.h Ventilation.h 
+HVAC.obj : HVAC.cpp HVAC.h    Default.h Heating.h AirConditioning.h Ventilation.h ControlSystem.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"HVAC_system.obj" "HVAC_system.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"HVAC.obj" "HVAC.cpp" 
 
 
 
@@ -282,25 +247,25 @@ Humidity_sensor.obj : Humidity_sensor.cpp Humidity_sensor.h    Default.h
 
 
 
-Heating.obj : Heating.cpp Heating.h    Default.h HVAC_system.h 
+Heating.obj : Heating.cpp Heating.h    Default.h HVAC.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Heating.obj" "Heating.cpp" 
 
 
 
-AirConditioning.obj : AirConditioning.cpp AirConditioning.h    Default.h HVAC_system.h 
+AirConditioning.obj : AirConditioning.cpp AirConditioning.h    Default.h HVAC.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"AirConditioning.obj" "AirConditioning.cpp" 
 
 
 
-Ventilation.obj : Ventilation.cpp Ventilation.h    Default.h HVAC_system.h 
+Ventilation.obj : Ventilation.cpp Ventilation.h    Default.h HVAC.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Ventilation.obj" "Ventilation.cpp" 
 
 
 
-Default.obj : Default.cpp Default.h    sensing_system.h Control_system.h Authorization_security_system.h Communication_system.h Actuation_system.h Air_Q_control.h Temperature_sensor.h Lighting_system.h Light_sensor.h Air_Q_sensor.h Fire_sensor.h Security_system.h HVAC_system.h Pressure_sensor.h Humidity_sensor.h Heating.h AirConditioning.h Ventilation.h part_0.h 
+Default.obj : Default.cpp Default.h    ControlSystem.h Authorization_security_system.h Communication_system.h TemperatureSensor.h Lighting_system.h Light_sensor.h Fire_sensor.h Security_system.h HVAC.h Pressure_sensor.h Humidity_sensor.h Heating.h AirConditioning.h Ventilation.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Default.obj" "Default.cpp" 
 
@@ -333,20 +298,15 @@ $(TARGET_NAME)$(LIB_EXT) : $(OBJS) $(ADDITIONAL_OBJS) DefaultComponent.mak
 
 clean:
 	@echo Cleanup
-	if exist part_0.obj erase part_0.obj
-	if exist sensing_system.obj erase sensing_system.obj
-	if exist Control_system.obj erase Control_system.obj
+	if exist ControlSystem.obj erase ControlSystem.obj
 	if exist Authorization_security_system.obj erase Authorization_security_system.obj
 	if exist Communication_system.obj erase Communication_system.obj
-	if exist Actuation_system.obj erase Actuation_system.obj
-	if exist Air_Q_control.obj erase Air_Q_control.obj
-	if exist Temperature_sensor.obj erase Temperature_sensor.obj
+	if exist TemperatureSensor.obj erase TemperatureSensor.obj
 	if exist Lighting_system.obj erase Lighting_system.obj
 	if exist Light_sensor.obj erase Light_sensor.obj
-	if exist Air_Q_sensor.obj erase Air_Q_sensor.obj
 	if exist Fire_sensor.obj erase Fire_sensor.obj
 	if exist Security_system.obj erase Security_system.obj
-	if exist HVAC_system.obj erase HVAC_system.obj
+	if exist HVAC.obj erase HVAC.obj
 	if exist Pressure_sensor.obj erase Pressure_sensor.obj
 	if exist Humidity_sensor.obj erase Humidity_sensor.obj
 	if exist Heating.obj erase Heating.obj

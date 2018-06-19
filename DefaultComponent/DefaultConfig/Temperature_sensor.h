@@ -93,15 +93,6 @@ protected :
 
 public :
 
-    //## auto_generated
-    void __setItsControl_system(Control_system* p_Control_system);
-    
-    //## auto_generated
-    void _setItsControl_system(Control_system* p_Control_system);
-    
-    //## auto_generated
-    void _clearItsControl_system();
-    
     // rootState:
     //## statechart_method
     inline bool rootState_IN() const;

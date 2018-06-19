@@ -3,7 +3,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 	- _id = GUID 35b2f820-3d03-4691-8c3f-ee512f828a4d;
 	- _myState = 139264;
 	- _name = "DefaultComponent";
-	- _modifiedTimeWeak = 6.19.2018::14:23:53;
+	- _modifiedTimeWeak = 6.19.2018::19:47:7;
 	- m_buildType = Executable;
 	- m_libraries = "";
 	- m_additionalSources = "";
@@ -34,7 +34,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- _id = GUID acc81c51-8173-49b2-9d38-e107d86839b4;
 			- _myState = 8192;
 			- _name = "DefaultConfig";
-			- _modifiedTimeWeak = 6.19.2018::14:23:53;
+			- _modifiedTimeWeak = 6.19.2018::19:47:7;
 			- HyperLinks = { IRPYRawContainer 
 				- size = 2;
 				- value = 
@@ -77,40 +77,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- size = 0;
 			}
 			- InitialInstances = { IRPYRawContainer 
-				- size = 4;
-				- value = 
-				{ IHandle 
-					- _m2Class = "IClass";
-					- _filename = "Default.sbs";
-					- _subsystem = "Default";
-					- _class = "";
-					- _name = "Control_system";
-					- _id = GUID e3de5109-742a-4b9f-8782-3b3e34af96aa;
-				}
-				{ IHandle 
-					- _m2Class = "IClass";
-					- _filename = "Default.sbs";
-					- _subsystem = "Default";
-					- _class = "";
-					- _name = "Heating";
-					- _id = GUID 7cf49e81-7672-42cf-853b-417bfc56fc29;
-				}
-				{ IHandle 
-					- _m2Class = "IClass";
-					- _filename = "Default.sbs";
-					- _subsystem = "Default";
-					- _class = "";
-					- _name = "HVAC_system";
-					- _id = GUID c5ce2907-5b70-40d7-a86f-da283258ab1c;
-				}
-				{ IHandle 
-					- _m2Class = "IClass";
-					- _filename = "Default.sbs";
-					- _subsystem = "Default";
-					- _class = "";
-					- _name = "Temperature_sensor";
-					- _id = GUID cbccade3-69d6-46a0-949f-7924e3e28376;
-				}
+				- size = 0;
 			}
 			- _root = { IFolder 
 				- _id = GUID 07b8b009-e14e-423b-900b-c766d5fcc8ce;
@@ -125,7 +92,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- size = 0;
 				}
 			}
-			- weakCGTime = 6.19.2018::14:23:53;
+			- weakCGTime = 6.19.2018::19:47:7;
 			- strongCGTime = 1.2.1990::0:0:0;
 			- AnimScopeElements = { IRPYRawContainer 
 				- size = 0;
@@ -168,7 +135,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 	- SelectedVariants = { IRPYRawContainer 
 		- size = 0;
 	}
-	- weakCGTime = 6.19.2018::14:23:53;
+	- weakCGTime = 6.19.2018::19:47:7;
 	- strongCGTime = 6.10.2018::17:14:22;
 }
 

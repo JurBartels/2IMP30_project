@@ -19,6 +19,14 @@
 #include <aom\aom.h>
 //## auto_generated
 #include "Default.h"
+//## auto_generated
+#include <oxf\omthread.h>
+//## auto_generated
+#include <oxf\omreactive.h>
+//## auto_generated
+#include <oxf\state.h>
+//## auto_generated
+#include <oxf\event.h>
 //## class Control_system
 #include "sensing_system.h"
 //## link itsActuation_system
@@ -53,7 +61,7 @@ class Temperature_sensor;
 
 //## class Control_system
 // The control system gets input from the sensing system and sends appropriate actuation to actuation system
-class Control_system : public sensing_system {
+class Control_system : public OMReactive, public sensing_system {
     ////    Friends    ////
     
 public :
@@ -65,7 +73,7 @@ public :
     ////    Constructors and destructors    ////
     
     //## auto_generated
-    Control_system();
+    Control_system(IOxfActive* theActiveContext = 0);
     
     //## auto_generated
     ~Control_system();
@@ -137,9 +145,15 @@ public :
     
     //## auto_generated
     void setItsTemperature_sensor(Temperature_sensor* p_Temperature_sensor);
+    
+    //## auto_generated
+    virtual bool startBehavior();
 
 protected :
 
+    //## auto_generated
+    void initStatechart();
+    
     //## auto_generated
     void cleanUpRelations();
     
@@ -254,14 +268,59 @@ public :
     //## auto_generated
     void _clearItsSensing_system_2();
     
-    //## auto_generated
-    void __setItsTemperature_sensor(Temperature_sensor* p_Temperature_sensor);
+    // rootState:
+    //## statechart_method
+    inline bool rootState_IN() const;
     
-    //## auto_generated
-    void _setItsTemperature_sensor(Temperature_sensor* p_Temperature_sensor);
+    //## statechart_method
+    virtual void rootState_entDef();
     
-    //## auto_generated
-    void _clearItsTemperature_sensor();
+    //## statechart_method
+    virtual IOxfReactive::TakeEventStatus rootState_processEvent();
+    
+    // sendaction_6:
+    //## statechart_method
+    inline bool sendaction_6_IN() const;
+    
+    // sendaction_5:
+    //## statechart_method
+    inline bool sendaction_5_IN() const;
+    
+    // sendaction_4:
+    //## statechart_method
+    inline bool sendaction_4_IN() const;
+    
+    // Idle:
+    //## statechart_method
+    inline bool Idle_IN() const;
+    
+    // HeatRoom:
+    //## statechart_method
+    inline bool HeatRoom_IN() const;
+    
+    // CoolRoom:
+    //## statechart_method
+    inline bool CoolRoom_IN() const;
+    
+    ////    Framework    ////
+
+protected :
+
+//#[ ignore
+    enum Control_system_Enum {
+        OMNonState = 0,
+        sendaction_6 = 1,
+        sendaction_5 = 2,
+        sendaction_4 = 3,
+        Idle = 4,
+        HeatRoom = 5,
+        CoolRoom = 6
+    };
+    
+    int rootState_subState;
+    
+    int rootState_active;
+//#]
 };
 
 #ifdef _OMINSTRUMENT
@@ -269,7 +328,7 @@ DECLARE_OPERATION_CLASS(Default_Control_system_setGoal_temp_int)
 
 //#[ ignore
 class OMAnimatedControl_system : public OMAnimatedsensing_system {
-    DECLARE_META(Control_system, OMAnimatedControl_system)
+    DECLARE_REACTIVE_META(Control_system, OMAnimatedControl_system)
     
     DECLARE_META_OP(Default_Control_system_setGoal_temp_int)
     
@@ -280,9 +339,58 @@ public :
     virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
     
     virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+    
+    //## statechart_method
+    void rootState_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void sendaction_6_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void sendaction_5_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void sendaction_4_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void Idle_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void HeatRoom_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void CoolRoom_serializeStates(AOMSState* aomsState) const;
 };
 //#]
 #endif // _OMINSTRUMENT
+
+inline bool Control_system::rootState_IN() const {
+    return true;
+}
+
+inline bool Control_system::sendaction_6_IN() const {
+    return rootState_subState == sendaction_6;
+}
+
+inline bool Control_system::sendaction_5_IN() const {
+    return rootState_subState == sendaction_5;
+}
+
+inline bool Control_system::sendaction_4_IN() const {
+    return rootState_subState == sendaction_4;
+}
+
+inline bool Control_system::Idle_IN() const {
+    return rootState_subState == Idle;
+}
+
+inline bool Control_system::HeatRoom_IN() const {
+    return rootState_subState == HeatRoom;
+}
+
+inline bool Control_system::CoolRoom_IN() const {
+    return rootState_subState == CoolRoom;
+}
 
 #endif
 /*********************************************************************

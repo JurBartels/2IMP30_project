@@ -19,17 +19,8 @@
 #include <aom\aom.h>
 //## auto_generated
 #include <oxf\event.h>
-//## auto_generated
-class Actuation_system;
-
-//## auto_generated
+//## classInstance AirConditioningPart
 class AirConditioning;
-
-//## auto_generated
-class Air_Q_control;
-
-//## auto_generated
-class Air_Q_sensor;
 
 //## auto_generated
 class Authorization_security_system;
@@ -37,16 +28,16 @@ class Authorization_security_system;
 //## auto_generated
 class Communication_system;
 
-//## auto_generated
-class Control_system;
+//## classInstance ControlSystemPart
+class ControlSystem;
 
 //## auto_generated
 class Fire_sensor;
 
-//## auto_generated
-class HVAC_system;
+//## classInstance HVACPart
+class HVAC;
 
-//## auto_generated
+//## classInstance HeatingPart
 class Heating;
 
 //## auto_generated
@@ -64,94 +55,65 @@ class Pressure_sensor;
 //## auto_generated
 class Security_system;
 
-//## auto_generated
-class Temperature_sensor;
+//## classInstance TemperatureSensorPart
+class TemperatureSensor;
 
 //## auto_generated
 class Ventilation;
 
-//## classInstance part_0
-class part_0_C;
-
-//## auto_generated
-class sensing_system;
-
 //#[ ignore
-#define AC_on_Default_id 18601
+#define heatingOn_Default_id 18601
 
-#define AC_off_Default_id 18602
+#define heatingOff_Default_id 18602
 
-#define heatingOn_Default_id 18603
+#define heatRoom_Default_id 18603
 
-#define heatingOff_Default_id 18604
+#define coolRoom_Default_id 18604
+
+#define acOn_Default_id 18605
+
+#define acOff_Default_id 18606
+
+#define okTemp_Default_id 18607
 //#]
 
 //## package Default
 
 
-//## classInstance part_0
-extern part_0_C part_0;
+//## classInstance AirConditioningPart
+extern AirConditioning AirConditioningPart;
+
+//## classInstance ControlSystemPart
+extern ControlSystem ControlSystemPart;
+
+//## classInstance HVACPart
+extern HVAC HVACPart;
+
+//## classInstance HeatingPart
+extern Heating HeatingPart;
+
+//## classInstance TemperatureSensorPart
+extern TemperatureSensor TemperatureSensorPart;
 
 //## auto_generated
 void Default_initRelations();
 
-//## event AC_on()
-class AC_on : public OMEvent {
-    ////    Friends    ////
+//## auto_generated
+bool Default_startBehavior();
+
+//#[ ignore
+class Default_OMInitializer {
+    ////    Constructors and destructors    ////
     
 public :
 
-#ifdef _OMINSTRUMENT
-    friend class OMAnimatedAC_on;
-#endif // _OMINSTRUMENT
-
-    ////    Constructors and destructors    ////
+    //## auto_generated
+    Default_OMInitializer();
     
     //## auto_generated
-    AC_on();
-    
-    ////    Framework operations    ////
-    
-    //## statechart_method
-    virtual bool isTypeOf(const short id) const;
-};
-
-#ifdef _OMINSTRUMENT
-//#[ ignore
-class OMAnimatedAC_on : virtual public AOMEvent {
-    DECLARE_META_EVENT(AC_on)
+    ~Default_OMInitializer();
 };
 //#]
-#endif // _OMINSTRUMENT
-
-//## event AC_off()
-class AC_off : public OMEvent {
-    ////    Friends    ////
-    
-public :
-
-#ifdef _OMINSTRUMENT
-    friend class OMAnimatedAC_off;
-#endif // _OMINSTRUMENT
-
-    ////    Constructors and destructors    ////
-    
-    //## auto_generated
-    AC_off();
-    
-    ////    Framework operations    ////
-    
-    //## statechart_method
-    virtual bool isTypeOf(const short id) const;
-};
-
-#ifdef _OMINSTRUMENT
-//#[ ignore
-class OMAnimatedAC_off : virtual public AOMEvent {
-    DECLARE_META_EVENT(AC_off)
-};
-//#]
-#endif // _OMINSTRUMENT
 
 //## event heatingOn()
 class heatingOn : public OMEvent {
@@ -207,6 +169,151 @@ public :
 //#[ ignore
 class OMAnimatedheatingOff : virtual public AOMEvent {
     DECLARE_META_EVENT(heatingOff)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event heatRoom()
+class heatRoom : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedheatRoom;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    heatRoom();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedheatRoom : virtual public AOMEvent {
+    DECLARE_META_EVENT(heatRoom)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event coolRoom()
+class coolRoom : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedcoolRoom;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    coolRoom();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedcoolRoom : virtual public AOMEvent {
+    DECLARE_META_EVENT(coolRoom)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event acOn()
+class acOn : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedacOn;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    acOn();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedacOn : virtual public AOMEvent {
+    DECLARE_META_EVENT(acOn)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event acOff()
+class acOff : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedacOff;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    acOff();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedacOff : virtual public AOMEvent {
+    DECLARE_META_EVENT(acOff)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event okTemp()
+class okTemp : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedokTemp;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    okTemp();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedokTemp : virtual public AOMEvent {
+    DECLARE_META_EVENT(okTemp)
 };
 //#]
 #endif // _OMINSTRUMENT

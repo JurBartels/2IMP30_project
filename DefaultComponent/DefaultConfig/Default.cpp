@@ -14,30 +14,24 @@
 
 //## auto_generated
 #include "Default.h"
-//## classInstance part_0
-#include "part_0.h"
-//## auto_generated
-#include "Actuation_system.h"
-//## auto_generated
-#include "Air_Q_control.h"
-//## auto_generated
-#include "Air_Q_sensor.h"
-//## auto_generated
+//## classInstance AirConditioningPart
 #include "AirConditioning.h"
+//## classInstance ControlSystemPart
+#include "ControlSystem.h"
+//## classInstance HeatingPart
+#include "Heating.h"
+//## classInstance HVACPart
+#include "HVAC.h"
+//## classInstance TemperatureSensorPart
+#include "TemperatureSensor.h"
 //## auto_generated
 #include "Authorization_security_system.h"
 //## auto_generated
 #include "Communication_system.h"
 //## auto_generated
-#include "Control_system.h"
-//## auto_generated
 #include "Fire_sensor.h"
 //## auto_generated
-#include "Heating.h"
-//## auto_generated
 #include "Humidity_sensor.h"
-//## auto_generated
-#include "HVAC_system.h"
 //## auto_generated
 #include "Light_sensor.h"
 //## auto_generated
@@ -47,24 +41,8 @@
 //## auto_generated
 #include "Security_system.h"
 //## auto_generated
-#include "sensing_system.h"
-//## auto_generated
-#include "Temperature_sensor.h"
-//## auto_generated
 #include "Ventilation.h"
 //#[ ignore
-#define AC_on_SERIALIZE OM_NO_OP
-
-#define AC_on_UNSERIALIZE OM_NO_OP
-
-#define AC_on_CONSTRUCTOR AC_on()
-
-#define AC_off_SERIALIZE OM_NO_OP
-
-#define AC_off_UNSERIALIZE OM_NO_OP
-
-#define AC_off_CONSTRUCTOR AC_off()
-
 #define heatingOn_SERIALIZE OM_NO_OP
 
 #define heatingOn_UNSERIALIZE OM_NO_OP
@@ -76,13 +54,55 @@
 #define heatingOff_UNSERIALIZE OM_NO_OP
 
 #define heatingOff_CONSTRUCTOR heatingOff()
+
+#define heatRoom_SERIALIZE OM_NO_OP
+
+#define heatRoom_UNSERIALIZE OM_NO_OP
+
+#define heatRoom_CONSTRUCTOR heatRoom()
+
+#define coolRoom_SERIALIZE OM_NO_OP
+
+#define coolRoom_UNSERIALIZE OM_NO_OP
+
+#define coolRoom_CONSTRUCTOR coolRoom()
+
+#define acOn_SERIALIZE OM_NO_OP
+
+#define acOn_UNSERIALIZE OM_NO_OP
+
+#define acOn_CONSTRUCTOR acOn()
+
+#define acOff_SERIALIZE OM_NO_OP
+
+#define acOff_UNSERIALIZE OM_NO_OP
+
+#define acOff_CONSTRUCTOR acOff()
+
+#define okTemp_SERIALIZE OM_NO_OP
+
+#define okTemp_UNSERIALIZE OM_NO_OP
+
+#define okTemp_CONSTRUCTOR okTemp()
 //#]
 
 //## package Default
 
 
-//## classInstance part_0
-part_0_C part_0;
+//## classInstance AirConditioningPart
+AirConditioning AirConditioningPart;
+
+//## classInstance ControlSystemPart
+ControlSystem ControlSystemPart;
+
+//## classInstance HVACPart
+HVAC HVACPart;
+
+//## classInstance HeatingPart
+Heating HeatingPart;
+
+//## classInstance TemperatureSensorPart
+TemperatureSensor TemperatureSensorPart;
 
 #ifdef _OMINSTRUMENT
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
@@ -93,10 +113,37 @@ IMPLEMENT_META_PACKAGE(Default, Default)
 #endif // _OMINSTRUMENT
 
 void Default_initRelations() {
+    {
+        {
+            ControlSystemPart.setShouldDelete(false);
+        }
+        {
+            HVACPart.setShouldDelete(false);
+        }
+        {
+            HeatingPart.setShouldDelete(false);
+        }
+        {
+            AirConditioningPart.setShouldDelete(false);
+        }
+    }
+    ControlSystemPart.setItsHVAC(&HVACPart);
+    ControlSystemPart.setItsTemperatureSensor(&TemperatureSensorPart);
+    HeatingPart.setItsHVAC(&HVACPart);
+    AirConditioningPart.setItsHVAC(&HVACPart);
     
     #ifdef _OMINSTRUMENT
     RenameGlobalInstances();
     #endif // _OMINSTRUMENT
+}
+
+bool Default_startBehavior() {
+    bool done = true;
+    done &= AirConditioningPart.startBehavior();
+    done &= ControlSystemPart.startBehavior();
+    done &= HVACPart.startBehavior();
+    done &= HeatingPart.startBehavior();
+    return done;
 }
 
 #ifdef _OMINSTRUMENT
@@ -104,33 +151,23 @@ static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 }
 
 static void RenameGlobalInstances() {
-    OM_SET_INSTANCE_NAME(&part_0, part_0, "part_0", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&ControlSystemPart, ControlSystem, "ControlSystemPart", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&TemperatureSensorPart, TemperatureSensor, "TemperatureSensorPart", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&HVACPart, HVAC, "HVACPart", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&HeatingPart, Heating, "HeatingPart", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&AirConditioningPart, AirConditioning, "AirConditioningPart", AOMNoMultiplicity);
 }
 #endif // _OMINSTRUMENT
 
-//## event AC_on()
-AC_on::AC_on() {
-    NOTIFY_EVENT_CONSTRUCTOR(AC_on)
-    setId(AC_on_Default_id);
+//#[ ignore
+Default_OMInitializer::Default_OMInitializer() {
+    Default_initRelations();
+    Default_startBehavior();
 }
 
-bool AC_on::isTypeOf(const short id) const {
-    return (AC_on_Default_id==id);
+Default_OMInitializer::~Default_OMInitializer() {
 }
-
-IMPLEMENT_META_EVENT_P(AC_on, Default, Default, AC_on())
-
-//## event AC_off()
-AC_off::AC_off() {
-    NOTIFY_EVENT_CONSTRUCTOR(AC_off)
-    setId(AC_off_Default_id);
-}
-
-bool AC_off::isTypeOf(const short id) const {
-    return (AC_off_Default_id==id);
-}
-
-IMPLEMENT_META_EVENT_P(AC_off, Default, Default, AC_off())
+//#]
 
 //## event heatingOn()
 heatingOn::heatingOn() {
@@ -155,6 +192,66 @@ bool heatingOff::isTypeOf(const short id) const {
 }
 
 IMPLEMENT_META_EVENT_P(heatingOff, Default, Default, heatingOff())
+
+//## event heatRoom()
+heatRoom::heatRoom() {
+    NOTIFY_EVENT_CONSTRUCTOR(heatRoom)
+    setId(heatRoom_Default_id);
+}
+
+bool heatRoom::isTypeOf(const short id) const {
+    return (heatRoom_Default_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(heatRoom, Default, Default, heatRoom())
+
+//## event coolRoom()
+coolRoom::coolRoom() {
+    NOTIFY_EVENT_CONSTRUCTOR(coolRoom)
+    setId(coolRoom_Default_id);
+}
+
+bool coolRoom::isTypeOf(const short id) const {
+    return (coolRoom_Default_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(coolRoom, Default, Default, coolRoom())
+
+//## event acOn()
+acOn::acOn() {
+    NOTIFY_EVENT_CONSTRUCTOR(acOn)
+    setId(acOn_Default_id);
+}
+
+bool acOn::isTypeOf(const short id) const {
+    return (acOn_Default_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(acOn, Default, Default, acOn())
+
+//## event acOff()
+acOff::acOff() {
+    NOTIFY_EVENT_CONSTRUCTOR(acOff)
+    setId(acOff_Default_id);
+}
+
+bool acOff::isTypeOf(const short id) const {
+    return (acOff_Default_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(acOff, Default, Default, acOff())
+
+//## event okTemp()
+okTemp::okTemp() {
+    NOTIFY_EVENT_CONSTRUCTOR(okTemp)
+    setId(okTemp_Default_id);
+}
+
+bool okTemp::isTypeOf(const short id) const {
+    return (okTemp_Default_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(okTemp, Default, Default, okTemp())
 
 /*********************************************************************
 	File Path	: DefaultComponent\DefaultConfig\Default.cpp

@@ -52,11 +52,15 @@ Control_system* Temperature_sensor::getItsControl_system() const {
 }
 
 void Temperature_sensor::setItsControl_system(Control_system* p_Control_system) {
+    itsControl_system = p_Control_system;
     if(p_Control_system != NULL)
         {
-            p_Control_system->_setItsTemperature_sensor(this);
+            NOTIFY_RELATION_ITEM_ADDED("itsControl_system", p_Control_system, false, true);
         }
-    _setItsControl_system(p_Control_system);
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsControl_system");
+        }
 }
 
 bool Temperature_sensor::startBehavior() {
@@ -75,11 +79,6 @@ void Temperature_sensor::cleanUpRelations() {
     if(itsControl_system != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsControl_system");
-            Temperature_sensor* p_Temperature_sensor = itsControl_system->getItsTemperature_sensor();
-            if(p_Temperature_sensor != NULL)
-                {
-                    itsControl_system->__setItsTemperature_sensor(NULL);
-                }
             itsControl_system = NULL;
         }
 }
@@ -96,31 +95,6 @@ bool Temperature_sensor::cancelTimeout(const IOxfTimeout* arg) {
             res = true;
         }
     return res;
-}
-
-void Temperature_sensor::__setItsControl_system(Control_system* p_Control_system) {
-    itsControl_system = p_Control_system;
-    if(p_Control_system != NULL)
-        {
-            NOTIFY_RELATION_ITEM_ADDED("itsControl_system", p_Control_system, false, true);
-        }
-    else
-        {
-            NOTIFY_RELATION_CLEARED("itsControl_system");
-        }
-}
-
-void Temperature_sensor::_setItsControl_system(Control_system* p_Control_system) {
-    if(itsControl_system != NULL)
-        {
-            itsControl_system->__setItsTemperature_sensor(NULL);
-        }
-    __setItsControl_system(p_Control_system);
-}
-
-void Temperature_sensor::_clearItsControl_system() {
-    NOTIFY_RELATION_CLEARED("itsControl_system");
-    itsControl_system = NULL;
 }
 
 void Temperature_sensor::rootState_entDef() {

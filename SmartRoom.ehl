@@ -1,5 +1,6 @@
 [Op Calls]
 [Events]
+HVAC_system[0]->GEN(coolRoom())`HVAC_system
 Heating[0]->GEN(heatingOff())`Heating
 Heating[0]->GEN(heatingOn())`Heating
 HVAC_system[0]->GEN(AC_on())`HVAC_system
