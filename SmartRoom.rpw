@@ -5,7 +5,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 	}
 	- isLoadOnDemand = 0;
 	- myViewsWithID = { IRPYRawContainer 
-		- size = 7;
+		- size = 5;
 		- value = 
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -33,7 +33,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 0 ;
 			- _DownRight = 1144 410 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 6;
+			- m_nDiagramIndex = 4;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -62,7 +62,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 0 ;
 			- _DownRight = 1394 683 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 4;
+			- m_nDiagramIndex = 3;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -88,39 +88,10 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- _name = "StatechartDiagram";
 				- _id = GUID ccbe300d-0704-414b-adb1-861ebf5bd9d7;
 			}
-			- _UpLeft = 0 285 ;
-			- _DownRight = 1144 695 ;
-			- _instanceName = "ControlSystemPart";
-			- m_nDiagramIndex = 1;
-			- m_bIsActiveView = 0;
-		}
-		{ CGEMdiDiagramParams 
-			- _placement = { CCommon_WINDOWPLACEMENT 
-				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
-				- m_ptMinPositionX = -1;
-				- m_ptMinPositionY = -1;
-				- m_ptMaxPositionX = -8;
-				- m_ptMaxPositionY = -31;
-				- m_nLeft = 208;
-				- m_nTop = 208;
-				- m_nRight = 1389;
-				- m_nBottom = 678;
-			}
-			- _wasOpenedOnCloseProject = 1;
-			- _theDiagram = { IHandle 
-				- _m2Class = "IStateChartDiagram";
-				- _filename = "Default.sbs";
-				- _subsystem = "Default";
-				- _class = "HVAC";
-				- _name = "StatechartDiagram";
-				- _id = GUID c528be85-fcd9-465b-987a-c076a65f0db9;
-			}
 			- _UpLeft = 0 0 ;
 			- _DownRight = 1144 410 ;
-			- _instanceName = "";
-			- m_nDiagramIndex = 2;
+			- _instanceName = "ControlSystemPart";
+			- m_nDiagramIndex = 1;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -155,35 +126,6 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
-				- m_ptMinPositionX = -1;
-				- m_ptMinPositionY = -1;
-				- m_ptMaxPositionX = -8;
-				- m_ptMaxPositionY = -31;
-				- m_nLeft = 182;
-				- m_nTop = 182;
-				- m_nRight = 1363;
-				- m_nBottom = 652;
-			}
-			- _wasOpenedOnCloseProject = 1;
-			- _theDiagram = { IHandle 
-				- _m2Class = "IStateChartDiagram";
-				- _filename = "Default.sbs";
-				- _subsystem = "Default";
-				- _class = "HVAC";
-				- _name = "StatechartDiagram";
-				- _id = GUID c528be85-fcd9-465b-987a-c076a65f0db9;
-			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 1144 410 ;
-			- _instanceName = "itsHVAC_system";
-			- m_nDiagramIndex = 5;
-			- m_bIsActiveView = 0;
-		}
-		{ CGEMdiDiagramParams 
-			- _placement = { CCommon_WINDOWPLACEMENT 
-				- m_nLength = 44;
 				- m_nFlags = 2;
 				- m_showCmd = 3;
 				- m_ptMinPositionX = -1;
@@ -207,7 +149,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 0 ;
 			- _DownRight = 1394 683 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 3;
+			- m_nDiagramIndex = 2;
 			- m_bIsActiveView = 1;
 		}
 	}
