@@ -30,8 +30,8 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- _name = "Smartroom panel";
 				- _id = GUID 2c2c1882-b427-4c1d-849a-15c82f0ca063;
 			}
-			- _UpLeft = 64 0 ;
-			- _DownRight = 904 417 ;
+			- _UpLeft = 0 0 ;
+			- _DownRight = 840 417 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
 			- m_bIsActiveView = 1;

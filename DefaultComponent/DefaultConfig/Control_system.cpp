@@ -32,6 +32,10 @@
 #include "Temperature_sensor.h"
 //#[ ignore
 #define Default_Control_system_Control_system_SERIALIZE OM_NO_OP
+
+#define OMAnim_Default_Control_system_setGoal_temp_int_UNSERIALIZE_ARGS OP_UNSER(OMDestructiveString2X,p_goal_temp)
+
+#define OMAnim_Default_Control_system_setGoal_temp_int_SERIALIZE_RET_VAL
 //#]
 
 //## package Default
@@ -54,6 +58,15 @@ Control_system::Control_system() {
 Control_system::~Control_system() {
     NOTIFY_DESTRUCTOR(~Control_system, false);
     cleanUpRelations();
+}
+
+int Control_system::getGoal_temp() const {
+    return goal_temp;
+}
+
+void Control_system::setGoal_temp(int p_goal_temp) {
+    goal_temp = p_goal_temp;
+    NOTIFY_SET_OPERATION;
 }
 
 Actuation_system* Control_system::getItsActuation_system() const {
@@ -532,6 +545,7 @@ void Control_system::_clearItsTemperature_sensor() {
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedControl_system::serializeAttributes(AOMSAttributes* aomsAttributes) const {
+    aomsAttributes->addAttribute("goal_temp", x2String(myReal->goal_temp));
     OMAnimatedsensing_system::serializeAttributes(aomsAttributes);
 }
 
@@ -595,6 +609,10 @@ IMPLEMENT_META_S_P(Control_system, Default, false, sensing_system, OMAnimatedsen
 OMINIT_SUPERCLASS(sensing_system, OMAnimatedsensing_system)
 
 OMREGISTER_CLASS
+
+IMPLEMENT_META_OP(OMAnimatedControl_system, Default_Control_system_setGoal_temp_int, "setGoal_temp", FALSE, "setGoal_temp(int)", 1)
+
+IMPLEMENT_OP_CALL(Default_Control_system_setGoal_temp_int, Control_system, setGoal_temp(p_goal_temp), NO_OP())
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

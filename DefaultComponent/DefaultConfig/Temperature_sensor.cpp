@@ -20,10 +20,6 @@
 #include "Control_system.h"
 //#[ ignore
 #define Default_Temperature_sensor_Temperature_sensor_SERIALIZE OM_NO_OP
-
-#define OMAnim_Default_Temperature_sensor_setGoal_temp_int_UNSERIALIZE_ARGS OP_UNSER(OMDestructiveString2X,p_goal_temp)
-
-#define OMAnim_Default_Temperature_sensor_setGoal_temp_int_SERIALIZE_RET_VAL
 //#]
 
 //## package Default
@@ -40,15 +36,6 @@ Temperature_sensor::~Temperature_sensor() {
     NOTIFY_DESTRUCTOR(~Temperature_sensor, true);
     cleanUpRelations();
     cancelTimeouts();
-}
-
-int Temperature_sensor::getGoal_temp() const {
-    return goal_temp;
-}
-
-void Temperature_sensor::setGoal_temp(int p_goal_temp) {
-    goal_temp = p_goal_temp;
-    NOTIFY_SET_OPERATION;
 }
 
 int Temperature_sensor::getTemp() const {
@@ -199,7 +186,6 @@ IOxfReactive::TakeEventStatus Temperature_sensor::rootState_processEvent() {
 //#[ ignore
 void OMAnimatedTemperature_sensor::serializeAttributes(AOMSAttributes* aomsAttributes) const {
     aomsAttributes->addAttribute("temp", x2String(myReal->temp));
-    aomsAttributes->addAttribute("goal_temp", x2String(myReal->goal_temp));
 }
 
 void OMAnimatedTemperature_sensor::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -238,10 +224,6 @@ void OMAnimatedTemperature_sensor::accepttimeevent_1_serializeStates(AOMSState* 
 //#]
 
 IMPLEMENT_REACTIVE_META_P(Temperature_sensor, Default, Default, false, OMAnimatedTemperature_sensor)
-
-IMPLEMENT_META_OP(OMAnimatedTemperature_sensor, Default_Temperature_sensor_setGoal_temp_int, "setGoal_temp", FALSE, "setGoal_temp(int)", 1)
-
-IMPLEMENT_OP_CALL(Default_Temperature_sensor_setGoal_temp_int, Temperature_sensor, setGoal_temp(p_goal_temp), NO_OP())
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

@@ -177,7 +177,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- reqID = "SMR00";
 		}
 	}
-	- _modifiedTimeWeak = 6.19.2018::10:15:52;
+	- _modifiedTimeWeak = 6.19.2018::10:20:32;
 	- _lastID = 56;
 	- Declaratives = { IRPYRawContainer 
 		- size = 1;
@@ -348,7 +348,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			}
 			- _name = "Smartroom panel";
 			- _modifiedTimeWeak = 1.2.1990::0:0:0;
-			- _lastModifiedTime = "6.19.2018::10:16:12";
+			- _lastModifiedTime = "6.19.2018::10:21:17";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID b4ae8950-6c88-4977-b966-7b9beada116a;
 				- m_type = 0;
@@ -724,7 +724,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 											- value = 
 											{ IProperty 
 												- _Name = "ActiveXProperties@Child.ActiveXControl";
-												- _Value = "BackGroundColor;12632256;DivisionLineThickness;2;DotColor;16711680;EndAngle;-45;Font;Arial;;8,25;0;0;0;0;400;0;GradientFactor;0,7;LineColor;4210752;MaximumValue;30;MinimumValue;15;NumberOfDivisions;10;NumberOfSubdivisions;1;RelativeBubbleRadius;0,6;RelativeDotPositionRadius;0,75;RelativeDotRadius;0,11;RelativeExternalRadius;1,1;RelativeInternalRadius;1;RelativeTextRadius;0,98;StartAngle;225;SubdivisionLineThickness;1;TextColor;4210752;Value;15;ValueFormatString;%.0f;";
+												- _Value = "BackGroundColor;12632256;DivisionLineThickness;2;DotColor;16711680;EndAngle;-45;Font;Arial;;8,25;0;0;0;0;400;0;GradientFactor;0,7;LineColor;4210752;MaximumValue;30;MinimumValue;15;NumberOfDivisions;10;NumberOfSubdivisions;1;RelativeBubbleRadius;0,6;RelativeDotPositionRadius;0,75;RelativeDotRadius;0,11;RelativeExternalRadius;1,1;RelativeInternalRadius;1;RelativeTextRadius;0,98;StartAngle;225;SubdivisionLineThickness;1;TextColor;4210752;Value;20;ValueFormatString;%.0f;";
 												- _Type = String;
 											}
 										}
@@ -781,7 +781,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_type = 216;
 					- m_pModelObject = { IHandle 
 						- _m2Class = "IAttribute";
-						- _id = GUID 9954fba2-34d9-459c-836a-fcda2f066195;
+						- _id = GUID e52bfa4e-067e-4452-9a51-af621c6c75ea;
 					}
 					- m_pParent = GUID aa99140e-e9ba-44a8-9dce-cb4e44df5089;
 					- m_name = { CGIText 
@@ -806,14 +806,14 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- Compartments = { IRPYRawContainer 
 						- size = 0;
 					}
-					- m_csModelObjPath = "Default.Temperature_sensor[0].goal_temp";
+					- m_csModelObjPath = "Default.Control_system[0].goal_temp";
 					- m_csName = "Goal temperature";
 					- m_PartsArray = { IRPYRawContainer 
 						- size = 1;
 						- value = 
 						{ IHandle 
 							- _m2Class = "IClass";
-							- _id = GUID cbccade3-69d6-46a0-949f-7924e3e28376;
+							- _id = GUID e3de5109-742a-4b9f-8782-3b3e34af96aa;
 						}
 					}
 				}
@@ -1868,7 +1868,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			}
 		}
 	}
-	- weakCGTime = 6.19.2018::10:15:52;
+	- weakCGTime = 6.19.2018::10:20:32;
 	- strongCGTime = 6.17.2018::14:43:4;
 	- _defaultComposite = GUID a1bd937f-d49a-4655-9fb2-6fd4e1d15cbf;
 	- _eventsBaseID = -1;
@@ -2013,7 +2013,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
 				}
 			}
-			- _modifiedTimeWeak = 6.19.2018::10:9:10;
+			- _modifiedTimeWeak = 6.19.2018::10:21:17;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "Sensing_System.omd";
@@ -2025,8 +2025,44 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- _description = { IDescription 
 				- _text = "The control system gets input from the sensing system and sends appropriate actuation to actuation system";
 			}
-			- weakCGTime = 6.19.2018::10:9:10;
+			- _lastID = 1;
+			- weakCGTime = 6.19.2018::10:21:17;
 			- strongCGTime = 6.17.2018::14:43:4;
+			- Attrs = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAttribute 
+					- _id = GUID e52bfa4e-067e-4452-9a51-af621c6c75ea;
+					- _myState = 8192;
+					- _name = "goal_temp";
+					- Stereotypes = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IStereotype";
+							- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+							- _subsystem = "SysML::Blocks";
+							- _class = "";
+							- _name = "ValueProperty";
+							- _id = GUID 04164f8c-01a3-4eab-b4a4-c37aae7a46e9;
+						}
+					}
+					- _modifiedTimeWeak = 6.19.2018::10:21:17;
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "int";
+						- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+					}
+					- _isOrdered = 0;
+					- _protection = iPublic;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+			}
 			- Inheritances = { IRPYRawContainer 
 				- size = 1;
 				- value = 
@@ -2482,7 +2518,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
 				}
 			}
-			- _modifiedTimeWeak = 6.19.2018::10:14:45;
+			- _modifiedTimeWeak = 6.19.2018::10:20:58;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "Sensing_System.omd";
@@ -2492,10 +2528,10 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
 			}
 			- _lastID = 3;
-			- weakCGTime = 6.19.2018::10:14:45;
+			- weakCGTime = 6.19.2018::10:20:58;
 			- strongCGTime = 6.18.2018::6:28:57;
 			- Attrs = { IRPYRawContainer 
-				- size = 2;
+				- size = 1;
 				- value = 
 				{ IAttribute 
 					- _id = GUID d1700d35-a4a6-4f84-97b2-fe9d19b862ec;
@@ -2523,37 +2559,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- _value = "25";
 						}
 					}
-					- _typeOf = { IHandle 
-						- _m2Class = "IType";
-						- _filename = "PredefinedTypesC++.sbs";
-						- _subsystem = "PredefinedTypesCpp";
-						- _class = "";
-						- _name = "int";
-						- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
-					}
-					- _isOrdered = 0;
-					- _protection = iPublic;
-					- _static = 0;
-					- _isReference = 0;
-					- _isConstant = 0;
-				}
-				{ IAttribute 
-					- _id = GUID 9954fba2-34d9-459c-836a-fcda2f066195;
-					- _myState = 8192;
-					- _name = "goal_temp";
-					- Stereotypes = { IRPYRawContainer 
-						- size = 1;
-						- value = 
-						{ IHandle 
-							- _m2Class = "IStereotype";
-							- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
-							- _subsystem = "SysML::Blocks";
-							- _class = "";
-							- _name = "ValueProperty";
-							- _id = GUID 04164f8c-01a3-4eab-b4a4-c37aae7a46e9;
-						}
-					}
-					- _modifiedTimeWeak = 6.19.2018::10:14:45;
 					- _typeOf = { IHandle 
 						- _m2Class = "IType";
 						- _filename = "PredefinedTypesC++.sbs";

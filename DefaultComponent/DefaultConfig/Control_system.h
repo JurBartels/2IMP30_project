@@ -45,6 +45,10 @@ class Lighting_system;
 //## link itsTemperature_sensor
 class Temperature_sensor;
 
+//#[ ignore
+#define OMAnim_Default_Control_system_setGoal_temp_int_ARGS_DECLARATION int p_goal_temp;
+//#]
+
 //## package Default
 
 //## class Control_system
@@ -67,6 +71,12 @@ public :
     ~Control_system();
     
     ////    Additional operations    ////
+    
+    //## auto_generated
+    int getGoal_temp() const;
+    
+    //## auto_generated
+    void setGoal_temp(int p_goal_temp);
     
     //## auto_generated
     Actuation_system* getItsActuation_system() const;
@@ -132,6 +142,10 @@ protected :
 
     //## auto_generated
     void cleanUpRelations();
+    
+    ////    Attributes    ////
+    
+    int goal_temp;		//## attribute goal_temp
     
     ////    Relations and components    ////
     
@@ -251,9 +265,13 @@ public :
 };
 
 #ifdef _OMINSTRUMENT
+DECLARE_OPERATION_CLASS(Default_Control_system_setGoal_temp_int)
+
 //#[ ignore
 class OMAnimatedControl_system : public OMAnimatedsensing_system {
     DECLARE_META(Control_system, OMAnimatedControl_system)
+    
+    DECLARE_META_OP(Default_Control_system_setGoal_temp_int)
     
     ////    Framework operations    ////
     
