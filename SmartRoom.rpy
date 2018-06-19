@@ -18,7 +18,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- value = 
 							{ IProperty 
 								- _Name = "Environment";
-								- _Value = "Cygwin";
+								- _Value = "MSVC";
 								- _Type = Enum;
 								- _ExtraTypeInfo = "MSVC,MSVCDLL,MSVCStandardLibrary,VxWorks,VxWorks6diab,VxWorks6gnu,VxWorks6diab_RTP,VxWorks6gnu_RTP,Solaris2,Cygwin,MicrosoftWinCE600,OseSfk,Linux,Solaris2GNU,QNXNeutrinoGCC, QNXNeutrinoMomentics,NucleusPLUS-PPC,WorkbenchManaged,WorkbenchManaged653,WorkbenchManaged_RTP";
 							}
@@ -41,7 +41,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- _id = GUID 052b8171-a32b-4f45-a829-5585f79f9deb;
 		}
 	}
-	- _modifiedTimeWeak = 6.11.2018::10:23:28;
+	- _modifiedTimeWeak = 6.19.2018::10:8:57;
 	- _lastID = 8;
 	- _UserColors = { IRPYRawContainer 
 		- size = 16;

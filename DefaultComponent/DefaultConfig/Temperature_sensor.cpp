@@ -1,10 +1,10 @@
 /********************************************************************
 	Rhapsody	: 8.2 
-	Login		: s137910
+	Login		: jlta
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Temperature_sensor
-//!	Generated Date	: Mon, 18, Jun 2018  
+//!	Generated Date	: Tue, 19, Jun 2018  
 	File Path	: DefaultComponent\DefaultConfig\Temperature_sensor.cpp
 *********************************************************************/
 
@@ -38,13 +38,13 @@ Temperature_sensor::~Temperature_sensor() {
     cancelTimeouts();
 }
 
-OMIterator<int> Temperature_sensor::getTemp() const {
-    OMIterator<int> iter(temp);
-    return iter;
+int Temperature_sensor::getTemp() const {
+    return temp;
 }
 
 void Temperature_sensor::setTemp(int p_temp) {
-    temp.add(p_temp);
+    temp = p_temp;
+    NOTIFY_SET_OPERATION;
 }
 
 Control_system* Temperature_sensor::getItsControl_system() const {
@@ -185,7 +185,7 @@ IOxfReactive::TakeEventStatus Temperature_sensor::rootState_processEvent() {
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedTemperature_sensor::serializeAttributes(AOMSAttributes* aomsAttributes) const {
-    aomsAttributes->addAttribute("temp", UNKNOWN2STRING(myReal->temp));
+    aomsAttributes->addAttribute("temp", x2String(myReal->temp));
 }
 
 void OMAnimatedTemperature_sensor::serializeRelations(AOMSRelations* aomsRelations) const {

@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 8.2 
-	Login		: s137910
+	Login		: jlta
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Default
-//!	Generated Date	: Mon, 18, Jun 2018  
+//!	Generated Date	: Tue, 19, Jun 2018  
 	File Path	: DefaultComponent\DefaultConfig\Default.h
 *********************************************************************/
 
@@ -42,10 +42,16 @@ class Fire_sensor;
 class HVAC_system;
 
 //## auto_generated
+class Humidity_sensor;
+
+//## auto_generated
 class Light_sensor;
 
 //## auto_generated
 class Lighting_system;
+
+//## auto_generated
+class Pressure_sensor;
 
 //## auto_generated
 class Security_system;

@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 8.2 
-	Login		: s137910
+	Login		: jlta
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Temperature_sensor
-//!	Generated Date	: Mon, 18, Jun 2018  
+//!	Generated Date	: Tue, 19, Jun 2018  
 	File Path	: DefaultComponent\DefaultConfig\Temperature_sensor.h
 *********************************************************************/
 
@@ -27,8 +27,6 @@
 #include <oxf\state.h>
 //## auto_generated
 #include <oxf\event.h>
-//## auto_generated
-#include <oxf\omcollec.h>
 //## link itsControl_system
 class Control_system;
 
@@ -55,7 +53,7 @@ public :
     ////    Additional operations    ////
     
     //## auto_generated
-    OMIterator<int> getTemp() const;
+    int getTemp() const;
     
     //## auto_generated
     void setTemp(int p_temp);
@@ -85,7 +83,7 @@ protected :
     
     ////    Attributes    ////
     
-    OMCollection<int> temp;		//## attribute temp
+    int temp;		//## attribute temp
     
     ////    Relations and components    ////
     

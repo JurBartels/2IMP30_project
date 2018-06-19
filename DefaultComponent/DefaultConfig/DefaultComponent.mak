@@ -55,7 +55,7 @@ LINK_FLAGS=$(LinkDebug)  /NOLOGO    $(SUBSYSTEM) /MACHINE:x86
 
 FLAGSFILE=
 RULESFILE=
-OMROOT="C:\Users\s137910\IBM\Rational\Rhapsody\8.2\Share"
+OMROOT="C:\ProgramData\IBM\Rational\Rhapsody\8.2\Share"
 RHPROOT="C:\Program Files (x86)\IBM\Rational\Rhapsody\8.2"
 
 CPP_EXT=.cpp
@@ -97,6 +97,8 @@ OBJS= \
   Fire_sensor.obj \
   Security_system.obj \
   HVAC_system.obj \
+  Pressure_sensor.obj \
+  Humidity_sensor.obj \
   Default.obj
 
 
@@ -258,7 +260,19 @@ HVAC_system.obj : HVAC_system.cpp HVAC_system.h    Default.h Control_system.h
 
 
 
-Default.obj : Default.cpp Default.h    sensing_system.h Control_system.h Authorization_security_system.h Communication_system.h Actuation_system.h Air_Q_control.h Temperature_sensor.h Lighting_system.h Light_sensor.h Air_Q_sensor.h Fire_sensor.h Security_system.h HVAC_system.h 
+Pressure_sensor.obj : Pressure_sensor.cpp Pressure_sensor.h    Default.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Pressure_sensor.obj" "Pressure_sensor.cpp" 
+
+
+
+Humidity_sensor.obj : Humidity_sensor.cpp Humidity_sensor.h    Default.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Humidity_sensor.obj" "Humidity_sensor.cpp" 
+
+
+
+Default.obj : Default.cpp Default.h    sensing_system.h Control_system.h Authorization_security_system.h Communication_system.h Actuation_system.h Air_Q_control.h Temperature_sensor.h Lighting_system.h Light_sensor.h Air_Q_sensor.h Fire_sensor.h Security_system.h HVAC_system.h Pressure_sensor.h Humidity_sensor.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Default.obj" "Default.cpp" 
 
@@ -304,6 +318,8 @@ clean:
 	if exist Fire_sensor.obj erase Fire_sensor.obj
 	if exist Security_system.obj erase Security_system.obj
 	if exist HVAC_system.obj erase HVAC_system.obj
+	if exist Pressure_sensor.obj erase Pressure_sensor.obj
+	if exist Humidity_sensor.obj erase Humidity_sensor.obj
 	if exist Default.obj erase Default.obj
 	if exist $(TARGET_MAIN)$(OBJ_EXT) erase $(TARGET_MAIN)$(OBJ_EXT)
 	if exist *$(OBJ_EXT) erase *$(OBJ_EXT)
