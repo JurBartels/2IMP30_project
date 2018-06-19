@@ -17,6 +17,14 @@
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
 #include <aom\aom.h>
+class DefaultComponent {
+    ////    Constructors and destructors    ////
+    
+public :
+
+    DefaultComponent();
+};
+
 #endif
 /*********************************************************************
 	File Path	: DefaultComponent\DefaultConfig\MainDefaultComponent.h

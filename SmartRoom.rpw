@@ -5,7 +5,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 	}
 	- isLoadOnDemand = 0;
 	- myViewsWithID = { IRPYRawContainer 
-		- size = 2;
+		- size = 1;
 		- value = 
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -18,8 +18,8 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- m_ptMaxPositionY = -31;
 				- m_nLeft = 130;
 				- m_nTop = 130;
-				- m_nRight = 1045;
-				- m_nBottom = 702;
+				- m_nRight = 861;
+				- m_nBottom = 392;
 			}
 			- _wasOpenedOnCloseProject = 1;
 			- _theDiagram = { IHandle 
@@ -30,40 +30,11 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- _name = "Smartroom panel";
 				- _id = GUID 2c2c1882-b427-4c1d-849a-15c82f0ca063;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 840 417 ;
+			- _UpLeft = 0 70 ;
+			- _DownRight = 840 441 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
 			- m_bIsActiveView = 1;
-		}
-		{ CGEMdiDiagramParams 
-			- _placement = { CCommon_WINDOWPLACEMENT 
-				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
-				- m_ptMinPositionX = -1;
-				- m_ptMinPositionY = -1;
-				- m_ptMaxPositionX = -8;
-				- m_ptMaxPositionY = -31;
-				- m_nLeft = 156;
-				- m_nTop = 156;
-				- m_nRight = 1285;
-				- m_nBottom = 732;
-			}
-			- _wasOpenedOnCloseProject = 1;
-			- _theDiagram = { IHandle 
-				- _m2Class = "IStateChartDiagram";
-				- _filename = "Default.sbs";
-				- _subsystem = "Default";
-				- _class = "Temperature_sensor";
-				- _name = "StatechartDiagram";
-				- _id = GUID 3139ba3a-dab1-4abd-bb0d-b1543ba81b7f;
-			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 1092 516 ;
-			- _instanceName = "";
-			- m_nDiagramIndex = 1;
-			- m_bIsActiveView = 0;
 		}
 	}
 	- _fullName = "C:\\Users\\jlta\\Documents\\GitHub\\2IMP30_project\\SmartRoom";

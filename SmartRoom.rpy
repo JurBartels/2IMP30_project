@@ -4,7 +4,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 	- _myState = 8192;
 	- _properties = { IPropertyContainer 
 		- Subjects = { IRPYRawContainer 
-			- size = 1;
+			- size = 3;
 			- value = 
 			{ IPropertySubject 
 				- _Name = "CPP_CG";
@@ -26,6 +26,102 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					}
 				}
 			}
+			{ IPropertySubject 
+				- _Name = "Format";
+				- Metaclasses = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertyMetaclass 
+						- _Name = "Aggregation";
+						- Properties = { IRPYRawContainer 
+							- size = 4;
+							- value = 
+							{ IProperty 
+								- _Name = "Font.Font";
+								- _Value = "Tahoma";
+								- _Type = String;
+							}
+							{ IProperty 
+								- _Name = "Font.Size";
+								- _Value = "8";
+								- _Type = Int;
+							}
+							{ IProperty 
+								- _Name = "Line.LineColor";
+								- _Value = "128,128,128";
+								- _Type = Color;
+							}
+							{ IProperty 
+								- _Name = "Line.LineWidth";
+								- _Value = "1";
+								- _Type = Int;
+							}
+						}
+					}
+				}
+			}
+			{ IPropertySubject 
+				- _Name = "ObjectModelGe";
+				- Metaclasses = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertyMetaclass 
+						- _Name = "Aggregation";
+						- Properties = { IRPYRawContainer 
+							- size = 9;
+							- value = 
+							{ IProperty 
+								- _Name = "ShowName";
+								- _Value = "Name";
+								- _Type = Enum;
+								- _ExtraTypeInfo = "Name,Label,None";
+							}
+							{ IProperty 
+								- _Name = "ShowSourceMultiplicity";
+								- _Value = "False";
+								- _Type = Bool;
+							}
+							{ IProperty 
+								- _Name = "ShowSourceQualifier";
+								- _Value = "False";
+								- _Type = Bool;
+							}
+							{ IProperty 
+								- _Name = "ShowSourceRole";
+								- _Value = "False";
+								- _Type = Bool;
+							}
+							{ IProperty 
+								- _Name = "ShowStereotype";
+								- _Value = "None";
+								- _Type = Enum;
+								- _ExtraTypeInfo = "Label,Bitmap,None";
+							}
+							{ IProperty 
+								- _Name = "ShowTargetMultiplicity";
+								- _Value = "False";
+								- _Type = Bool;
+							}
+							{ IProperty 
+								- _Name = "ShowTargetQualifier";
+								- _Value = "False";
+								- _Type = Bool;
+							}
+							{ IProperty 
+								- _Name = "ShowTargetRole";
+								- _Value = "False";
+								- _Type = Bool;
+							}
+							{ IProperty 
+								- _Name = "line_style";
+								- _Value = "rectilinear_arrows";
+								- _Type = Enum;
+								- _ExtraTypeInfo = "straight_arrows,rectilinear_arrows,spline_arrows,rounded_rectilinear_arrows";
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 	- _name = "SmartRoom";
@@ -41,7 +137,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- _id = GUID 052b8171-a32b-4f45-a829-5585f79f9deb;
 		}
 	}
-	- _modifiedTimeWeak = 6.19.2018::10:8:57;
+	- _modifiedTimeWeak = 6.19.2018::14:11:25;
 	- _lastID = 8;
 	- _UserColors = { IRPYRawContainer 
 		- size = 16;
@@ -116,8 +212,35 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					{ IPropertySubject 
 						- _Name = "Format";
 						- Metaclasses = { IRPYRawContainer 
-							- size = 1;
+							- size = 2;
 							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Aggregation";
+								- Properties = { IRPYRawContainer 
+									- size = 4;
+									- value = 
+									{ IProperty 
+										- _Name = "Font.Font";
+										- _Value = "Tahoma";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "Font.Size";
+										- _Value = "8";
+										- _Type = Int;
+									}
+									{ IProperty 
+										- _Name = "Line.LineColor";
+										- _Value = "128,128,128";
+										- _Type = Color;
+									}
+									{ IProperty 
+										- _Name = "Line.LineWidth";
+										- _Value = "1";
+										- _Type = Int;
+									}
+								}
+							}
 							{ IPropertyMetaclass 
 								- _Name = "DiagramFrame";
 								- Properties = { IRPYRawContainer 
@@ -183,7 +306,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				}
 			}
 			- _modifiedTimeWeak = 1.2.1990::0:0:0;
-			- _lastModifiedTime = "6.10.2018::17:55:45";
+			- _lastModifiedTime = "6.19.2018::14:11:25";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 32fde0c3-0823-4890-9310-62edf2cfcf04;
 				- m_type = 0;
@@ -358,8 +481,35 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					{ IPropertySubject 
 						- _Name = "Format";
 						- Metaclasses = { IRPYRawContainer 
-							- size = 7;
+							- size = 8;
 							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Aggregation";
+								- Properties = { IRPYRawContainer 
+									- size = 4;
+									- value = 
+									{ IProperty 
+										- _Name = "Font.Font";
+										- _Value = "Tahoma";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "Font.Size";
+										- _Value = "8";
+										- _Type = Int;
+									}
+									{ IProperty 
+										- _Name = "Line.LineColor";
+										- _Value = "128,128,128";
+										- _Type = Color;
+									}
+									{ IProperty 
+										- _Name = "Line.LineWidth";
+										- _Value = "1";
+										- _Type = Int;
+									}
+								}
+							}
 							{ IPropertyMetaclass 
 								- _Name = "Depends";
 								- Properties = { IRPYRawContainer 
@@ -622,7 +772,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				}
 			}
 			- _modifiedTimeWeak = 1.2.1990::0:0:0;
-			- _lastModifiedTime = "6.11.2018::10:23:49";
+			- _lastModifiedTime = "6.19.2018::14:11:25";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 3e78bcdc-5926-492b-8388-9d1ca324e566;
 				- m_type = 0;
