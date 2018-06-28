@@ -177,7 +177,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- reqID = "SMR00";
 		}
 	}
-	- _modifiedTimeWeak = 6.28.2018::11:38:53;
+	- _modifiedTimeWeak = 6.28.2018::12:3:38;
 	- _lastID = 86;
 	- Declaratives = { IRPYRawContainer 
 		- size = 1;
@@ -1787,7 +1787,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			}
 		}
 	}
-	- weakCGTime = 6.28.2018::11:38:53;
+	- weakCGTime = 6.28.2018::12:3:38;
 	- strongCGTime = 6.19.2018::21:9:26;
 	- _defaultComposite = GUID a1bd937f-d49a-4655-9fb2-6fd4e1d15cbf;
 	- _eventsBaseID = 18601;
@@ -5612,7 +5612,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
 				}
 			}
-			- _modifiedTimeWeak = 6.28.2018::11:56:19;
+			- _modifiedTimeWeak = 6.28.2018::12:8:51;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "Sensing_System.omd";
@@ -5621,7 +5621,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- _name = "BDD";
 				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
 			}
-			- _lastID = 15;
+			- _lastID = 24;
 			- Declaratives = { IRPYRawContainer 
 				- size = 5;
 				- value = 
@@ -5726,16 +5726,16 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- _kind = Language;
 				}
 			}
-			- weakCGTime = 6.28.2018::11:56:19;
+			- weakCGTime = 6.28.2018::12:8:51;
 			- strongCGTime = 6.19.2018::18:28:34;
 			- Operations = { IRPYRawContainer 
-				- size = 1;
+				- size = 5;
 				- value = 
 				{ IPrimitiveOperation 
 					- _id = GUID ace317ea-544d-4462-8f59-e964c4747dab;
 					- _myState = 8192;
 					- _name = "initiate_socket";
-					- _modifiedTimeWeak = 6.28.2018::11:56:19;
+					- _modifiedTimeWeak = 6.28.2018::12:2:29;
 					- _virtual = 1;
 					- Args = { IRPYRawContainer 
 						- size = 0;
@@ -5759,8 +5759,8 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 #define WIN32_LEAN_AND_MEAN
 #endif
  
-i_result=WSAStartup(MAKEWORD(2,2), &ws);
-if (i_result != 0) {
+iResult1=WSAStartup(MAKEWORD(2,2), &ws);
+if (iResult1 != 0) {
    error(\"WSAStartup failed: %d\\n\");
    std::cout<<i_result;
     return 1;
@@ -5773,9 +5773,245 @@ temp_addr.sin_addr.s_addr=inet_addr(server_name);
 return 0;";
 					}
 				}
+				{ IPrimitiveOperation 
+					- _id = GUID a08f0807-c778-4dcf-ac38-cd805b61019b;
+					- _myState = 8192;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,virtual,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "setup_socket";
+					- _modifiedTimeWeak = 6.28.2018::12:2:39;
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "int";
+						- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "/* Resolve the server address and port  
+  struct getaddrinfo* result;
+ 
+iResult = getaddrinfo(NULL, port, &address, &result);
+if ( iResult != 0 ) {
+    error(\"getaddrinfo failed with error: %d\\n\");
+     WSACleanup();
+    return 1;
+}     */
+ 
+// Create a SOCKET for connecting to server
+ 
+listenSocket1 = socket(AF_INET,SOCK_STREAM ,IPPROTO_TCP);
+if (listenSocket1 == INVALID_SOCKET) {
+    error(\"socket failed with error: %ld\\n\");
+    //freeaddrinfo(result);
+    WSACleanup();
+    return 1;
+}  
+ 
+ 
+ 
+// Setup the TCP listening socket
+iResult1 = bind( listenSocket1,(SOCKADDR*)&addressForUltraSonic, sizeof(addressForUltraSonic));  
+ 
+if (iResult1 == SOCKET_ERROR) {
+    error(\"bind failed with error: %d\\n\");
+  //  freeaddrinfo(result);
+    closesocket(listenSocket1);
+    WSACleanup();
+    return 1;
+}
+std::cout<<\"Socket bind Complete\"<<std::endl;  
+ 
+//freeaddrinfo(result);
+ 
+ 
+   
+     
+return 0;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID a109aac3-cb96-4c79-9438-ff4421fdbe14;
+					- _myState = 8192;
+					- _name = "acceptClient";
+					- _modifiedTimeWeak = 6.28.2018::12:2:15;
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "                   
+ iResult1 = listen(listenSocket1, SOMAXCONN);
+if (iResult1 == SOCKET_ERROR) {
+    error(\"listen failed with error: %d\\n\");
+    closesocket(listenSocket1);
+    WSACleanup();
+    return 1;
+    }
+ 
+ 
+connectSocket1 = accept(listenSocket1, NULL, NULL);
+if (connectSocket1 == INVALID_SOCKET) {
+    error(\"accept failed with error: %d\\n\");
+    closesocket(connectSocket1);
+    WSACleanup();
+    return 1;
+}  
+std::cout<<\"\\n connected to client\"<<std::endl;
+                           
+// No longer need server socket
+ 
+closesocket(listenSocket1);
+ 
+return 0;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID dcf86515-46cb-46ec-a65c-0b829e5f039e;
+					- _myState = 8192;
+					- _name = "recieve";
+					- _modifiedTimeWeak = 6.28.2018::12:5:34;
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = " 
+ 
+    // temp=sizeof (addressForUltraSonic);
+       irecvResult = recv(connectSocket1, recvbuf1, recvbuflen1, 0);  
+     
+       //printf(\"%%s = '%s'\\n\", recvbuf1);
+      // std::cout<<\"\\n on port 52052: \"<<recvbuf1;  
+      //std::memcpy(recvbuf1,'\\0',strlen(recvbuf1)+1) ;
+       
+       
+         
+                    //   std::strcpy(recvbuf1,'\\0');
+      temp=recvbuf1;
+       
+        if (irecvResult == SOCKET_ERROR) {
+        printf(\"sendto failed with error: %d\\n\", WSAGetLastError());
+        closesocket(connectSocket1);
+        WSACleanup();
+        return 1;  
+        }
+   
+       // itsStringprocessor->processStr(recvbuf);
+   
+         else if (irecvResult == 0)  
+       
+        printf(\"\\nConnection closing...\\n\");  
+       
+       
+return 0;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 739dda6c-0b04-433e-83fe-81341f5af28c;
+					- _myState = 8192;
+					- _name = "closeSocket";
+					- _modifiedTimeWeak = 6.28.2018::12:8:51;
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "// shutdown the connection since we're done
+iResult1 = shutdown(connectSocket1, SD_SEND);
+if (iResult1 == SOCKET_ERROR) {
+    error(\"shutdown failed with error: %d\\n\");
+    closesocket(connectSocket1);
+    WSACleanup();
+    return 1;
+}
+ 
+// cleanup
+closesocket(connectSocket1);
+WSACleanup();
+return 0;";
+					}
+				}
 			}
 			- Attrs = { IRPYRawContainer 
-				- size = 6;
+				- size = 11;
 				- value = 
 				{ IAttribute 
 					- _id = GUID d1700d35-a4a6-4f84-97b2-fe9d19b862ec;
@@ -5847,7 +6083,7 @@ return 0;";
 				{ IAttribute 
 					- _id = GUID 49741fcf-46ba-493e-802a-a5872c5de588;
 					- _myState = 8192;
-					- _name = "i_result";
+					- _name = "iResult1";
 					- Stereotypes = { IRPYRawContainer 
 						- size = 1;
 						- value = 
@@ -5860,7 +6096,7 @@ return 0;";
 							- _id = GUID 04164f8c-01a3-4eab-b4a4-c37aae7a46e9;
 						}
 					}
-					- _modifiedTimeWeak = 6.28.2018::11:52:43;
+					- _modifiedTimeWeak = 6.28.2018::12:2:19;
 					- _typeOf = { IHandle 
 						- _m2Class = "IType";
 						- _filename = "PredefinedTypesC++.sbs";
@@ -5966,6 +6202,172 @@ return 0;";
 					- _typeOf = { IHandle 
 						- _m2Class = "IType";
 						- _id = GUID bc8de49f-dc2b-45ed-bd26-36067b12f6b3;
+					}
+					- _isOrdered = 0;
+					- _protection = iPublic;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 663427e8-fa28-4463-9d68-d6b416db32af;
+					- _myState = 8192;
+					- _name = "listenSocket1";
+					- Stereotypes = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IStereotype";
+							- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+							- _subsystem = "SysML::Blocks";
+							- _class = "";
+							- _name = "ValueProperty";
+							- _id = GUID 04164f8c-01a3-4eab-b4a4-c37aae7a46e9;
+						}
+					}
+					- _modifiedTimeWeak = 6.28.2018::11:59:42;
+					- ValueSpecifications = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ ILiteralSpecification 
+							- _id = GUID 64a2a3c3-8f58-46be-b296-c343dce1e183;
+							- _modifiedTimeWeak = 6.28.2018::11:59:42;
+							- _value = "INVALID_SOCKET";
+						}
+					}
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _id = GUID d76729e1-10d0-4d0d-a595-dd96dea1b120;
+					}
+					- _isOrdered = 0;
+					- _protection = iPublic;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 7b05f56a-37e6-4cad-8f82-e4c19b9128f6;
+					- _myState = 8192;
+					- _name = "irecvResult";
+					- Stereotypes = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IStereotype";
+							- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+							- _subsystem = "SysML::Blocks";
+							- _class = "";
+							- _name = "ValueProperty";
+							- _id = GUID 04164f8c-01a3-4eab-b4a4-c37aae7a46e9;
+						}
+					}
+					- _modifiedTimeWeak = 6.28.2018::12:4:24;
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "int";
+						- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+					}
+					- _isOrdered = 0;
+					- _protection = iPublic;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID da1e74ee-83e7-485c-b101-8849769682cd;
+					- _myState = 8192;
+					- _name = "connectSocket1";
+					- Stereotypes = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IStereotype";
+							- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+							- _subsystem = "SysML::Blocks";
+							- _class = "";
+							- _name = "ValueProperty";
+							- _id = GUID 04164f8c-01a3-4eab-b4a4-c37aae7a46e9;
+						}
+					}
+					- _modifiedTimeWeak = 6.28.2018::12:4:58;
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _id = GUID d76729e1-10d0-4d0d-a595-dd96dea1b120;
+					}
+					- _isOrdered = 0;
+					- _protection = iPublic;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID d609756a-667f-43bf-b160-4b93b56000db;
+					- _myState = 8192;
+					- _name = "recvbuf1";
+					- Stereotypes = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IStereotype";
+							- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+							- _subsystem = "SysML::Blocks";
+							- _class = "";
+							- _name = "ValueProperty";
+							- _id = GUID 04164f8c-01a3-4eab-b4a4-c37aae7a46e9;
+						}
+					}
+					- _modifiedTimeWeak = 6.28.2018::12:6:0;
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "char";
+						- _id = GUID 717461b3-278b-47c8-9526-c62c7be55b14;
+					}
+					- _multiplicity = "DEFAULT_BUFLEN";
+					- _isOrdered = 0;
+					- _protection = iPublic;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 03e6b94d-aa83-459f-b147-4ceae4cde96e;
+					- _myState = 8192;
+					- _name = "recvbuflen1";
+					- Stereotypes = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IHandle 
+							- _m2Class = "IStereotype";
+							- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+							- _subsystem = "SysML::Blocks";
+							- _class = "";
+							- _name = "ValueProperty";
+							- _id = GUID 04164f8c-01a3-4eab-b4a4-c37aae7a46e9;
+						}
+					}
+					- _modifiedTimeWeak = 6.28.2018::12:6:32;
+					- ValueSpecifications = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ ILiteralSpecification 
+							- _id = GUID b45740e2-c328-476f-8baa-7abbf6a74cc3;
+							- _modifiedTimeWeak = 6.28.2018::12:6:32;
+							- _value = "DEFAULT_BUFLEN";
+						}
+					}
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "int";
+						- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
 					}
 					- _isOrdered = 0;
 					- _protection = iPublic;
