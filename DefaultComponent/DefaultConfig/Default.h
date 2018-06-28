@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Default
-//!	Generated Date	: Tue, 19, Jun 2018  
+//!	Generated Date	: Thu, 28, Jun 2018  
 	File Path	: DefaultComponent\DefaultConfig\Default.h
 *********************************************************************/
 
@@ -17,6 +17,18 @@
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
 #include <aom\aom.h>
+//## auto_generated
+#include "winsock2.h"
+//## auto_generated
+#include "stdio.h"
+//## auto_generated
+#include "windows.h"
+//## auto_generated
+#include "iostream"
+//## auto_generated
+#include "Ws2tcpip.h"
+//## auto_generated
+#include "string.h"
 //## auto_generated
 #include <oxf\event.h>
 //## classInstance AirConditioningPart
@@ -84,10 +96,16 @@ class Ventilation;
 #define ventilationOff_Default_id 18609
 
 #define itsPre_Default_id 18610
+
+#define closeAll_Default_id 18611
 //#]
 
 //## package Default
 
+
+//#[ type DEFAULT_BUFLEN
+#define DEFAULT_BUFLEN 1024
+//#]
 
 //## classInstance AirConditioningPart
 extern AirConditioning AirConditioningPart;
@@ -425,6 +443,35 @@ public :
 //#[ ignore
 class OMAnimateditsPre : virtual public AOMEvent {
     DECLARE_META_EVENT(itsPre)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event closeAll()
+class closeAll : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedcloseAll;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    closeAll();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedcloseAll : virtual public AOMEvent {
+    DECLARE_META_EVENT(closeAll)
 };
 //#]
 #endif // _OMINSTRUMENT

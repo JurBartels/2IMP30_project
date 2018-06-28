@@ -177,8 +177,8 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- reqID = "SMR00";
 		}
 	}
-	- _modifiedTimeWeak = 6.28.2018::12:3:38;
-	- _lastID = 86;
+	- _modifiedTimeWeak = 6.28.2018::12:40:11;
+	- _lastID = 93;
 	- Declaratives = { IRPYRawContainer 
 		- size = 1;
 		- value = 
@@ -1787,7 +1787,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			}
 		}
 	}
-	- weakCGTime = 6.28.2018::12:3:38;
+	- weakCGTime = 6.28.2018::12:40:11;
 	- strongCGTime = 6.19.2018::21:9:26;
 	- _defaultComposite = GUID a1bd937f-d49a-4655-9fb2-6fd4e1d15cbf;
 	- _eventsBaseID = 18601;
@@ -2797,7 +2797,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- _durationTime = "100";
 						}
 					}
-					- _version = 6.20.2018::0:1:15;
+					- _version = 6.28.2018::14:40:6;
 					- _baseVersion = 1.2.1990::0:0:0;
 					- _diagram = GUID ccbe300d-0704-414b-adb1-861ebf5bd9d7;
 					- Views = { IRPYRawContainer 
@@ -5612,7 +5612,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
 				}
 			}
-			- _modifiedTimeWeak = 6.28.2018::12:8:51;
+			- _modifiedTimeWeak = 6.28.2018::12:40:6;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "Sensing_System.omd";
@@ -5621,121 +5621,43 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- _name = "BDD";
 				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
 			}
-			- _lastID = 24;
-			- Declaratives = { IRPYRawContainer 
-				- size = 5;
-				- value = 
-				{ IType 
-					- _id = GUID 31868f23-8a76-4808-a1ee-7584cee30e7f;
-					- _myState = 8192;
-					- _name = "sockaddr_in";
-					- Stereotypes = { IRPYRawContainer 
-						- size = 1;
-						- value = 
-						{ IHandle 
-							- _m2Class = "IStereotype";
-							- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
-							- _subsystem = "SysML::Blocks";
-							- _class = "";
-							- _name = "DataType";
-							- _id = GUID 39bf6572-6f61-4cbf-b651-64241e075688;
-						}
-					}
-					- _modifiedTimeWeak = 6.28.2018::11:49:51;
-					- _declaration = "";
-					- _kind = Language;
-				}
-				{ IType 
-					- _id = GUID d76729e1-10d0-4d0d-a595-dd96dea1b120;
-					- _myState = 8192;
-					- _name = "socket";
-					- Stereotypes = { IRPYRawContainer 
-						- size = 1;
-						- value = 
-						{ IHandle 
-							- _m2Class = "IStereotype";
-							- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
-							- _subsystem = "SysML::Blocks";
-							- _class = "";
-							- _name = "DataType";
-							- _id = GUID 39bf6572-6f61-4cbf-b651-64241e075688;
-						}
-					}
-					- _modifiedTimeWeak = 6.28.2018::11:50:6;
-					- _declaration = "";
-					- _kind = Language;
-				}
-				{ IType 
-					- _id = GUID 72e34109-ebc4-49a5-87b9-d9fbbf9ef264;
-					- _myState = 8192;
-					- _name = "uint32_t";
-					- Stereotypes = { IRPYRawContainer 
-						- size = 1;
-						- value = 
-						{ IHandle 
-							- _m2Class = "IStereotype";
-							- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
-							- _subsystem = "SysML::Blocks";
-							- _class = "";
-							- _name = "DataType";
-							- _id = GUID 39bf6572-6f61-4cbf-b651-64241e075688;
-						}
-					}
-					- _modifiedTimeWeak = 6.28.2018::11:50:31;
-					- _declaration = "";
-					- _kind = Language;
-				}
-				{ IType 
-					- _id = GUID bc8de49f-dc2b-45ed-bd26-36067b12f6b3;
-					- _myState = 8192;
-					- _name = "wsadata";
-					- Stereotypes = { IRPYRawContainer 
-						- size = 1;
-						- value = 
-						{ IHandle 
-							- _m2Class = "IStereotype";
-							- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
-							- _subsystem = "SysML::Blocks";
-							- _class = "";
-							- _name = "DataType";
-							- _id = GUID 39bf6572-6f61-4cbf-b651-64241e075688;
-						}
-					}
-					- _modifiedTimeWeak = 6.28.2018::11:50:50;
-					- _declaration = "";
-					- _kind = Language;
-				}
-				{ IType 
-					- _id = GUID cae79d5a-e500-4fbe-bb5a-576d5d5191ab;
-					- _myState = 8192;
-					- _name = "DEFAULT_BUFLEN";
-					- Stereotypes = { IRPYRawContainer 
-						- size = 1;
-						- value = 
-						{ IHandle 
-							- _m2Class = "IStereotype";
-							- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
-							- _subsystem = "SysML::Blocks";
-							- _class = "";
-							- _name = "DataType";
-							- _id = GUID 39bf6572-6f61-4cbf-b651-64241e075688;
-						}
-					}
-					- _modifiedTimeWeak = 6.28.2018::11:51:28;
-					- _declaration = "#define BUFLEN 1024";
-					- _kind = Language;
-				}
-			}
-			- weakCGTime = 6.28.2018::12:8:51;
+			- _lastID = 25;
+			- weakCGTime = 6.28.2018::12:40:6;
 			- strongCGTime = 6.19.2018::18:28:34;
 			- Operations = { IRPYRawContainer 
-				- size = 5;
+				- size = 6;
 				- value = 
 				{ IPrimitiveOperation 
 					- _id = GUID ace317ea-544d-4462-8f59-e964c4747dab;
 					- _myState = 8192;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,virtual,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- _name = "initiate_socket";
-					- _modifiedTimeWeak = 6.28.2018::12:2:29;
+					- _modifiedTimeWeak = 6.28.2018::12:14:33;
 					- _virtual = 1;
 					- Args = { IRPYRawContainer 
 						- size = 0;
@@ -5745,8 +5667,8 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _filename = "PredefinedTypesC++.sbs";
 						- _subsystem = "PredefinedTypesCpp";
 						- _class = "";
-						- _name = "void";
-						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+						- _name = "int";
+						- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
 					}
 					- _abstract = 0;
 					- _final = 0;
@@ -5803,7 +5725,7 @@ return 0;";
 						}
 					}
 					- _name = "setup_socket";
-					- _modifiedTimeWeak = 6.28.2018::12:2:39;
+					- _modifiedTimeWeak = 6.28.2018::12:24:54;
 					- _virtual = 1;
 					- Args = { IRPYRawContainer 
 						- size = 0;
@@ -5846,7 +5768,7 @@ if (listenSocket1 == INVALID_SOCKET) {
  
  
 // Setup the TCP listening socket
-iResult1 = bind( listenSocket1,(SOCKADDR*)&addressForUltraSonic, sizeof(addressForUltraSonic));  
+iResult1 = bind( listenSocket1,(SOCKADDR*)&temp_addr, sizeof(temp_addr));  
  
 if (iResult1 == SOCKET_ERROR) {
     error(\"bind failed with error: %d\\n\");
@@ -5868,8 +5790,34 @@ return 0;";
 				{ IPrimitiveOperation 
 					- _id = GUID a109aac3-cb96-4c79-9438-ff4421fdbe14;
 					- _myState = 8192;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,virtual,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- _name = "acceptClient";
-					- _modifiedTimeWeak = 6.28.2018::12:2:15;
+					- _modifiedTimeWeak = 6.28.2018::12:15:37;
 					- _virtual = 1;
 					- Args = { IRPYRawContainer 
 						- size = 0;
@@ -5879,8 +5827,8 @@ return 0;";
 						- _filename = "PredefinedTypesC++.sbs";
 						- _subsystem = "PredefinedTypesCpp";
 						- _class = "";
-						- _name = "void";
-						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+						- _name = "int";
+						- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
 					}
 					- _abstract = 0;
 					- _final = 0;
@@ -5918,8 +5866,34 @@ return 0;";
 				{ IPrimitiveOperation 
 					- _id = GUID dcf86515-46cb-46ec-a65c-0b829e5f039e;
 					- _myState = 8192;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,virtual,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- _name = "recieve";
-					- _modifiedTimeWeak = 6.28.2018::12:5:34;
+					- _modifiedTimeWeak = 6.28.2018::12:19:20;
 					- _virtual = 1;
 					- Args = { IRPYRawContainer 
 						- size = 0;
@@ -5929,8 +5903,8 @@ return 0;";
 						- _filename = "PredefinedTypesC++.sbs";
 						- _subsystem = "PredefinedTypesCpp";
 						- _class = "";
-						- _name = "void";
-						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+						- _name = "int";
+						- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
 					}
 					- _abstract = 0;
 					- _final = 0;
@@ -5973,8 +5947,34 @@ return 0;";
 				{ IPrimitiveOperation 
 					- _id = GUID 739dda6c-0b04-433e-83fe-81341f5af28c;
 					- _myState = 8192;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,virtual,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- _name = "closeSocket";
-					- _modifiedTimeWeak = 6.28.2018::12:8:51;
+					- _modifiedTimeWeak = 6.28.2018::12:19:10;
 					- _virtual = 1;
 					- Args = { IRPYRawContainer 
 						- size = 0;
@@ -5984,8 +5984,8 @@ return 0;";
 						- _filename = "PredefinedTypesC++.sbs";
 						- _subsystem = "PredefinedTypesCpp";
 						- _class = "";
-						- _name = "void";
-						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+						- _name = "int";
+						- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
 					}
 					- _abstract = 0;
 					- _final = 0;
@@ -6007,6 +6007,19 @@ if (iResult1 == SOCKET_ERROR) {
 closesocket(connectSocket1);
 WSACleanup();
 return 0;";
+					}
+				}
+				{ IReception 
+					- _id = GUID 76b3ddcf-5ba5-4eb9-a990-6683050821cb;
+					- _myState = 8192;
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _event = { IHandle 
+						- _m2Class = "IEvent";
+						- _id = GUID c255cc72-85af-482b-b365-bb8737275e67;
 					}
 				}
 			}
@@ -6069,10 +6082,10 @@ return 0;";
 							- _id = GUID 04164f8c-01a3-4eab-b4a4-c37aae7a46e9;
 						}
 					}
-					- _modifiedTimeWeak = 6.28.2018::11:52:23;
+					- _modifiedTimeWeak = 6.28.2018::12:39:32;
 					- _typeOf = { IHandle 
 						- _m2Class = "IType";
-						- _id = GUID 31868f23-8a76-4808-a1ee-7584cee30e7f;
+						- _id = GUID e9a0f152-ec91-4849-b5ac-bc83e37421b4;
 					}
 					- _isOrdered = 0;
 					- _protection = iPublic;
@@ -6198,10 +6211,10 @@ return 0;";
 							- _id = GUID 04164f8c-01a3-4eab-b4a4-c37aae7a46e9;
 						}
 					}
-					- _modifiedTimeWeak = 6.28.2018::11:54:38;
+					- _modifiedTimeWeak = 6.28.2018::12:39:13;
 					- _typeOf = { IHandle 
 						- _m2Class = "IType";
-						- _id = GUID bc8de49f-dc2b-45ed-bd26-36067b12f6b3;
+						- _id = GUID 0c395628-1db3-4a2f-b9b0-b2a876d6084b;
 					}
 					- _isOrdered = 0;
 					- _protection = iPublic;
@@ -6225,7 +6238,7 @@ return 0;";
 							- _id = GUID 04164f8c-01a3-4eab-b4a4-c37aae7a46e9;
 						}
 					}
-					- _modifiedTimeWeak = 6.28.2018::11:59:42;
+					- _modifiedTimeWeak = 6.28.2018::12:37:24;
 					- ValueSpecifications = { IRPYRawContainer 
 						- size = 1;
 						- value = 
@@ -6237,7 +6250,7 @@ return 0;";
 					}
 					- _typeOf = { IHandle 
 						- _m2Class = "IType";
-						- _id = GUID d76729e1-10d0-4d0d-a595-dd96dea1b120;
+						- _id = GUID dd69edbe-5f9c-4824-819a-2e70df8add31;
 					}
 					- _isOrdered = 0;
 					- _protection = iPublic;
@@ -6279,6 +6292,31 @@ return 0;";
 				{ IAttribute 
 					- _id = GUID da1e74ee-83e7-485c-b101-8849769682cd;
 					- _myState = 8192;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Attribute";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "AccessorGenerate";
+												- _Value = "True";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 					- _name = "connectSocket1";
 					- Stereotypes = { IRPYRawContainer 
 						- size = 1;
@@ -6292,10 +6330,10 @@ return 0;";
 							- _id = GUID 04164f8c-01a3-4eab-b4a4-c37aae7a46e9;
 						}
 					}
-					- _modifiedTimeWeak = 6.28.2018::12:4:58;
+					- _modifiedTimeWeak = 6.28.2018::12:37:17;
 					- _typeOf = { IHandle 
 						- _m2Class = "IType";
-						- _id = GUID d76729e1-10d0-4d0d-a595-dd96dea1b120;
+						- _id = GUID dd69edbe-5f9c-4824-819a-2e70df8add31;
 					}
 					- _isOrdered = 0;
 					- _protection = iPublic;
@@ -6377,8 +6415,2280 @@ return 0;";
 				}
 			}
 			- _multiplicity = "";
+			- StateCharts = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IActivityGraph 
+					- _id = GUID 05936578-2e9f-4ede-af87-098663b0a733;
+					- _myState = 10240;
+					- _name = "activity_24";
+					- _modifiedTimeWeak = 6.28.2018::12:24:54;
+					- _lastID = 18;
+					- weakCGTime = 6.28.2018::12:24:54;
+					- strongCGTime = 6.28.2018::12:11:15;
+					- _multiplicity = "";
+					- _itsStateChart = { IHandle 
+						- _m2Class = "";
+					}
+					- _classModifier = Unspecified;
+					- _defNumber = 13;
+					- Transitions = { IRPYRawContainer 
+						- size = 9;
+						- value = 
+						{ IDefaultDrvdTrans 
+							- _id = GUID 89202104-21c1-452e-ad8e-5c6081803e00;
+							- _myState = 2048;
+							- _name = "defaulttransition_1";
+							- _modifiedTimeWeak = 6.28.2018::12:20:4;
+							- _itsLabel = { ILabel 
+								- _id = GUID c0a8d130-2462-457a-982c-7e86b92ee240;
+								- _modifiedTimeWeak = 1.2.1990::0:0:0;
+								- _itsTrigger = NULL;
+								- _itsGuard = NULL;
+								- _itsAction = NULL;
+							}
+							- _itsTarget = GUID 590d0567-8af7-48a8-afbf-53d3c65be8f2;
+							- _staticReaction = 0;
+							- _itsSource = ;
+							- _ofState = GUID 182ef6bd-fe0d-4197-83ab-4743b595b3c1;
+						}
+						{ ITransition 
+							- _id = GUID eab80953-e422-4da7-9e9e-b7791a9d7449;
+							- _myState = 2048;
+							- _name = "controlflow_3";
+							- Stereotypes = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IHandle 
+									- _m2Class = "IStereotype";
+									- _filename = "PredefinedTypes.sbs";
+									- _subsystem = "PredefinedTypes";
+									- _class = "";
+									- _name = "ControlFlow";
+									- _id = GUID 51c3acf0-07f1-4786-825e-c01378393cfc;
+								}
+							}
+							- _modifiedTimeWeak = 6.28.2018::12:20:7;
+							- _itsLabel = { ILabel 
+								- _id = GUID 254e7bb3-cdd9-47cd-867c-487bd4ada67e;
+								- _modifiedTimeWeak = 1.2.1990::0:0:0;
+								- _itsTrigger = NULL;
+								- _itsGuard = NULL;
+								- _itsAction = NULL;
+							}
+							- _itsTarget = GUID 9b1cb9d1-1423-41f2-9602-82d786eeab4a;
+							- _staticReaction = 0;
+							- _itsSource = GUID 590d0567-8af7-48a8-afbf-53d3c65be8f2;
+						}
+						{ ITransition 
+							- _id = GUID 43392730-bc73-4122-bb23-0e59efea19c8;
+							- _myState = 2048;
+							- _name = "controlflow_5";
+							- Stereotypes = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IHandle 
+									- _m2Class = "IStereotype";
+									- _filename = "PredefinedTypes.sbs";
+									- _subsystem = "PredefinedTypes";
+									- _class = "";
+									- _name = "ControlFlow";
+									- _id = GUID 51c3acf0-07f1-4786-825e-c01378393cfc;
+								}
+							}
+							- _modifiedTimeWeak = 6.28.2018::12:19:41;
+							- _itsLabel = { ILabel 
+								- _id = GUID 30691daf-0e7d-42db-9362-f3b5060bda36;
+								- _modifiedTimeWeak = 1.2.1990::0:0:0;
+								- _itsTrigger = NULL;
+								- _itsGuard = NULL;
+								- _itsAction = NULL;
+							}
+							- _itsTarget = GUID 933c244b-57ea-45ce-b09b-99a7bb8f61df;
+							- _staticReaction = 0;
+							- _itsSource = GUID 9b1cb9d1-1423-41f2-9602-82d786eeab4a;
+						}
+						{ ITransition 
+							- _id = GUID deb7ca72-c822-4b9b-823f-61a2d90f2fd0;
+							- _myState = 2048;
+							- _name = "controlflow_7";
+							- Stereotypes = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IHandle 
+									- _m2Class = "IStereotype";
+									- _filename = "PredefinedTypes.sbs";
+									- _subsystem = "PredefinedTypes";
+									- _class = "";
+									- _name = "ControlFlow";
+									- _id = GUID 51c3acf0-07f1-4786-825e-c01378393cfc;
+								}
+							}
+							- _modifiedTimeWeak = 6.28.2018::12:20:11;
+							- _itsLabel = { ILabel 
+								- _id = GUID 3f7916f0-0178-4bd5-95a7-a55d6d36bd2a;
+								- _modifiedTimeWeak = 1.2.1990::0:0:0;
+								- _itsTrigger = NULL;
+								- _itsGuard = NULL;
+								- _itsAction = NULL;
+							}
+							- _itsTarget = GUID b6bbe59f-3219-4297-a54d-bd97bae30bca;
+							- _staticReaction = 0;
+							- _itsSource = GUID 933c244b-57ea-45ce-b09b-99a7bb8f61df;
+						}
+						{ ITransition 
+							- _id = GUID 710017bb-11ee-4935-b1f3-d6701eae91ef;
+							- _myState = 2048;
+							- _name = "controlflow_9";
+							- Stereotypes = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IHandle 
+									- _m2Class = "IStereotype";
+									- _filename = "PredefinedTypes.sbs";
+									- _subsystem = "PredefinedTypes";
+									- _class = "";
+									- _name = "ControlFlow";
+									- _id = GUID 51c3acf0-07f1-4786-825e-c01378393cfc;
+								}
+							}
+							- _modifiedTimeWeak = 6.28.2018::12:20:20;
+							- _itsLabel = { ILabel 
+								- _id = GUID 2bff64da-b626-4888-9301-ba665dfc5dc3;
+								- _modifiedTimeWeak = 1.2.1990::0:0:0;
+								- _itsTrigger = NULL;
+								- _itsGuard = NULL;
+								- _itsAction = NULL;
+							}
+							- _itsTarget = GUID 963a0be2-bb31-4117-9740-8c68fd55e119;
+							- _staticReaction = 0;
+							- _itsSource = GUID b6bbe59f-3219-4297-a54d-bd97bae30bca;
+						}
+						{ ITransition 
+							- _id = GUID 96b60c23-863f-4a36-b186-61bf5ccdcd51;
+							- _myState = 2048;
+							- _name = "controlflow_11";
+							- Stereotypes = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IHandle 
+									- _m2Class = "IStereotype";
+									- _filename = "PredefinedTypes.sbs";
+									- _subsystem = "PredefinedTypes";
+									- _class = "";
+									- _name = "ControlFlow";
+									- _id = GUID 51c3acf0-07f1-4786-825e-c01378393cfc;
+								}
+							}
+							- _modifiedTimeWeak = 6.28.2018::12:20:27;
+							- _itsLabel = { ILabel 
+								- _id = GUID 832840a4-3e3c-4d85-a40f-f35f6d262df0;
+								- _modifiedTimeWeak = 1.2.1990::0:0:0;
+								- _itsTrigger = NULL;
+								- _itsGuard = NULL;
+								- _itsAction = NULL;
+							}
+							- _itsTarget = GUID 76137bc6-cf69-45d5-b766-e9f7ac7ac200;
+							- _staticReaction = 0;
+							- _itsSource = GUID e714e899-1dff-4cff-85ba-e17750aec554;
+						}
+						{ ITransition 
+							- _id = GUID 6ff3270c-e72f-46ff-9dc6-9db44e562cf3;
+							- _myState = 2048;
+							- _name = "controlflow_13";
+							- Stereotypes = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IHandle 
+									- _m2Class = "IStereotype";
+									- _filename = "PredefinedTypes.sbs";
+									- _subsystem = "PredefinedTypes";
+									- _class = "";
+									- _name = "ControlFlow";
+									- _id = GUID 51c3acf0-07f1-4786-825e-c01378393cfc;
+								}
+							}
+							- _modifiedTimeWeak = 6.28.2018::12:20:18;
+							- _itsLabel = { ILabel 
+								- _id = GUID cc7d0d88-b09e-4168-ad9c-a22f407f7a23;
+								- _modifiedTimeWeak = 1.2.1990::0:0:0;
+								- _itsTrigger = NULL;
+								- _itsGuard = NULL;
+								- _itsAction = NULL;
+							}
+							- _itsTarget = GUID 2e5646f0-f917-4901-97c2-5bcbb8589b17;
+							- _staticReaction = 0;
+							- _itsSource = GUID b6bbe59f-3219-4297-a54d-bd97bae30bca;
+						}
+						{ ITransition 
+							- _id = GUID 7030eed7-aba1-4529-bb42-486737543659;
+							- _myState = 2048;
+							- _name = "controlflow_15";
+							- Stereotypes = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IHandle 
+									- _m2Class = "IStereotype";
+									- _filename = "PredefinedTypes.sbs";
+									- _subsystem = "PredefinedTypes";
+									- _class = "";
+									- _name = "ControlFlow";
+									- _id = GUID 51c3acf0-07f1-4786-825e-c01378393cfc;
+								}
+							}
+							- _modifiedTimeWeak = 6.28.2018::12:20:15;
+							- _itsLabel = { ILabel 
+								- _id = GUID 342b714e-dbd6-4c06-9a90-10788ca5d30b;
+								- _modifiedTimeWeak = 1.2.1990::0:0:0;
+								- _itsTrigger = NULL;
+								- _itsGuard = NULL;
+								- _itsAction = NULL;
+							}
+							- _itsTarget = GUID b6bbe59f-3219-4297-a54d-bd97bae30bca;
+							- _staticReaction = 0;
+							- _itsSource = GUID 2e5646f0-f917-4901-97c2-5bcbb8589b17;
+						}
+						{ ITransition 
+							- _id = GUID 2d0d64b5-6a06-4708-89bb-23d544e9696c;
+							- _myState = 2048;
+							- _name = "controlflow_17";
+							- Stereotypes = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IHandle 
+									- _m2Class = "IStereotype";
+									- _filename = "PredefinedTypes.sbs";
+									- _subsystem = "PredefinedTypes";
+									- _class = "";
+									- _name = "ControlFlow";
+									- _id = GUID 51c3acf0-07f1-4786-825e-c01378393cfc;
+								}
+							}
+							- _modifiedTimeWeak = 6.28.2018::12:20:24;
+							- _itsLabel = { ILabel 
+								- _id = GUID 8e5ca8b7-e8fe-458a-9c1e-998eea0e63f0;
+								- _modifiedTimeWeak = 1.2.1990::0:0:0;
+								- _itsTrigger = NULL;
+								- _itsGuard = NULL;
+								- _itsAction = NULL;
+							}
+							- _itsTarget = GUID e714e899-1dff-4cff-85ba-e17750aec554;
+							- _staticReaction = 0;
+							- _itsSource = GUID 963a0be2-bb31-4117-9740-8c68fd55e119;
+						}
+					}
+					- Connectors = { IRPYRawContainer 
+						- size = 5;
+						- value = 
+						{ IPin 
+							- _id = GUID c8183df1-0e16-41b9-a132-39d1d8ff244c;
+							- _name = "RETURN";
+							- _modifiedTimeWeak = 6.28.2018::12:14:0;
+							- _parent = GUID 9b1cb9d1-1423-41f2-9602-82d786eeab4a;
+							- _connectorType = OutPin;
+							- m_type = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypesC++.sbs";
+								- _subsystem = "PredefinedTypesCpp";
+								- _class = "";
+								- _name = "int";
+								- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+							}
+							- m_isParameterPin = 0;
+							- m_corePin = { IHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IPin 
+							- _id = GUID 13c38eeb-f7a6-4db9-aafd-f44baa6329b8;
+							- _name = "RETURN";
+							- _modifiedTimeWeak = 6.28.2018::12:19:37;
+							- _parent = GUID 933c244b-57ea-45ce-b09b-99a7bb8f61df;
+							- _connectorType = OutPin;
+							- m_type = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypesC++.sbs";
+								- _subsystem = "PredefinedTypesCpp";
+								- _class = "";
+								- _name = "int";
+								- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+							}
+							- m_isParameterPin = 0;
+							- m_corePin = { IHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IPin 
+							- _id = GUID 3f7c1312-2453-4e97-8021-1c28b27f8050;
+							- _name = "RETURN";
+							- _modifiedTimeWeak = 6.28.2018::12:19:56;
+							- _parent = GUID 590d0567-8af7-48a8-afbf-53d3c65be8f2;
+							- _connectorType = OutPin;
+							- m_type = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypesC++.sbs";
+								- _subsystem = "PredefinedTypesCpp";
+								- _class = "";
+								- _name = "int";
+								- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+							}
+							- m_isParameterPin = 0;
+							- m_corePin = { IHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IPin 
+							- _id = GUID 0a8cc88a-e9f2-4ae6-8854-993a56d808a8;
+							- _name = "RETURN";
+							- _modifiedTimeWeak = 6.28.2018::12:19:59;
+							- _parent = GUID b6bbe59f-3219-4297-a54d-bd97bae30bca;
+							- _connectorType = OutPin;
+							- m_type = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypesC++.sbs";
+								- _subsystem = "PredefinedTypesCpp";
+								- _class = "";
+								- _name = "int";
+								- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+							}
+							- m_isParameterPin = 0;
+							- m_corePin = { IHandle 
+								- _m2Class = "";
+							}
+						}
+						{ IPin 
+							- _id = GUID d181d295-4576-4585-91ae-d0e122aff903;
+							- _name = "RETURN";
+							- _modifiedTimeWeak = 6.28.2018::12:20:2;
+							- _parent = GUID e714e899-1dff-4cff-85ba-e17750aec554;
+							- _connectorType = OutPin;
+							- m_type = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypesC++.sbs";
+								- _subsystem = "PredefinedTypesCpp";
+								- _class = "";
+								- _name = "int";
+								- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+							}
+							- m_isParameterPin = 0;
+							- m_corePin = { IHandle 
+								- _m2Class = "";
+							}
+						}
+					}
+					- States = { IRPYRawContainer 
+						- size = 9;
+						- value = 
+						{ IState 
+							- _id = GUID 182ef6bd-fe0d-4197-83ab-4743b595b3c1;
+							- _modifiedTimeWeak = 6.28.2018::12:20:2;
+							- _parent = ;
+							- _defaultTrans = GUID 89202104-21c1-452e-ad8e-5c6081803e00;
+						}
+						{ ICallOperation 
+							- _id = GUID 9b1cb9d1-1423-41f2-9602-82d786eeab4a;
+							- _myState = 2048;
+							- _name = "calloperation_2";
+							- _modifiedTimeWeak = 6.28.2018::12:15:10;
+							- _parent = GUID 182ef6bd-fe0d-4197-83ab-4743b595b3c1;
+							- _stateType = CallOperation;
+							- _defaultTrans = ;
+							- _operation = { IHandle 
+								- _m2Class = "IPrimitiveOperation";
+								- _id = GUID a08f0807-c778-4dcf-ac38-cd805b61019b;
+							}
+						}
+						{ IState 
+							- _id = GUID 76137bc6-cf69-45d5-b766-e9f7ac7ac200;
+							- _myState = 2048;
+							- _name = "flowfinal_6";
+							- _modifiedTimeWeak = 6.28.2018::12:16:22;
+							- _parent = GUID 182ef6bd-fe0d-4197-83ab-4743b595b3c1;
+							- _stateType = FlowFinal;
+							- _defaultTrans = ;
+						}
+						{ ITimeEvent 
+							- _id = GUID 2e5646f0-f917-4901-97c2-5bcbb8589b17;
+							- _myState = 2048;
+							- _name = "accepttimeevent_7";
+							- _modifiedTimeWeak = 6.28.2018::12:17:4;
+							- _parent = GUID 182ef6bd-fe0d-4197-83ab-4743b595b3c1;
+							- _stateType = TimeEvent;
+							- _defaultTrans = ;
+							- _durationTime = "500";
+						}
+						{ IAcceptEventAction 
+							- _id = GUID 963a0be2-bb31-4117-9740-8c68fd55e119;
+							- _myState = 2048;
+							- _name = "accepteventaction_8";
+							- _modifiedTimeWeak = 6.28.2018::12:18:36;
+							- _parent = GUID 182ef6bd-fe0d-4197-83ab-4743b595b3c1;
+							- _stateType = AcceptEventAction;
+							- _defaultTrans = ;
+							- _event = { IHandle 
+								- _m2Class = "IEvent";
+								- _id = GUID c255cc72-85af-482b-b365-bb8737275e67;
+							}
+						}
+						{ ICallOperation 
+							- _id = GUID 933c244b-57ea-45ce-b09b-99a7bb8f61df;
+							- _myState = 2048;
+							- _name = "calloperation_9";
+							- _modifiedTimeWeak = 6.28.2018::12:19:44;
+							- _parent = GUID 182ef6bd-fe0d-4197-83ab-4743b595b3c1;
+							- _stateType = CallOperation;
+							- _defaultTrans = ;
+							- _operation = { IHandle 
+								- _m2Class = "IPrimitiveOperation";
+								- _id = GUID a08f0807-c778-4dcf-ac38-cd805b61019b;
+							}
+						}
+						{ ICallOperation 
+							- _id = GUID 590d0567-8af7-48a8-afbf-53d3c65be8f2;
+							- _myState = 2048;
+							- _name = "calloperation_10";
+							- _modifiedTimeWeak = 6.28.2018::12:20:7;
+							- _parent = GUID 182ef6bd-fe0d-4197-83ab-4743b595b3c1;
+							- _stateType = CallOperation;
+							- _defaultTrans = ;
+							- _operation = { IHandle 
+								- _m2Class = "IPrimitiveOperation";
+								- _id = GUID ace317ea-544d-4462-8f59-e964c4747dab;
+							}
+						}
+						{ ICallOperation 
+							- _id = GUID b6bbe59f-3219-4297-a54d-bd97bae30bca;
+							- _myState = 2048;
+							- _name = "calloperation_11";
+							- _modifiedTimeWeak = 6.28.2018::12:20:20;
+							- _parent = GUID 182ef6bd-fe0d-4197-83ab-4743b595b3c1;
+							- _stateType = CallOperation;
+							- _defaultTrans = ;
+							- _operation = { IHandle 
+								- _m2Class = "IPrimitiveOperation";
+								- _id = GUID dcf86515-46cb-46ec-a65c-0b829e5f039e;
+							}
+						}
+						{ ICallOperation 
+							- _id = GUID e714e899-1dff-4cff-85ba-e17750aec554;
+							- _myState = 2048;
+							- _name = "calloperation_12";
+							- _modifiedTimeWeak = 6.28.2018::12:20:27;
+							- _parent = GUID 182ef6bd-fe0d-4197-83ab-4743b595b3c1;
+							- _stateType = CallOperation;
+							- _defaultTrans = ;
+							- _operation = { IHandle 
+								- _m2Class = "IPrimitiveOperation";
+								- _id = GUID 739dda6c-0b04-433e-83fe-81341f5af28c;
+							}
+						}
+					}
+					- _version = 6.28.2018::14:40:6;
+					- _baseVersion = 1.1.1970::1:0:0;
+					- _diagram = GUID 8b99808a-8c5b-4e93-ad86-d0caf2c6756d;
+					- Views = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IActivityDiagram 
+							- _id = GUID 8b99808a-8c5b-4e93-ad86-d0caf2c6756d;
+							- _myState = 10240;
+							- _properties = { IPropertyContainer 
+								- Subjects = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertySubject 
+										- _Name = "Format";
+										- Metaclasses = { IRPYRawContainer 
+											- size = 9;
+											- value = 
+											{ IPropertyMetaclass 
+												- _Name = "AcceptEventAction";
+												- Properties = { IRPYRawContainer 
+													- size = 5;
+													- value = 
+													{ IProperty 
+														- _Name = "DefaultSize";
+														- _Value = "0,0,100,40";
+														- _Type = String;
+													}
+													{ IProperty 
+														- _Name = "Fill.FillColor";
+														- _Value = "225,235,245";
+														- _Type = Color;
+													}
+													{ IProperty 
+														- _Name = "Line.LineColor";
+														- _Value = "109,163,217";
+														- _Type = Color;
+													}
+													{ IProperty 
+														- _Name = "Line.LineStyle";
+														- _Value = "0";
+														- _Type = Int;
+													}
+													{ IProperty 
+														- _Name = "Line.LineWidth";
+														- _Value = "1";
+														- _Type = Int;
+													}
+												}
+											}
+											{ IPropertyMetaclass 
+												- _Name = "AcceptTimeEvent";
+												- Properties = { IRPYRawContainer 
+													- size = 6;
+													- value = 
+													{ IProperty 
+														- _Name = "DefaultSize";
+														- _Value = "0,0,30,40";
+														- _Type = String;
+													}
+													{ IProperty 
+														- _Name = "Fill.FillColor";
+														- _Value = "225,235,245";
+														- _Type = Color;
+													}
+													{ IProperty 
+														- _Name = "Font.Font";
+														- _Value = "Tahoma";
+														- _Type = String;
+													}
+													{ IProperty 
+														- _Name = "Font.Size";
+														- _Value = "8";
+														- _Type = Int;
+													}
+													{ IProperty 
+														- _Name = "Line.LineColor";
+														- _Value = "109,163,217";
+														- _Type = Color;
+													}
+													{ IProperty 
+														- _Name = "Line.LineWidth";
+														- _Value = "1";
+														- _Type = Int;
+													}
+												}
+											}
+											{ IPropertyMetaclass 
+												- _Name = "Action";
+												- Properties = { IRPYRawContainer 
+													- size = 4;
+													- value = 
+													{ IProperty 
+														- _Name = "DefaultSize";
+														- _Value = "0,0,95,60";
+														- _Type = String;
+													}
+													{ IProperty 
+														- _Name = "Fill.FillColor";
+														- _Value = "225,235,245";
+														- _Type = Color;
+													}
+													{ IProperty 
+														- _Name = "Line.LineColor";
+														- _Value = "109,163,217";
+														- _Type = Color;
+													}
+													{ IProperty 
+														- _Name = "Line.LineWidth";
+														- _Value = "1";
+														- _Type = Int;
+													}
+												}
+											}
+											{ IPropertyMetaclass 
+												- _Name = "ActionPin";
+												- Properties = { IRPYRawContainer 
+													- size = 5;
+													- value = 
+													{ IProperty 
+														- _Name = "DefaultSize";
+														- _Value = "0,0,12,12";
+														- _Type = String;
+													}
+													{ IProperty 
+														- _Name = "Fill.FillColor@Child.PinInArrow";
+														- _Value = "$<asParent>LineColor";
+														- _Type = Color;
+													}
+													{ IProperty 
+														- _Name = "Fill.FillColor@Child.PinOutArrow";
+														- _Value = "$<asParent>LineColor";
+														- _Type = Color;
+													}
+													{ IProperty 
+														- _Name = "Line.LineColor";
+														- _Value = "109,163,217";
+														- _Type = Color;
+													}
+													{ IProperty 
+														- _Name = "Line.LineWidth";
+														- _Value = "1";
+														- _Type = Int;
+													}
+												}
+											}
+											{ IPropertyMetaclass 
+												- _Name = "CallOperation";
+												- Properties = { IRPYRawContainer 
+													- size = 5;
+													- value = 
+													{ IProperty 
+														- _Name = "Fill.FillColor";
+														- _Value = "225,235,245";
+														- _Type = Color;
+													}
+													{ IProperty 
+														- _Name = "Font.Font";
+														- _Value = "Tahoma";
+														- _Type = String;
+													}
+													{ IProperty 
+														- _Name = "Font.Size";
+														- _Value = "8";
+														- _Type = Int;
+													}
+													{ IProperty 
+														- _Name = "Line.LineColor";
+														- _Value = "109,163,217";
+														- _Type = Color;
+													}
+													{ IProperty 
+														- _Name = "Line.LineWidth";
+														- _Value = "1";
+														- _Type = Int;
+													}
+												}
+											}
+											{ IPropertyMetaclass 
+												- _Name = "DanglingTransition";
+												- Properties = { IRPYRawContainer 
+													- size = 1;
+													- value = 
+													{ IProperty 
+														- _Name = "Line.LineWidth";
+														- _Value = "2";
+														- _Type = Int;
+													}
+												}
+											}
+											{ IPropertyMetaclass 
+												- _Name = "DiagramFrame";
+												- Properties = { IRPYRawContainer 
+													- size = 8;
+													- value = 
+													{ IProperty 
+														- _Name = "DefaultSize";
+														- _Value = "20,20,590,500";
+														- _Type = String;
+													}
+													{ IProperty 
+														- _Name = "Fill.FillColor";
+														- _Value = "247,247,247";
+														- _Type = Color;
+													}
+													{ IProperty 
+														- _Name = "Fill.Transparent_Fill";
+														- _Value = "0";
+														- _Type = Int;
+													}
+													{ IProperty 
+														- _Name = "Font.Font";
+														- _Value = "Tahoma";
+														- _Type = String;
+													}
+													{ IProperty 
+														- _Name = "Font.Size";
+														- _Value = "8";
+														- _Type = Int;
+													}
+													{ IProperty 
+														- _Name = "Font.Weight@Child.NameCompartment@Name";
+														- _Value = "700";
+														- _Type = Int;
+													}
+													{ IProperty 
+														- _Name = "Line.LineColor";
+														- _Value = "194,192,192";
+														- _Type = Color;
+													}
+													{ IProperty 
+														- _Name = "Line.LineWidth";
+														- _Value = "1";
+														- _Type = Int;
+													}
+												}
+											}
+											{ IPropertyMetaclass 
+												- _Name = "FlowFinal";
+												- Properties = { IRPYRawContainer 
+													- size = 5;
+													- value = 
+													{ IProperty 
+														- _Name = "DefaultSize";
+														- _Value = "0,0,25,23";
+														- _Type = String;
+													}
+													{ IProperty 
+														- _Name = "Fill.FillColor";
+														- _Value = "225,235,245";
+														- _Type = Color;
+													}
+													{ IProperty 
+														- _Name = "Fill.FillColor@Child.InnerSymbol";
+														- _Value = "$<asParent>LineColor";
+														- _Type = Color;
+													}
+													{ IProperty 
+														- _Name = "Line.LineColor";
+														- _Value = "109,163,217";
+														- _Type = Color;
+													}
+													{ IProperty 
+														- _Name = "Line.LineWidth";
+														- _Value = "1";
+														- _Type = Int;
+													}
+												}
+											}
+											{ IPropertyMetaclass 
+												- _Name = "State";
+												- Properties = { IRPYRawContainer 
+													- size = 7;
+													- value = 
+													{ IProperty 
+														- _Name = "DefaultSize";
+														- _Value = "0,0,96,60";
+														- _Type = String;
+													}
+													{ IProperty 
+														- _Name = "Fill.FillColor";
+														- _Value = "255,255,255";
+														- _Type = Color;
+													}
+													{ IProperty 
+														- _Name = "Font.Font";
+														- _Value = "Tahoma";
+														- _Type = String;
+													}
+													{ IProperty 
+														- _Name = "Font.Size";
+														- _Value = "8";
+														- _Type = Int;
+													}
+													{ IProperty 
+														- _Name = "Line.LineColor";
+														- _Value = "109,163,217";
+														- _Type = Color;
+													}
+													{ IProperty 
+														- _Name = "Line.LineStyle";
+														- _Value = "0";
+														- _Type = Int;
+													}
+													{ IProperty 
+														- _Name = "Line.LineWidth";
+														- _Value = "1";
+														- _Type = Int;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+							- _name = "activitydiagram_0";
+							- _modifiedTimeWeak = 6.28.2018::12:24:54;
+							- _lastModifiedTime = "6.28.2018::12:24:54";
+							- _graphicChart = { CGIStateChart 
+								- _id = GUID d2e6f14e-872f-4123-9d3a-e4864230cb76;
+								- m_type = 0;
+								- m_pModelObject = { IHandle 
+									- _m2Class = "IActivityGraph";
+									- _id = GUID 05936578-2e9f-4ede-af87-098663b0a733;
+								}
+								- m_pParent = ;
+								- m_name = { CGIText 
+									- m_str = "";
+									- m_style = "Arial" 10 0 0 0 1 ;
+									- m_color = { IColor 
+										- m_fgColor = 0;
+										- m_bgColor = 0;
+										- m_bgFlag = 0;
+									}
+									- m_position = 1 0 0  ;
+									- m_nIdent = 0;
+									- m_bImplicitSetRectPoints = 0;
+									- m_nOrientationCtrlPt = 8;
+								}
+								- m_drawBehavior = 4096;
+								- m_bIsPreferencesInitialized = 1;
+								- elementList = 24;
+								{ CGIState 
+									- _id = GUID 80f2e893-02b7-4528-9e1f-cf00b9ff8668;
+									- m_type = 5;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "IState";
+										- _id = GUID 182ef6bd-fe0d-4197-83ab-4743b595b3c1;
+									}
+									- m_pParent = ;
+									- m_name = { CGIText 
+										- m_str = "ROOT";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 5;
+									}
+									- m_drawBehavior = 0;
+									- m_bIsPreferencesInitialized = 0;
+									- m_AdditionalLabel = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 1;
+									}
+									- m_polygon = 4 0 0  0 0  0 0  0 0  ;
+									- m_nNameFormat = 0;
+									- m_nIsNameFormat = 0;
+									- Compartments = { IRPYRawContainer 
+										- size = 0;
+									}
+									- nAndLineCount = 0;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_pDefaultComponentRelation = ;
+								}
+								{ CGIDiagramFrame 
+									- _id = GUID ee9a12e7-3f1b-4e07-821f-3f3389d44378;
+									- m_type = 203;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "";
+									}
+									- m_pParent = GUID 80f2e893-02b7-4528-9e1f-cf00b9ff8668;
+									- m_name = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 8;
+									}
+									- m_drawBehavior = 4096;
+									- m_transform = 3.03241 0 0 3.63636 20 20 ;
+									- m_bIsPreferencesInitialized = 1;
+									- m_AdditionalLabel = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 1;
+									}
+									- m_polygon = 4 0 0  0 132  216 132  216 0  ;
+									- m_nNameFormat = 0;
+									- m_nIsNameFormat = 0;
+									- Compartments = { IRPYRawContainer 
+										- size = 0;
+									}
+								}
+								{ CGITrans 
+									- _id = GUID 246ca161-4cb9-4706-9ea4-30b559bbc4df;
+									- _properties = { IPropertyContainer 
+										- Subjects = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IPropertySubject 
+												- _Name = "General";
+												- Metaclasses = { IRPYRawContainer 
+													- size = 1;
+													- value = 
+													{ IPropertyMetaclass 
+														- _Name = "Graphics";
+														- Properties = { IRPYRawContainer 
+															- size = 1;
+															- value = 
+															{ IProperty 
+																- _Name = "ShowLabels";
+																- _Value = "False";
+																- _Type = Bool;
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+									- m_type = 29;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "ITransition";
+										- _id = GUID 89202104-21c1-452e-ad8e-5c6081803e00;
+									}
+									- m_pParent = ;
+									- m_name = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 8;
+									}
+									- m_drawBehavior = 4096;
+									- m_bIsPreferencesInitialized = 1;
+									- m_pSource = GUID 80f2e893-02b7-4528-9e1f-cf00b9ff8668;
+									- m_sourceType = 'F';
+									- m_pTarget = GUID b1582b06-0598-4947-b221-229961d93f4a;
+									- m_targetType = 'T';
+									- m_direction = ' ';
+									- m_rpn = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 0;
+									}
+									- m_anglePoint1 = 0 0 ;
+									- m_anglePoint2 = 0 0 ;
+									- m_line_style = 1;
+									- m_SourcePort = 94 88 ;
+									- m_TargetPort = 0 707 ;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_bShowName = 1;
+								}
+								{ CGITrans 
+									- _id = GUID 36d006ae-88d2-4c05-847d-b66f5e598a04;
+									- _properties = { IPropertyContainer 
+										- Subjects = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IPropertySubject 
+												- _Name = "General";
+												- Metaclasses = { IRPYRawContainer 
+													- size = 1;
+													- value = 
+													{ IPropertyMetaclass 
+														- _Name = "Graphics";
+														- Properties = { IRPYRawContainer 
+															- size = 1;
+															- value = 
+															{ IProperty 
+																- _Name = "ShowLabels";
+																- _Value = "False";
+																- _Type = Bool;
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+									- m_type = 28;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "ITransition";
+										- _id = GUID eab80953-e422-4da7-9e9e-b7791a9d7449;
+									}
+									- m_pParent = ;
+									- m_name = { CGIText 
+										- m_str = "ControlFlow";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 8;
+									}
+									- m_drawBehavior = 4096;
+									- m_bIsPreferencesInitialized = 1;
+									- m_pSource = GUID b1582b06-0598-4947-b221-229961d93f4a;
+									- m_sourceType = 'F';
+									- m_pTarget = GUID 290640fa-a2e2-4885-a01d-60b3846d2345;
+									- m_targetType = 'T';
+									- m_direction = ' ';
+									- m_rpn = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 0;
+									}
+									- m_anglePoint1 = 0 0 ;
+									- m_anglePoint2 = 0 0 ;
+									- m_line_style = 1;
+									- m_SourcePort = 1095 690 ;
+									- m_TargetPort = 0 548 ;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_bShowName = 1;
+								}
+								{ CGIActionState 
+									- _id = GUID 290640fa-a2e2-4885-a01d-60b3846d2345;
+									- m_type = 208;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "ICallOperation";
+										- _id = GUID 9b1cb9d1-1423-41f2-9602-82d786eeab4a;
+									}
+									- m_pParent = GUID 80f2e893-02b7-4528-9e1f-cf00b9ff8668;
+									- m_name = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 5;
+									}
+									- m_drawBehavior = 4104;
+									- m_transform = 0.0876712 0 0 0.0566038 320 132.962 ;
+									- m_bIsPreferencesInitialized = 1;
+									- m_AdditionalLabel = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 1;
+									}
+									- m_polygon = 4 0 -17  0 1043  1095 1043  1095 -17  ;
+									- m_nNameFormat = 0;
+									- m_nIsNameFormat = 0;
+									- Compartments = { IRPYRawContainer 
+										- size = 0;
+									}
+									- nAndLineCount = 0;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_pDefaultComponentRelation = ;
+									- m_NameDisplayMode = ShowOperation;
+									- m_ActDescLablDiaplayMode = DisplayAction;
+								}
+								{ CGIConnector 
+									- _id = GUID ffc511d1-b5eb-4549-86fe-c3e2931eb09e;
+									- m_type = 194;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "IPin";
+										- _id = GUID c8183df1-0e16-41b9-a132-39d1d8ff244c;
+									}
+									- m_pParent = GUID 290640fa-a2e2-4885-a01d-60b3846d2345;
+									- m_name = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nVerticalSpacing = -19;
+										- m_nOrientationCtrlPt = 0;
+									}
+									- m_drawBehavior = 4096;
+									- m_transform = 1.1739e-005 17.6667 -11.4063 1.8182e-005 1231.87 407 ;
+									- m_bIsPreferencesInitialized = 0;
+									- m_AdditionalLabel = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nVerticalSpacing = -29;
+										- m_nOrientationCtrlPt = 0;
+									}
+									- m_position = 4 0 0  0 12  12 12  12 0  ;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_SubType = 0;
+								}
+								{ CGITrans 
+									- _id = GUID c5d04a61-a6aa-4ccf-94a2-a3f92addb024;
+									- _properties = { IPropertyContainer 
+										- Subjects = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IPropertySubject 
+												- _Name = "General";
+												- Metaclasses = { IRPYRawContainer 
+													- size = 1;
+													- value = 
+													{ IPropertyMetaclass 
+														- _Name = "Graphics";
+														- Properties = { IRPYRawContainer 
+															- size = 1;
+															- value = 
+															{ IProperty 
+																- _Name = "ShowLabels";
+																- _Value = "False";
+																- _Type = Bool;
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+									- m_type = 28;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "ITransition";
+										- _id = GUID 43392730-bc73-4122-bb23-0e59efea19c8;
+									}
+									- m_pParent = ;
+									- m_name = { CGIText 
+										- m_str = "ControlFlow";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 8;
+									}
+									- m_drawBehavior = 4096;
+									- m_bIsPreferencesInitialized = 1;
+									- m_pSource = GUID 290640fa-a2e2-4885-a01d-60b3846d2345;
+									- m_sourceType = 'F';
+									- m_pTarget = GUID 74b7b1cd-816a-443b-ab8c-699d85e68607;
+									- m_targetType = 'T';
+									- m_direction = ' ';
+									- m_rpn = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 0;
+									}
+									- m_anglePoint1 = 0 0 ;
+									- m_anglePoint2 = 0 0 ;
+									- m_line_style = 1;
+									- m_SourcePort = 1095 778 ;
+									- m_TargetPort = 0 531 ;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_bShowName = 1;
+								}
+								{ CGITrans 
+									- _id = GUID e58b9c8c-fc35-4ae4-9835-975c5bbcba33;
+									- _properties = { IPropertyContainer 
+										- Subjects = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IPropertySubject 
+												- _Name = "General";
+												- Metaclasses = { IRPYRawContainer 
+													- size = 1;
+													- value = 
+													{ IPropertyMetaclass 
+														- _Name = "Graphics";
+														- Properties = { IRPYRawContainer 
+															- size = 1;
+															- value = 
+															{ IProperty 
+																- _Name = "ShowLabels";
+																- _Value = "False";
+																- _Type = Bool;
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+									- m_type = 28;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "ITransition";
+										- _id = GUID deb7ca72-c822-4b9b-823f-61a2d90f2fd0;
+									}
+									- m_pParent = ;
+									- m_name = { CGIText 
+										- m_str = "ControlFlow";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 8;
+									}
+									- m_drawBehavior = 4096;
+									- m_bIsPreferencesInitialized = 1;
+									- m_pSource = GUID 74b7b1cd-816a-443b-ab8c-699d85e68607;
+									- m_sourceType = 'F';
+									- m_pTarget = GUID 3e1c3b8c-c11d-4d7c-bbc3-04ef7755b912;
+									- m_targetType = 'T';
+									- m_direction = ' ';
+									- m_rpn = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 0;
+									}
+									- m_anglePoint1 = 0 0 ;
+									- m_anglePoint2 = 0 0 ;
+									- m_line_style = 1;
+									- m_SourcePort = 1004 1043 ;
+									- m_TargetPort = 719 -17 ;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_bShowName = 1;
+								}
+								{ CGITrans 
+									- _id = GUID 5dbf2e8e-36d0-4b05-a05e-55cd70bd478a;
+									- _properties = { IPropertyContainer 
+										- Subjects = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IPropertySubject 
+												- _Name = "General";
+												- Metaclasses = { IRPYRawContainer 
+													- size = 1;
+													- value = 
+													{ IPropertyMetaclass 
+														- _Name = "Graphics";
+														- Properties = { IRPYRawContainer 
+															- size = 1;
+															- value = 
+															{ IProperty 
+																- _Name = "ShowLabels";
+																- _Value = "False";
+																- _Type = Bool;
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+									- m_type = 28;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "ITransition";
+										- _id = GUID 710017bb-11ee-4935-b1f3-d6701eae91ef;
+									}
+									- m_pParent = ;
+									- m_name = { CGIText 
+										- m_str = "ControlFlow";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 8;
+									}
+									- m_drawBehavior = 4096;
+									- m_bIsPreferencesInitialized = 1;
+									- m_pSource = GUID 3e1c3b8c-c11d-4d7c-bbc3-04ef7755b912;
+									- m_sourceType = 'F';
+									- m_pTarget = GUID 775667b4-9ded-4c11-a1dd-596fd584a608;
+									- m_targetType = 'T';
+									- m_direction = ' ';
+									- m_rpn = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 0;
+									}
+									- m_anglePoint1 = 0 0 ;
+									- m_anglePoint2 = 0 0 ;
+									- m_line_style = 1;
+									- m_SourcePort = 0 531 ;
+									- m_TargetPort = 684 583 ;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_bShowName = 1;
+								}
+								{ CGITrans 
+									- _id = GUID 8bda72f0-3ed5-42a4-aba4-b151d00674c3;
+									- _properties = { IPropertyContainer 
+										- Subjects = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IPropertySubject 
+												- _Name = "General";
+												- Metaclasses = { IRPYRawContainer 
+													- size = 1;
+													- value = 
+													{ IPropertyMetaclass 
+														- _Name = "Graphics";
+														- Properties = { IRPYRawContainer 
+															- size = 1;
+															- value = 
+															{ IProperty 
+																- _Name = "ShowLabels";
+																- _Value = "False";
+																- _Type = Bool;
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+									- m_type = 28;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "ITransition";
+										- _id = GUID 96b60c23-863f-4a36-b186-61bf5ccdcd51;
+									}
+									- m_pParent = ;
+									- m_name = { CGIText 
+										- m_str = "ControlFlow";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 8;
+									}
+									- m_drawBehavior = 4096;
+									- m_bIsPreferencesInitialized = 1;
+									- m_pSource = GUID 6a5ab8cd-11d5-428b-a111-4838e4293920;
+									- m_sourceType = 'F';
+									- m_pTarget = GUID 9bcd3df9-0046-4280-8055-faa1bcfd9d62;
+									- m_targetType = 'T';
+									- m_direction = ' ';
+									- m_rpn = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 0;
+									}
+									- m_anglePoint1 = 0 0 ;
+									- m_anglePoint2 = 0 0 ;
+									- m_line_style = 1;
+									- m_SourcePort = 0 707 ;
+									- m_TargetPort = 13 12 ;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_bShowName = 1;
+								}
+								{ CGIState 
+									- _id = GUID 61962ab2-6bc2-49fa-acb2-04f79ff8b11e;
+									- m_type = 234;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "ITimeEvent";
+										- _id = GUID 2e5646f0-f917-4901-97c2-5bcbb8589b17;
+									}
+									- m_pParent = GUID 80f2e893-02b7-4528-9e1f-cf00b9ff8668;
+									- m_name = { CGIText 
+										- m_str = "accepttimeevent_7";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nVerticalSpacing = 20;
+										- m_nOrientationCtrlPt = 5;
+									}
+									- m_drawBehavior = 4096;
+									- m_transform = 1 0 0 0.888889 526 242 ;
+									- m_bIsPreferencesInitialized = 1;
+									- m_polygon = 4 0 0  0 45  30 45  30 0  ;
+									- m_nNameFormat = 0;
+									- m_nIsNameFormat = 0;
+									- Compartments = { IRPYRawContainer 
+										- size = 0;
+									}
+									- nAndLineCount = 0;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_pDefaultComponentRelation = ;
+								}
+								{ CGITrans 
+									- _id = GUID d6d8d8fa-9f92-4c60-b440-ad1a5b04b7da;
+									- _properties = { IPropertyContainer 
+										- Subjects = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IPropertySubject 
+												- _Name = "General";
+												- Metaclasses = { IRPYRawContainer 
+													- size = 1;
+													- value = 
+													{ IPropertyMetaclass 
+														- _Name = "Graphics";
+														- Properties = { IRPYRawContainer 
+															- size = 1;
+															- value = 
+															{ IProperty 
+																- _Name = "ShowLabels";
+																- _Value = "False";
+																- _Type = Bool;
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+									- m_type = 28;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "ITransition";
+										- _id = GUID 6ff3270c-e72f-46ff-9dc6-9db44e562cf3;
+									}
+									- m_pParent = ;
+									- m_name = { CGIText 
+										- m_str = "ControlFlow";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 8;
+									}
+									- m_drawBehavior = 4096;
+									- m_bIsPreferencesInitialized = 1;
+									- m_pSource = GUID 3e1c3b8c-c11d-4d7c-bbc3-04ef7755b912;
+									- m_sourceType = 'F';
+									- m_pTarget = GUID 61962ab2-6bc2-49fa-acb2-04f79ff8b11e;
+									- m_targetType = 'T';
+									- m_direction = ' ';
+									- m_rpn = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 0;
+									}
+									- m_anglePoint1 = 0 0 ;
+									- m_anglePoint2 = 0 0 ;
+									- m_line_style = 1;
+									- m_SourcePort = 342 -17 ;
+									- m_TargetPort = 13 45 ;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_bShowName = 1;
+								}
+								{ CGITrans 
+									- _id = GUID b5e081d3-309f-4fe2-b73d-ca67fe7f6fae;
+									- _properties = { IPropertyContainer 
+										- Subjects = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IPropertySubject 
+												- _Name = "General";
+												- Metaclasses = { IRPYRawContainer 
+													- size = 1;
+													- value = 
+													{ IPropertyMetaclass 
+														- _Name = "Graphics";
+														- Properties = { IRPYRawContainer 
+															- size = 1;
+															- value = 
+															{ IProperty 
+																- _Name = "ShowLabels";
+																- _Value = "False";
+																- _Type = Bool;
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+									- m_type = 28;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "ITransition";
+										- _id = GUID 7030eed7-aba1-4529-bb42-486737543659;
+									}
+									- m_pParent = ;
+									- m_name = { CGIText 
+										- m_str = "ControlFlow";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 8;
+									}
+									- m_drawBehavior = 4096;
+									- m_bIsPreferencesInitialized = 1;
+									- m_pSource = GUID 61962ab2-6bc2-49fa-acb2-04f79ff8b11e;
+									- m_sourceType = 'F';
+									- m_pTarget = GUID 3e1c3b8c-c11d-4d7c-bbc3-04ef7755b912;
+									- m_targetType = 'T';
+									- m_direction = ' ';
+									- m_rpn = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 0;
+									}
+									- m_anglePoint1 = 0 0 ;
+									- m_anglePoint2 = 0 0 ;
+									- m_line_style = 1;
+									- m_SourcePort = 16 0 ;
+									- m_TargetPort = 479 -17 ;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_bShowName = 1;
+								}
+								{ CGIState 
+									- _id = GUID 775667b4-9ded-4c11-a1dd-596fd584a608;
+									- _properties = { IPropertyContainer 
+										- Subjects = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IPropertySubject 
+												- _Name = "Activity_diagram";
+												- Metaclasses = { IRPYRawContainer 
+													- size = 1;
+													- value = 
+													{ IPropertyMetaclass 
+														- _Name = "AcceptEventAction";
+														- Properties = { IRPYRawContainer 
+															- size = 1;
+															- value = 
+															{ IProperty 
+																- _Name = "ShowNotation";
+																- _Value = "Event";
+																- _Type = Enum;
+																- _ExtraTypeInfo = "Name,Label,Event";
+															}
+														}
+													}
+												}
+											}
+											{ IPropertySubject 
+												- _Name = "General";
+												- Metaclasses = { IRPYRawContainer 
+													- size = 1;
+													- value = 
+													{ IPropertyMetaclass 
+														- _Name = "Graphics";
+														- Properties = { IRPYRawContainer 
+															- size = 1;
+															- value = 
+															{ IProperty 
+																- _Name = "ShowLabels";
+																- _Value = "";
+																- _Type = Bool;
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+									- m_type = 228;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "IAcceptEventAction";
+										- _id = GUID 963a0be2-bb31-4117-9740-8c68fd55e119;
+									}
+									- m_pParent = GUID 80f2e893-02b7-4528-9e1f-cf00b9ff8668;
+									- m_name = { CGIText 
+										- m_str = "accepteventaction_8";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 5;
+									}
+									- m_drawBehavior = 4096;
+									- m_transform = 0.146199 0 0 0.0377358 347 333 ;
+									- m_bIsPreferencesInitialized = 1;
+									- m_AdditionalLabel = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 1;
+									}
+									- m_polygon = 4 0 0  0 1060  684 1060  684 0  ;
+									- m_nNameFormat = 0;
+									- m_nIsNameFormat = 0;
+									- Compartments = { IRPYRawContainer 
+										- size = 0;
+									}
+									- nAndLineCount = 0;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_pDefaultComponentRelation = ;
+								}
+								{ CGIConnector 
+									- _id = GUID 9bcd3df9-0046-4280-8055-faa1bcfd9d62;
+									- m_type = 235;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "IState";
+										- _id = GUID 76137bc6-cf69-45d5-b766-e9f7ac7ac200;
+									}
+									- m_pParent = GUID 80f2e893-02b7-4528-9e1f-cf00b9ff8668;
+									- m_name = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 8;
+									}
+									- m_drawBehavior = 0;
+									- m_transform = 1 0 0 0.884615 46 290 ;
+									- m_bIsPreferencesInitialized = 1;
+									- m_position = 4 0 0  0 26  25 26  25 0  ;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_SubType = 0;
+								}
+								{ CGITrans 
+									- _id = GUID 551a1407-efd3-47ed-a61b-d0b02dafc6d3;
+									- _properties = { IPropertyContainer 
+										- Subjects = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IPropertySubject 
+												- _Name = "General";
+												- Metaclasses = { IRPYRawContainer 
+													- size = 1;
+													- value = 
+													{ IPropertyMetaclass 
+														- _Name = "Graphics";
+														- Properties = { IRPYRawContainer 
+															- size = 1;
+															- value = 
+															{ IProperty 
+																- _Name = "ShowLabels";
+																- _Value = "False";
+																- _Type = Bool;
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+									- m_type = 28;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "ITransition";
+										- _id = GUID 2d0d64b5-6a06-4708-89bb-23d544e9696c;
+									}
+									- m_pParent = ;
+									- m_name = { CGIText 
+										- m_str = "ControlFlow";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 8;
+									}
+									- m_drawBehavior = 4096;
+									- m_bIsPreferencesInitialized = 1;
+									- m_pSource = GUID 775667b4-9ded-4c11-a1dd-596fd584a608;
+									- m_sourceType = 'F';
+									- m_pTarget = GUID 6a5ab8cd-11d5-428b-a111-4838e4293920;
+									- m_targetType = 'T';
+									- m_direction = ' ';
+									- m_rpn = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 0;
+									}
+									- m_anglePoint1 = 0 0 ;
+									- m_anglePoint2 = 0 0 ;
+									- m_line_style = 1;
+									- m_SourcePort = 157 0 ;
+									- m_TargetPort = 1095 778 ;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_bShowName = 1;
+								}
+								{ CGIActionState 
+									- _id = GUID 74b7b1cd-816a-443b-ab8c-699d85e68607;
+									- m_type = 208;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "ICallOperation";
+										- _id = GUID 933c244b-57ea-45ce-b09b-99a7bb8f61df;
+									}
+									- m_pParent = GUID 80f2e893-02b7-4528-9e1f-cf00b9ff8668;
+									- m_name = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 5;
+									}
+									- m_drawBehavior = 4104;
+									- m_transform = 0.0876712 0 0 0.0566038 557 123.962 ;
+									- m_bIsPreferencesInitialized = 1;
+									- m_AdditionalLabel = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 1;
+									}
+									- m_polygon = 4 0 -17  0 1043  1095 1043  1095 -17  ;
+									- m_nNameFormat = 0;
+									- m_nIsNameFormat = 0;
+									- Compartments = { IRPYRawContainer 
+										- size = 0;
+									}
+									- nAndLineCount = 0;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_pDefaultComponentRelation = ;
+									- m_NameDisplayMode = ShowOperation;
+									- m_ActDescLablDiaplayMode = DisplayAction;
+								}
+								{ CGIConnector 
+									- _id = GUID 76329cdf-7159-4ffc-bb92-e1c1946968de;
+									- m_type = 194;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "IPin";
+										- _id = GUID 13c38eeb-f7a6-4db9-aafd-f44baa6329b8;
+									}
+									- m_pParent = GUID 74b7b1cd-816a-443b-ab8c-699d85e68607;
+									- m_name = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nVerticalSpacing = -19;
+										- m_nOrientationCtrlPt = 0;
+									}
+									- m_drawBehavior = 4096;
+									- m_transform = 1.1739e-005 17.6667 -11.4063 1.8182e-005 1231.88 407 ;
+									- m_bIsPreferencesInitialized = 0;
+									- m_AdditionalLabel = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nVerticalSpacing = -29;
+										- m_nOrientationCtrlPt = 0;
+									}
+									- m_position = 4 0 0  0 12  12 12  12 0  ;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_SubType = 0;
+								}
+								{ CGIActionState 
+									- _id = GUID b1582b06-0598-4947-b221-229961d93f4a;
+									- m_type = 208;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "ICallOperation";
+										- _id = GUID 590d0567-8af7-48a8-afbf-53d3c65be8f2;
+									}
+									- m_pParent = GUID 80f2e893-02b7-4528-9e1f-cf00b9ff8668;
+									- m_name = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 5;
+									}
+									- m_drawBehavior = 4104;
+									- m_transform = 0.0894977 0 0 0.0566038 139 137.962 ;
+									- m_bIsPreferencesInitialized = 1;
+									- m_AdditionalLabel = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 1;
+									}
+									- m_polygon = 4 0 -17  0 1043  1095 1043  1095 -17  ;
+									- m_nNameFormat = 0;
+									- m_nIsNameFormat = 0;
+									- Compartments = { IRPYRawContainer 
+										- size = 0;
+									}
+									- nAndLineCount = 0;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_pDefaultComponentRelation = ;
+									- m_NameDisplayMode = ShowOperation;
+									- m_ActDescLablDiaplayMode = DisplayAction;
+								}
+								{ CGIConnector 
+									- _id = GUID decf34b0-b870-4917-b33d-1fd40d73efa7;
+									- m_type = 194;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "IPin";
+										- _id = GUID 3f7c1312-2453-4e97-8021-1c28b27f8050;
+									}
+									- m_pParent = GUID b1582b06-0598-4947-b221-229961d93f4a;
+									- m_name = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nVerticalSpacing = -19;
+										- m_nOrientationCtrlPt = 0;
+									}
+									- m_drawBehavior = 4096;
+									- m_transform = 1.14994e-005 17.6667 -11.1735 1.8182e-005 1229.08 407 ;
+									- m_bIsPreferencesInitialized = 0;
+									- m_AdditionalLabel = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nVerticalSpacing = -29;
+										- m_nOrientationCtrlPt = 0;
+									}
+									- m_position = 4 0 0  0 12  12 12  12 0  ;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_SubType = 0;
+								}
+								{ CGIActionState 
+									- _id = GUID 3e1c3b8c-c11d-4d7c-bbc3-04ef7755b912;
+									- m_type = 208;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "ICallOperation";
+										- _id = GUID b6bbe59f-3219-4297-a54d-bd97bae30bca;
+									}
+									- m_pParent = GUID 80f2e893-02b7-4528-9e1f-cf00b9ff8668;
+									- m_name = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 5;
+									}
+									- m_drawBehavior = 4104;
+									- m_transform = 0.0876712 0 0 0.0566038 556 323.962 ;
+									- m_bIsPreferencesInitialized = 1;
+									- m_AdditionalLabel = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 1;
+									}
+									- m_polygon = 4 0 -17  0 1043  1095 1043  1095 -17  ;
+									- m_nNameFormat = 0;
+									- m_nIsNameFormat = 0;
+									- Compartments = { IRPYRawContainer 
+										- size = 0;
+									}
+									- nAndLineCount = 0;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_pDefaultComponentRelation = ;
+									- m_NameDisplayMode = ShowOperation;
+									- m_ActDescLablDiaplayMode = DisplayAction;
+								}
+								{ CGIConnector 
+									- _id = GUID 74bdc7b6-1663-4a7b-9427-004712ac7a9e;
+									- m_type = 194;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "IPin";
+										- _id = GUID 0a8cc88a-e9f2-4ae6-8854-993a56d808a8;
+									}
+									- m_pParent = GUID 3e1c3b8c-c11d-4d7c-bbc3-04ef7755b912;
+									- m_name = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nVerticalSpacing = -19;
+										- m_nOrientationCtrlPt = 0;
+									}
+									- m_drawBehavior = 4096;
+									- m_transform = 1.1739e-005 17.6667 -11.4063 1.8182e-005 1231.87 407 ;
+									- m_bIsPreferencesInitialized = 0;
+									- m_AdditionalLabel = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nVerticalSpacing = -29;
+										- m_nOrientationCtrlPt = 0;
+									}
+									- m_position = 4 0 0  0 12  12 12  12 0  ;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_SubType = 0;
+								}
+								{ CGIActionState 
+									- _id = GUID 6a5ab8cd-11d5-428b-a111-4838e4293920;
+									- m_type = 208;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "ICallOperation";
+										- _id = GUID e714e899-1dff-4cff-85ba-e17750aec554;
+									}
+									- m_pParent = GUID 80f2e893-02b7-4528-9e1f-cf00b9ff8668;
+									- m_name = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 5;
+									}
+									- m_drawBehavior = 4104;
+									- m_transform = 0.0876712 0 0 0.0566038 141 290.962 ;
+									- m_bIsPreferencesInitialized = 1;
+									- m_AdditionalLabel = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nOrientationCtrlPt = 1;
+									}
+									- m_polygon = 4 0 -17  0 1043  1095 1043  1095 -17  ;
+									- m_nNameFormat = 0;
+									- m_nIsNameFormat = 0;
+									- Compartments = { IRPYRawContainer 
+										- size = 0;
+									}
+									- nAndLineCount = 0;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_pDefaultComponentRelation = ;
+									- m_NameDisplayMode = ShowOperation;
+									- m_ActDescLablDiaplayMode = DisplayAction;
+								}
+								{ CGIConnector 
+									- _id = GUID 8267f7ff-f0b8-41a5-b8b7-918bbc53890a;
+									- m_type = 194;
+									- m_pModelObject = { IHandle 
+										- _m2Class = "IPin";
+										- _id = GUID d181d295-4576-4585-91ae-d0e122aff903;
+									}
+									- m_pParent = GUID 6a5ab8cd-11d5-428b-a111-4838e4293920;
+									- m_name = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nVerticalSpacing = -19;
+										- m_nOrientationCtrlPt = 0;
+									}
+									- m_drawBehavior = 4096;
+									- m_transform = 1.1739e-005 17.6667 -11.4063 1.8182e-005 1231.87 407 ;
+									- m_bIsPreferencesInitialized = 0;
+									- m_AdditionalLabel = { CGIText 
+										- m_str = "";
+										- m_style = "Arial" 10 0 0 0 1 ;
+										- m_color = { IColor 
+											- m_fgColor = 0;
+											- m_bgColor = 0;
+											- m_bgFlag = 0;
+										}
+										- m_position = 1 0 0  ;
+										- m_nIdent = 0;
+										- m_bImplicitSetRectPoints = 0;
+										- m_nVerticalSpacing = -29;
+										- m_nOrientationCtrlPt = 0;
+									}
+									- m_position = 4 0 0  0 12  12 12  12 0  ;
+									- m_pInheritsFrom = { IHandle 
+										- _m2Class = "";
+									}
+									- m_nInheritanceMask = 0;
+									- m_SubType = 0;
+								}
+								
+								- m_access = 'Z';
+								- m_modified = 'N';
+								- m_fileVersion = "";
+								- m_nModifyDate = 0;
+								- m_nCreateDate = 0;
+								- m_creator = "";
+								- m_bScaleWithZoom = 1;
+								- m_arrowStyle = 'S';
+								- m_pRoot = GUID 80f2e893-02b7-4528-9e1f-cf00b9ff8668;
+								- m_currentLeftTop = 0 0 ;
+								- m_currentRightBottom = 0 0 ;
+								- m_bFreezeCompartmentContent = 0;
+								- m_pInheritsFrom = { IHandle 
+									- _m2Class = "";
+								}
+							}
+						}
+					}
+					- _AnalysisMode = 1;
+				}
+			}
 			- _itsStateChart = { IHandle 
-				- _m2Class = "";
+				- _m2Class = "IActivityGraph";
+				- _id = GUID 05936578-2e9f-4ede-af87-098663b0a733;
 			}
 			- Associations = { IRPYRawContainer 
 				- size = 1;
@@ -6420,7 +8730,7 @@ return 0;";
 					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
 				}
 			}
-			- _modifiedTimeWeak = 6.19.2018::22:0:22;
+			- _modifiedTimeWeak = 6.28.2018::12:22:5;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "Sensing_System.omd";
@@ -6430,7 +8740,7 @@ return 0;";
 				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
 			}
 			- _lastID = 3;
-			- weakCGTime = 6.19.2018::22:0:22;
+			- weakCGTime = 6.28.2018::12:22:5;
 			- strongCGTime = 6.19.2018::21:11:57;
 			- Operations = { IRPYRawContainer 
 				- size = 1;
@@ -6963,7 +9273,7 @@ return 0;";
 							- _durationTime = "100";
 						}
 					}
-					- _version = 6.20.2018::0:1:15;
+					- _version = 6.28.2018::14:40:6;
 					- _baseVersion = 1.2.1990::0:0:0;
 					- _diagram = GUID 5947de7b-4255-4aae-a074-a5df61a1ae17;
 					- Views = { IRPYRawContainer 
@@ -15931,7 +18241,7 @@ return 0;";
 							- _durationTime = "1000";
 						}
 					}
-					- _version = 6.20.2018::0:1:15;
+					- _version = 6.28.2018::14:40:6;
 					- _baseVersion = 1.2.1990::0:0:0;
 					- _diagram = GUID 95a75170-2e92-4d97-9852-a727cf2bec94;
 					- Views = { IRPYRawContainer 
@@ -17536,7 +19846,7 @@ return 0;";
 		}
 	}
 	- Events = { IRPYRawContainer 
-		- size = 10;
+		- size = 11;
 		- value = 
 		{ IEvent 
 			- _id = GUID 82880d2c-b25a-409a-8f65-f7f5e5efaa0c;
@@ -17637,6 +19947,120 @@ return 0;";
 			- Args = { IRPYRawContainer 
 				- size = 0;
 			}
+		}
+		{ IEvent 
+			- _id = GUID c255cc72-85af-482b-b365-bb8737275e67;
+			- _myState = 8192;
+			- _name = "closeAll";
+			- _modifiedTimeWeak = 6.28.2018::12:18:29;
+			- _virtual = 0;
+			- Args = { IRPYRawContainer 
+				- size = 0;
+			}
+		}
+	}
+	- Types = { IRPYRawContainer 
+		- size = 5;
+		- value = 
+		{ IType 
+			- _id = GUID dd69edbe-5f9c-4824-819a-2e70df8add31;
+			- _myState = 8192;
+			- _name = "SOCKET";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+					- _subsystem = "SysML::Blocks";
+					- _class = "";
+					- _name = "DataType";
+					- _id = GUID 39bf6572-6f61-4cbf-b651-64241e075688;
+				}
+			}
+			- _modifiedTimeWeak = 6.28.2018::12:36:55;
+			- _declaration = "";
+			- _kind = Language;
+		}
+		{ IType 
+			- _id = GUID e9a0f152-ec91-4849-b5ac-bc83e37421b4;
+			- _myState = 8192;
+			- _name = "SOCKADDR_IN";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+					- _subsystem = "SysML::Blocks";
+					- _class = "";
+					- _name = "DataType";
+					- _id = GUID 39bf6572-6f61-4cbf-b651-64241e075688;
+				}
+			}
+			- _modifiedTimeWeak = 6.28.2018::12:38:23;
+			- _declaration = "";
+			- _kind = Language;
+		}
+		{ IType 
+			- _id = GUID e48eacac-8b52-4663-9014-9fd562e41f2b;
+			- _myState = 8192;
+			- _name = "uint32_t";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+					- _subsystem = "SysML::Blocks";
+					- _class = "";
+					- _name = "DataType";
+					- _id = GUID 39bf6572-6f61-4cbf-b651-64241e075688;
+				}
+			}
+			- _modifiedTimeWeak = 6.28.2018::12:38:47;
+			- _declaration = "";
+			- _kind = Language;
+		}
+		{ IType 
+			- _id = GUID 0c395628-1db3-4a2f-b9b0-b2a876d6084b;
+			- _myState = 8192;
+			- _name = "WSDATA";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+					- _subsystem = "SysML::Blocks";
+					- _class = "";
+					- _name = "DataType";
+					- _id = GUID 39bf6572-6f61-4cbf-b651-64241e075688;
+				}
+			}
+			- _modifiedTimeWeak = 6.28.2018::12:38:58;
+			- _declaration = "";
+			- _kind = Language;
+		}
+		{ IType 
+			- _id = GUID 16082c7d-dffd-48d2-bb5d-1239a5fb2677;
+			- _myState = 8192;
+			- _name = "DEFAULT_BUFLEN";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "$OMROOT\\Profiles\\SysML\\SysMLProfile_rpy\\SysML.sbs";
+					- _subsystem = "SysML::Blocks";
+					- _class = "";
+					- _name = "DataType";
+					- _id = GUID 39bf6572-6f61-4cbf-b651-64241e075688;
+				}
+			}
+			- _modifiedTimeWeak = 6.28.2018::12:40:1;
+			- _declaration = "#define DEFAULT_BUFLEN 1024";
+			- _kind = Language;
 		}
 	}
 	- _configurationRelatedTime = 6.19.2018::21:7:20;

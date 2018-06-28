@@ -299,7 +299,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 		}
 	}
 	- _modifiedTimeWeak = 1.2.1990::0:0:0;
-	- _lastModifiedTime = "6.19.2018::21:21:6";
+	- _lastModifiedTime = "6.28.2018::12:19:52";
 	- _graphicChart = { CGIClassChart 
 		- _id = GUID e8c79b25-8c2f-49de-b861-679a062f8f91;
 		- m_type = 0;
@@ -960,7 +960,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- value = 
 						{ IHandle 
 							- _m2Class = "IAttribute";
-							- _filename = "Default.sbs";
+							- _filename = "";
 							- _subsystem = "Default";
 							- _class = "TemperatureSensor";
 							- _name = "temp";

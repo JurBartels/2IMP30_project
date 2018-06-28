@@ -76,7 +76,8 @@ all : $(TARGET_NAME)$(EXE_EXT) DefaultComponent.mak
 
 TARGET_MAIN=MainDefaultComponent
 
-LIBS=
+LIBS= \
+  ws2_32.lib
 
 INCLUDE_PATH= \
   $(INCLUDE_QUALIFIER)$(OMROOT)/LangCpp/osconfig/WIN32

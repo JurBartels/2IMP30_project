@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Default
-//!	Generated Date	: Tue, 19, Jun 2018  
+//!	Generated Date	: Thu, 28, Jun 2018  
 	File Path	: DefaultComponent\DefaultConfig\Default.cpp
 *********************************************************************/
 
@@ -104,6 +104,12 @@
 #define itsPre_UNSERIALIZE OM_NO_OP
 
 #define itsPre_CONSTRUCTOR itsPre()
+
+#define closeAll_SERIALIZE OM_NO_OP
+
+#define closeAll_UNSERIALIZE OM_NO_OP
+
+#define closeAll_CONSTRUCTOR closeAll()
 //#]
 
 //## package Default
@@ -192,6 +198,7 @@ bool Default_startBehavior() {
     done &= HeatingPart.startBehavior();
     done &= LightingControllerPart.startBehavior();
     done &= TemperatureControllerPart.startBehavior();
+    done &= TemperatureSensorPart.startBehavior();
     done &= VentilationPart.startBehavior();
     return done;
 }
@@ -343,6 +350,18 @@ bool itsPre::isTypeOf(const short id) const {
 }
 
 IMPLEMENT_META_EVENT_P(itsPre, Default, Default, itsPre())
+
+//## event closeAll()
+closeAll::closeAll() {
+    NOTIFY_EVENT_CONSTRUCTOR(closeAll)
+    setId(closeAll_Default_id);
+}
+
+bool closeAll::isTypeOf(const short id) const {
+    return (closeAll_Default_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(closeAll, Default, Default, closeAll())
 
 /*********************************************************************
 	File Path	: DefaultComponent\DefaultConfig\Default.cpp

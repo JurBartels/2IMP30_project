@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Authorization_security_system
-//!	Generated Date	: Tue, 19, Jun 2018  
+//!	Generated Date	: Thu, 28, Jun 2018  
 	File Path	: DefaultComponent\DefaultConfig\Authorization_security_system.h
 *********************************************************************/
 
@@ -17,6 +17,18 @@
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
 #include <aom\aom.h>
+//## auto_generated
+#include "winsock2.h"
+//## auto_generated
+#include "stdio.h"
+//## auto_generated
+#include "windows.h"
+//## auto_generated
+#include "iostream"
+//## auto_generated
+#include "Ws2tcpip.h"
+//## auto_generated
+#include "string.h"
 //## auto_generated
 #include "Default.h"
 //## package Default
