@@ -9,7 +9,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			{ IPropertySubject 
 				- _Name = "CPP_CG";
 				- Metaclasses = { IRPYRawContainer 
-					- size = 1;
+					- size = 2;
 					- value = 
 					{ IPropertyMetaclass 
 						- _Name = "Configuration";
@@ -21,6 +21,19 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 								- _Value = "MSVC";
 								- _Type = Enum;
 								- _ExtraTypeInfo = "MSVC,MSVCDLL,MSVCStandardLibrary,VxWorks,VxWorks6diab,VxWorks6gnu,VxWorks6diab_RTP,VxWorks6gnu_RTP,Solaris2,Cygwin,MicrosoftWinCE600,OseSfk,Linux,Solaris2GNU,QNXNeutrinoGCC, QNXNeutrinoMomentics,NucleusPLUS-PPC,WorkbenchManaged,WorkbenchManaged653,WorkbenchManaged_RTP";
+							}
+						}
+					}
+					{ IPropertyMetaclass 
+						- _Name = "MSVC";
+						- Properties = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IProperty 
+								- _Name = "IDEVersion";
+								- _Value = "VC14";
+								- _Type = Enum;
+								- _ExtraTypeInfo = "VC9,VC10,VC11,VC14";
 							}
 						}
 					}
@@ -219,7 +232,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- _id = GUID 052b8171-a32b-4f45-a829-5585f79f9deb;
 		}
 	}
-	- _modifiedTimeWeak = 6.28.2018::12:11:15;
+	- _modifiedTimeWeak = 6.28.2018::13:35:36;
 	- _lastID = 12;
 	- _UserColors = { IRPYRawContainer 
 		- size = 16;
@@ -246,7 +259,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 		- value = 
 		{ IMultiplicityItem 
 			- _name = "1";
-			- _count = 40;
+			- _count = 49;
 		}
 		{ IMultiplicityItem 
 			- _name = "*";
@@ -5505,6 +5518,18 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_displayOption = Public;
 							- m_bShowInherited = 0;
 							- m_bOrdered = 0;
+							- _itemValueOfFontPropertiesMapCount = 11;
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 						}
 						{ CGICompartment 
 							- _id = GUID c3b72070-4f5b-4d30-a804-0cc5e5c25a58;
@@ -5512,7 +5537,8 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_displayOption = Public;
 							- m_bShowInherited = 0;
 							- m_bOrdered = 0;
-							- _itemValueOfFontPropertiesMapCount = 6;
+							- _itemValueOfFontPropertiesMapCount = 7;
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
@@ -5641,6 +5667,16 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_displayOption = Public;
 							- m_bShowInherited = 0;
 							- m_bOrdered = 0;
+							- _itemValueOfFontPropertiesMapCount = 9;
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 						}
 						{ CGICompartment 
 							- _id = GUID d55badd0-6d4b-4abc-9ea9-acc58b66fca8;
@@ -5648,7 +5684,13 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_displayOption = Public;
 							- m_bShowInherited = 0;
 							- m_bOrdered = 0;
-							- _itemValueOfFontPropertiesMapCount = 3;
+							- _itemValueOfFontPropertiesMapCount = 9;
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
