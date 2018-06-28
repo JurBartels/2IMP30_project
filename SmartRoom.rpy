@@ -219,7 +219,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- _id = GUID 052b8171-a32b-4f45-a829-5585f79f9deb;
 		}
 	}
-	- _modifiedTimeWeak = 6.19.2018::21:11:57;
+	- _modifiedTimeWeak = 6.28.2018::11:25:4;
 	- _lastID = 12;
 	- _UserColors = { IRPYRawContainer 
 		- size = 16;
@@ -612,7 +612,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				}
 			}
 			- _modifiedTimeWeak = 1.2.1990::0:0:0;
-			- _lastModifiedTime = "6.19.2018::21:9:11";
+			- _lastModifiedTime = "6.28.2018::11:25:4";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 3e78bcdc-5926-492b-8388-9d1ca324e566;
 				- m_type = 0;
@@ -636,7 +636,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				}
 				- m_drawBehavior = 0;
 				- m_bIsPreferencesInitialized = 0;
-				- elementList = 108;
+				- elementList = 107;
 				{ CGIClass 
 					- _id = GUID fc122657-cb7b-438d-9491-713e947ae7f6;
 					- m_type = 78;
@@ -4906,103 +4906,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_bIsPreferencesInitialized = 1;
 					- m_points = 2 356 306  370 306  ;
 				}
-				{ CGIAnnotation 
-					- _id = GUID 3685b7ae-2476-4f01-a1dd-39d73f078b40;
-					- _properties = { IPropertyContainer 
-						- Subjects = { IRPYRawContainer 
-							- size = 2;
-							- value = 
-							{ IPropertySubject 
-								- _Name = "General";
-								- Metaclasses = { IRPYRawContainer 
-									- size = 1;
-									- value = 
-									{ IPropertyMetaclass 
-										- _Name = "Graphics";
-										- Properties = { IRPYRawContainer 
-											- size = 1;
-											- value = 
-											{ IProperty 
-												- _Name = "FitBoxToItsTextuals";
-												- _Value = "False";
-												- _Type = Bool;
-											}
-										}
-									}
-								}
-							}
-							{ IPropertySubject 
-								- _Name = "ObjectModelGe";
-								- Metaclasses = { IRPYRawContainer 
-									- size = 1;
-									- value = 
-									{ IPropertyMetaclass 
-										- _Name = "Requirement";
-										- Properties = { IRPYRawContainer 
-											- size = 1;
-											- value = 
-											{ IProperty 
-												- _Name = "Compartments";
-												- _Value = "ID, Specification";
-												- _Type = MultiLine;
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-					- m_type = 176;
-					- m_pModelObject = { IHandle 
-						- _m2Class = "IRequirement";
-						- _filename = "Default.sbs";
-						- _subsystem = "Default";
-						- _class = "";
-						- _name = "requirement_53";
-						- _id = GUID a0d120f7-6c57-4f4d-a3ac-23861188bfe2;
-					}
-					- m_pParent = GUID fc122657-cb7b-438d-9491-713e947ae7f6;
-					- m_name = { CGIText 
-						- m_str = "requirement_53";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nOrientationCtrlPt = 5;
-					}
-					- m_drawBehavior = 4104;
-					- m_transform = 0.107011 0 0 0.0686813 514 49.794 ;
-					- m_bIsPreferencesInitialized = 1;
-					- m_AdditionalLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nOrientationCtrlPt = 1;
-					}
-					- m_polygon = 4 0 3  0 1095  1084 1095  1084 3  ;
-					- m_nNameFormat = 0;
-					- m_nIsNameFormat = 0;
-					- frameset = "<frameset rows=50%,50%>
-<frame name=IDTextCompartment>
-<frame name=SpecificationTextCompartment>";
-					- Compartments = { IRPYRawContainer 
-						- size = 0;
-					}
-					- _iTempdisplayTextFlag = 1;
-					- m_bIsBoxStyle = 1;
-				}
 				
 				- m_access = 'Z';
 				- m_modified = 'N';
@@ -5298,7 +5201,28 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_nNameFormat = 0;
 					- m_nIsNameFormat = 0;
 					- Compartments = { IRPYRawContainer 
-						- size = 0;
+						- size = 2;
+						- value = 
+						{ CGICompartment 
+							- _id = GUID 0f5b3b9f-4a6d-48c1-8d2e-6382dfd6b680;
+							- m_name = "Attribute";
+							- m_displayOption = Explicit;
+							- m_bShowInherited = 0;
+							- m_bOrdered = 0;
+							- Items = { IRPYRawContainer 
+								- size = 0;
+							}
+						}
+						{ CGICompartment 
+							- _id = GUID 05a2e8fd-8b4d-48c4-9cd7-0ae5bf6ac14e;
+							- m_name = "Operation";
+							- m_displayOption = Explicit;
+							- m_bShowInherited = 0;
+							- m_bOrdered = 0;
+							- Items = { IRPYRawContainer 
+								- size = 0;
+							}
+						}
 					}
 					- Attrs = { IRPYRawContainer 
 						- size = 0;
@@ -5407,7 +5331,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					}
 					- m_pParent = GUID 0916eb32-e3a5-4558-b8de-2a467b931db6;
 					- m_name = { CGIText 
-						- m_str = "TemperatureControllerPart";
+						- m_str = "TemperatureControllerPart:TemperatureController";
 						- m_style = "Arial" 10 0 0 0 1 ;
 						- m_color = { IColor 
 							- m_fgColor = 0;
@@ -5450,6 +5374,8 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_displayOption = Public;
 							- m_bShowInherited = 0;
 							- m_bOrdered = 0;
+							- _itemValueOfFontPropertiesMapCount = 1;
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 						}
 						{ CGICompartment 
 							- _id = GUID 19d88288-a00e-4e1e-94c8-99b3f84007fe;
@@ -5579,6 +5505,8 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_displayOption = Public;
 							- m_bShowInherited = 0;
 							- m_bOrdered = 0;
+							- _itemValueOfFontPropertiesMapCount = 1;
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 						}
 						{ CGICompartment 
 							- _id = GUID c3b72070-4f5b-4d30-a804-0cc5e5c25a58;
@@ -5715,6 +5643,10 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_displayOption = Public;
 							- m_bShowInherited = 0;
 							- m_bOrdered = 0;
+							- _itemValueOfFontPropertiesMapCount = 3;
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 						}
 					}
 					- Attrs = { IRPYRawContainer 
@@ -5818,6 +5750,8 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_displayOption = Public;
 							- m_bShowInherited = 0;
 							- m_bOrdered = 0;
+							- _itemValueOfFontPropertiesMapCount = 1;
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 						}
 						{ CGICompartment 
 							- _id = GUID daa6ad40-f877-4225-b060-2e7b1b612cb8;
@@ -5825,6 +5759,9 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_displayOption = Public;
 							- m_bShowInherited = 0;
 							- m_bOrdered = 0;
+							- _itemValueOfFontPropertiesMapCount = 2;
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 						}
 					}
 					- Attrs = { IRPYRawContainer 
@@ -5928,6 +5865,8 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_displayOption = Public;
 							- m_bShowInherited = 0;
 							- m_bOrdered = 0;
+							- _itemValueOfFontPropertiesMapCount = 1;
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 						}
 						{ CGICompartment 
 							- _id = GUID 9801e812-4aec-4572-b8c2-488ef71f15dc;
@@ -5935,6 +5874,9 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_displayOption = Public;
 							- m_bShowInherited = 0;
 							- m_bOrdered = 0;
+							- _itemValueOfFontPropertiesMapCount = 2;
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 						}
 					}
 					- Attrs = { IRPYRawContainer 
@@ -6015,7 +5957,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_targetType = 'T';
 					- m_direction = ' ';
 					- m_rpn = { CGIText 
-						- m_str = "";
+						- m_str = "TemperatureControllerPart_HVACPart";
 						- m_style = "Arial" 10 0 0 0 1 ;
 						- m_color = { IColor 
 							- m_fgColor = 0;
@@ -6145,7 +6087,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_targetType = 'T';
 					- m_direction = ' ';
 					- m_rpn = { CGIText 
-						- m_str = "";
+						- m_str = "TemperatureControllerPart_TemperatureSensorPart";
 						- m_style = "Arial" 10 0 0 0 1 ;
 						- m_color = { IColor 
 							- m_fgColor = 0;
@@ -6730,7 +6672,28 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_nNameFormat = 0;
 					- m_nIsNameFormat = 0;
 					- Compartments = { IRPYRawContainer 
-						- size = 0;
+						- size = 2;
+						- value = 
+						{ CGICompartment 
+							- _id = GUID bf6d733d-0e28-4638-bf32-03922f2b9317;
+							- m_name = "Attribute";
+							- m_displayOption = Explicit;
+							- m_bShowInherited = 0;
+							- m_bOrdered = 0;
+							- Items = { IRPYRawContainer 
+								- size = 0;
+							}
+						}
+						{ CGICompartment 
+							- _id = GUID 265863b6-7ff0-4a3c-9195-28c04e4e4f32;
+							- m_name = "Operation";
+							- m_displayOption = Explicit;
+							- m_bShowInherited = 0;
+							- m_bOrdered = 0;
+							- Items = { IRPYRawContainer 
+								- size = 0;
+							}
+						}
 					}
 					- Attrs = { IRPYRawContainer 
 						- size = 0;
@@ -7651,7 +7614,28 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_nNameFormat = 0;
 					- m_nIsNameFormat = 0;
 					- Compartments = { IRPYRawContainer 
-						- size = 0;
+						- size = 2;
+						- value = 
+						{ CGICompartment 
+							- _id = GUID e9d54c19-65ab-4d43-9bda-d51441eea297;
+							- m_name = "Attribute";
+							- m_displayOption = Explicit;
+							- m_bShowInherited = 0;
+							- m_bOrdered = 0;
+							- Items = { IRPYRawContainer 
+								- size = 0;
+							}
+						}
+						{ CGICompartment 
+							- _id = GUID ca04e046-7849-46b2-92f2-297e890674cb;
+							- m_name = "Operation";
+							- m_displayOption = Explicit;
+							- m_bShowInherited = 0;
+							- m_bOrdered = 0;
+							- Items = { IRPYRawContainer 
+								- size = 0;
+							}
+						}
 					}
 					- Attrs = { IRPYRawContainer 
 						- size = 0;
@@ -7803,6 +7787,9 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_displayOption = Public;
 							- m_bShowInherited = 0;
 							- m_bOrdered = 0;
+							- _itemValueOfFontPropertiesMapCount = 2;
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 						}
 						{ CGICompartment 
 							- _id = GUID 4ce12e5a-f9dd-4979-98a6-eb799125ad79;
@@ -7810,6 +7797,8 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_displayOption = Public;
 							- m_bShowInherited = 0;
 							- m_bOrdered = 0;
+							- _itemValueOfFontPropertiesMapCount = 1;
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 						}
 					}
 					- Attrs = { IRPYRawContainer 
@@ -7932,6 +7921,8 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_displayOption = Public;
 							- m_bShowInherited = 0;
 							- m_bOrdered = 0;
+							- _itemValueOfFontPropertiesMapCount = 1;
+							- _fontPropValues = "Tahoma 8 400 0 0 0 0";
 						}
 						{ CGICompartment 
 							- _id = GUID 5399ca52-39a4-484c-91f5-32771b0fae60;
