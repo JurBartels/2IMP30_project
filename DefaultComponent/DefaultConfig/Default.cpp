@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 8.2 
-	Login		: jlta
+	Login		: s137910
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Default
@@ -115,6 +115,30 @@
 //## package Default
 
 
+#ifdef _OMINSTRUMENT
+static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
+
+static void RenameGlobalInstances();
+
+IMPLEMENT_META_PACKAGE(Default, Default)
+
+static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
+}
+
+static void RenameGlobalInstances() {
+    OM_SET_INSTANCE_NAME(&TemperatureControllerPart, TemperatureController, "TemperatureControllerPart", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&TemperatureSensorPart, TemperatureSensor, "TemperatureSensorPart", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&HVACPart, HVAC, "HVACPart", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&HeatingPart, Heating, "HeatingPart", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&AirConditioningPart, AirConditioning, "AirConditioningPart", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&VentilationPart, Ventilation, "VentilationPart", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&HumiditySensorPart, HumiditySensor, "HumiditySensorPart", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&AirQualityControllerPart, AirQualityController, "AirQualityControllerPart", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&LightingControllerPart, LightingController, "LightingControllerPart", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&PresenceSensorPart, PresenceSensor, "PresenceSensorPart", AOMNoMultiplicity);
+}
+#endif // _OMINSTRUMENT
+
 //## classInstance AirConditioningPart
 AirConditioning AirConditioningPart;
 
@@ -144,14 +168,6 @@ TemperatureSensor TemperatureSensorPart;
 
 //## classInstance VentilationPart
 Ventilation VentilationPart;
-
-#ifdef _OMINSTRUMENT
-static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
-
-static void RenameGlobalInstances();
-
-IMPLEMENT_META_PACKAGE(Default, Default)
-#endif // _OMINSTRUMENT
 
 void Default_initRelations() {
     {
@@ -202,24 +218,6 @@ bool Default_startBehavior() {
     done &= VentilationPart.startBehavior();
     return done;
 }
-
-#ifdef _OMINSTRUMENT
-static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
-}
-
-static void RenameGlobalInstances() {
-    OM_SET_INSTANCE_NAME(&TemperatureControllerPart, TemperatureController, "TemperatureControllerPart", AOMNoMultiplicity);
-    OM_SET_INSTANCE_NAME(&TemperatureSensorPart, TemperatureSensor, "TemperatureSensorPart", AOMNoMultiplicity);
-    OM_SET_INSTANCE_NAME(&HVACPart, HVAC, "HVACPart", AOMNoMultiplicity);
-    OM_SET_INSTANCE_NAME(&HeatingPart, Heating, "HeatingPart", AOMNoMultiplicity);
-    OM_SET_INSTANCE_NAME(&AirConditioningPart, AirConditioning, "AirConditioningPart", AOMNoMultiplicity);
-    OM_SET_INSTANCE_NAME(&VentilationPart, Ventilation, "VentilationPart", AOMNoMultiplicity);
-    OM_SET_INSTANCE_NAME(&HumiditySensorPart, HumiditySensor, "HumiditySensorPart", AOMNoMultiplicity);
-    OM_SET_INSTANCE_NAME(&AirQualityControllerPart, AirQualityController, "AirQualityControllerPart", AOMNoMultiplicity);
-    OM_SET_INSTANCE_NAME(&LightingControllerPart, LightingController, "LightingControllerPart", AOMNoMultiplicity);
-    OM_SET_INSTANCE_NAME(&PresenceSensorPart, PresenceSensor, "PresenceSensorPart", AOMNoMultiplicity);
-}
-#endif // _OMINSTRUMENT
 
 //#[ ignore
 Default_OMInitializer::Default_OMInitializer() {

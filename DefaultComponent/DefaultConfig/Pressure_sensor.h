@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 8.2 
-	Login		: jlta
+	Login		: s137910
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Pressure_sensor

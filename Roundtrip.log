@@ -1,9 +1,20 @@
 
 Reverse Engineering Done.
 
+Removing Type 'uint32_t' from Package 'Default'. 
 Source Artifacts have been added to the model to ensure that the generated code reflects details from the original code, such as global comments, preprocessor directives, and the order of elements. See the log file for more details.
 To view the Source Artifacts in the Rhapsody browser, open the View menu and select Browser Display Options > Show Source Artifacts.
 Source Artifacts were added for the following files:
-Adding File 'TemperatureSensor:impl' to Class 'TemperatureSensor'.
-Adding File 'TemperatureSensor:spec' to Class 'TemperatureSensor'.
+Adding File 'Authorization_security_system:impl' to Class 'Authorization_security_system'.
+Adding File 'Authorization_security_system:spec' to Class 'Authorization_security_system'.
+Adding File 'Communication_system:impl' to Class 'Communication_system'.
+Adding File 'Communication_system:spec' to Class 'Communication_system'.
+Adding File 'Default:impl' to Package 'Default'.
+Adding File 'Default:spec' to Package 'Default'.
+Adding File 'Fire_sensor:impl' to Class 'Fire_sensor'.
+Adding File 'Fire_sensor:spec' to Class 'Fire_sensor'.
+Adding File 'Pressure_sensor:impl' to Class 'Pressure_sensor'.
+Adding File 'Pressure_sensor:spec' to Class 'Pressure_sensor'.
+Adding File 'Security_system:impl' to Class 'Security_system'.
+Adding File 'Security_system:spec' to Class 'Security_system'.
 

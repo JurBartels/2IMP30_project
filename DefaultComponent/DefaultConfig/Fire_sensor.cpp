@@ -1,10 +1,10 @@
 /********************************************************************
 	Rhapsody	: 8.2 
-	Login		: jlta
+	Login		: s137910
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Fire_sensor
-//!	Generated Date	: Tue, 19, Jun 2018  
+//!	Generated Date	: Thu, 28, Jun 2018  
 	File Path	: DefaultComponent\DefaultConfig\Fire_sensor.cpp
 *********************************************************************/
 

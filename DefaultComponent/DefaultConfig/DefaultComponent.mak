@@ -55,7 +55,7 @@ LINK_FLAGS=$(LinkDebug)  /NOLOGO    $(SUBSYSTEM) /MACHINE:x86
 
 FLAGSFILE=
 RULESFILE=
-OMROOT="C:\ProgramData\IBM\Rational\Rhapsody\8.2\Share"
+OMROOT="C:\Users\s137910\IBM\Rational\Rhapsody\8.2\Share"
 RHPROOT="C:\Program Files (x86)\IBM\Rational\Rhapsody\8.2"
 
 CPP_EXT=.cpp
