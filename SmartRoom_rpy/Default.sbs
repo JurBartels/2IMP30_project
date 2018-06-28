@@ -177,7 +177,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- reqID = "SMR00";
 		}
 	}
-	- _modifiedTimeWeak = 6.28.2018::13:58:44;
+	- _modifiedTimeWeak = 6.28.2018::20:57:51;
 	- _lastID = 119;
 	- Declaratives = { IRPYRawContainer 
 		- size = 2;
@@ -2086,7 +2086,28 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_nNameFormat = 0;
 					- m_nIsNameFormat = 0;
 					- Compartments = { IRPYRawContainer 
-						- size = 0;
+						- size = 2;
+						- value = 
+						{ CGICompartment 
+							- _id = GUID ae5bcc29-6229-4447-9caf-efc8541f2a50;
+							- m_name = "Attribute";
+							- m_displayOption = Explicit;
+							- m_bShowInherited = 0;
+							- m_bOrdered = 0;
+							- Items = { IRPYRawContainer 
+								- size = 0;
+							}
+						}
+						{ CGICompartment 
+							- _id = GUID 118792e4-e7e0-4677-9ce5-3a3f5a61cf94;
+							- m_name = "Operation";
+							- m_displayOption = Explicit;
+							- m_bShowInherited = 0;
+							- m_bOrdered = 0;
+							- Items = { IRPYRawContainer 
+								- size = 0;
+							}
+						}
 					}
 					- Attrs = { IRPYRawContainer 
 						- size = 0;
@@ -3627,7 +3648,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			}
 		}
 	}
-	- weakCGTime = 6.28.2018::13:58:44;
+	- weakCGTime = 6.28.2018::20:57:51;
 	- strongCGTime = 6.28.2018::13:50:4;
 	- ComponentFiles = { IRPYRawContainer 
 		- size = 2;
@@ -3636,9 +3657,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- _id = GUID ae1b52fd-094a-47bb-a5bd-dea60e99dab0;
 			- _myState = 139264;
 			- _name = "Default";
-			- Dependencies = { IRPYRawContainer 
-				- size = 0;
-			}
 			- _modifiedTimeWeak = 6.28.2018::13:50:4;
 			- m_path = "";
 			- m_type = specFile;
@@ -3658,9 +3676,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID d2e87d32-044e-4c7b-b12a-714188e88eb1;
@@ -3674,9 +3689,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_endCol_Short = 45;
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -3692,9 +3704,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID ae6cdcbe-66ba-4e6a-9471-6ea57c6fa26c;
@@ -3708,9 +3717,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_endCol_Short = 22;
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -3726,9 +3732,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID 9dde5f3a-cbed-421e-b07a-8565484ef6ab;
@@ -3742,9 +3745,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_endCol_Short = 21;
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -3760,9 +3760,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID eca5d637-0618-4ac9-9bc2-433bea1883a1;
@@ -3776,9 +3773,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_endCol_Short = 22;
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -3794,9 +3788,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID 5026c453-31f2-4c85-89f0-08f9f882079c;
@@ -3810,9 +3801,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_endCol_Short = 23;
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -3829,9 +3817,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IType";
 						- _id = GUID 16082c7d-dffd-48d2-bb5d-1239a5fb2677;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID e200c4f4-efdf-42ce-a0ea-abe4dcb6dfb8;
@@ -3846,9 +3831,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "IPart";
 						- _id = GUID 25d4fe8e-8540-440e-82f0-c4324fe7bf5b;
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -3865,9 +3847,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IPart";
 						- _id = GUID a375e917-2c0a-4d3d-bf37-cd7d40b8511b;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID ebd5ead1-130e-4e38-981f-3bc5b8e5bcfa;
@@ -3882,9 +3861,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "IPart";
 						- _id = GUID fafc61d5-3ad7-4dea-b68d-026547da4bc1;
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -3901,9 +3877,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IPart";
 						- _id = GUID d24c5bb5-5f75-45d5-ba85-17df2f1fbada;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID fa476a7f-35bd-4e19-916e-719fafe64841;
@@ -3918,9 +3891,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "IPart";
 						- _id = GUID b072f4b0-3803-4227-b3b5-3d02dd7ff245;
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -3937,9 +3907,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IPart";
 						- _id = GUID b8b63335-d481-45cf-961d-eeebae2bee60;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID 0a4bb22a-450b-46af-8872-5dfcb0f21b55;
@@ -3954,9 +3921,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "IPart";
 						- _id = GUID 47f25818-bdfd-4f04-a925-e48e93be5ccb;
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -3973,9 +3937,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IPart";
 						- _id = GUID 480a97c8-76cf-41d2-8e35-ad7df37951ad;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID 7a4e681f-418c-4c84-8d2f-ba28a3641d35;
@@ -3990,9 +3951,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "IPart";
 						- _id = GUID 19fc7ade-8c5b-47ce-b53b-a026f4f24a58;
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -4009,9 +3967,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IPart";
 						- _id = GUID a28776f1-3722-416f-bd60-62688c094751;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID d92ed953-5b5c-44e5-baec-fae4efb0a103;
@@ -4026,9 +3981,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID 89b0c70e-91a7-4c1c-a57f-6e1ba9492b9f;
@@ -4042,9 +3994,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_endCol_Short = 29;
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -4113,9 +4062,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IEvent";
 						- _id = GUID 82880d2c-b25a-409a-8f65-f7f5e5efaa0c;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID 2155d2fa-fb53-4481-9b0a-ac52e07debb9;
@@ -4182,9 +4128,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "IEvent";
 						- _id = GUID f63ac1e1-9e24-4ab9-9d9a-00815f6e5141;
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -4253,9 +4196,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IEvent";
 						- _id = GUID 3e497783-4c44-4be3-9c89-c7275fe28c2d;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID 84b5a7bf-e51f-4c89-aaa9-87715f392078;
@@ -4322,9 +4262,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "IEvent";
 						- _id = GUID 8fd82c67-90f9-4b35-85d0-01b5f5378312;
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -4393,9 +4330,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IEvent";
 						- _id = GUID a5c1abc1-c1bf-4425-b1ad-2129c0b3b6cd;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID b975fffb-68a0-43a3-a2b4-71ed42c3107f;
@@ -4462,9 +4396,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "IEvent";
 						- _id = GUID e4c31f2e-4463-45c3-b6ea-3a9aa4639c8f;
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -4533,9 +4464,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IEvent";
 						- _id = GUID 6c14f44f-683d-41f0-87c1-9f0ccf8a608f;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID 8fd56614-5af5-4246-92bd-82e5741436dd;
@@ -4602,9 +4530,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "IEvent";
 						- _id = GUID 79d5a033-13d4-47a2-9db2-022dd6e6429c;
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -4673,9 +4598,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IEvent";
 						- _id = GUID 134247dc-a333-4c1b-8c79-85f262f2b293;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID 568fdccc-5803-4cc7-942f-8a9ddc781ca8;
@@ -4742,9 +4664,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "IEvent";
 						- _id = GUID 8d63d372-75f4-41d3-83db-b529fda7b6ca;
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -4813,9 +4732,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IEvent";
 						- _id = GUID c255cc72-85af-482b-b365-bb8737275e67;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 			}
 		}
@@ -4823,9 +4739,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- _id = GUID 88ae9db3-5c7e-4d94-9978-324aa4757db7;
 			- _myState = 139264;
 			- _name = "Default";
-			- Dependencies = { IRPYRawContainer 
-				- size = 0;
-			}
 			- _modifiedTimeWeak = 6.28.2018::13:50:4;
 			- m_path = "";
 			- m_type = implFile;
@@ -4845,9 +4758,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID 6355a078-5d47-48f5-b428-4c66e6f865b2;
@@ -4861,9 +4771,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_endCol_Short = 29;
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -4879,9 +4786,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID f92abf86-553b-49fb-988a-9fcd22b71e82;
@@ -4895,9 +4799,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_endCol_Short = 21;
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -4913,9 +4814,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID b2b126ac-12c7-4031-b0a4-dc7dd9b7cc81;
@@ -4929,9 +4827,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_endCol_Short = 18;
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -4947,9 +4842,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID 9f6d07e9-6c15-45ab-b71d-4f28f4a8118b;
@@ -4963,9 +4855,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_endCol_Short = 28;
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -4981,9 +4870,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID fb4af668-dde5-4f26-9439-ee05dfc4f522;
@@ -4997,9 +4883,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_endCol_Short = 31;
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -5015,9 +4898,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID 00f4a14b-a43e-4f93-ae8f-141b48cf9a71;
@@ -5031,9 +4911,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_endCol_Short = 43;
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -5049,9 +4926,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID de2fc53b-125c-4b4f-bdf0-d5f634906fca;
@@ -5065,9 +4939,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_endCol_Short = 25;
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -5083,9 +4954,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID 4af66864-0513-4e61-af04-4844fbce7afc;
@@ -5099,9 +4967,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_endCol_Short = 29;
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -5118,9 +4983,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IPart";
 						- _id = GUID 25d4fe8e-8540-440e-82f0-c4324fe7bf5b;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID 74149d34-755b-429a-8ad0-727c27c04781;
@@ -5135,9 +4997,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "IPart";
 						- _id = GUID a375e917-2c0a-4d3d-bf37-cd7d40b8511b;
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -5154,9 +5013,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IPart";
 						- _id = GUID fafc61d5-3ad7-4dea-b68d-026547da4bc1;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID ca85edc8-baf9-49c0-9677-3302de999856;
@@ -5171,9 +5027,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "IPart";
 						- _id = GUID d24c5bb5-5f75-45d5-ba85-17df2f1fbada;
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -5190,9 +5043,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IPart";
 						- _id = GUID b072f4b0-3803-4227-b3b5-3d02dd7ff245;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID e66fcf21-cc1b-480e-8059-1b1a7ce99dcf;
@@ -5207,9 +5057,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "IPart";
 						- _id = GUID b8b63335-d481-45cf-961d-eeebae2bee60;
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -5226,9 +5073,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IPart";
 						- _id = GUID 47f25818-bdfd-4f04-a925-e48e93be5ccb;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID 560ab66c-5010-46f7-8948-93934e1158a2;
@@ -5243,9 +5087,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "IPart";
 						- _id = GUID 480a97c8-76cf-41d2-8e35-ad7df37951ad;
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -5262,9 +5103,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IPart";
 						- _id = GUID 19fc7ade-8c5b-47ce-b53b-a026f4f24a58;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID 2cae12be-868e-456a-b2f2-df0656c39c7a;
@@ -5279,9 +5117,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "IPart";
 						- _id = GUID a28776f1-3722-416f-bd60-62688c094751;
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -5349,9 +5184,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID 2b52d830-3051-4c2d-9da7-fa78726678f0;
@@ -5418,9 +5250,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "";
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID 0bbb4ba2-8204-483b-9f25-77f9611817f0;
@@ -5435,9 +5264,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "IEvent";
 						- _id = GUID 82880d2c-b25a-409a-8f65-f7f5e5efaa0c;
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -5454,9 +5280,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IEvent";
 						- _id = GUID f63ac1e1-9e24-4ab9-9d9a-00815f6e5141;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID ca3f0325-2fcf-4c77-9452-378aacbb77e2;
@@ -5471,9 +5294,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "IEvent";
 						- _id = GUID 3e497783-4c44-4be3-9c89-c7275fe28c2d;
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -5490,9 +5310,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IEvent";
 						- _id = GUID 8fd82c67-90f9-4b35-85d0-01b5f5378312;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID 3830f300-c5a7-4199-8c3b-1cf93e3ba3fb;
@@ -5507,9 +5324,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "IEvent";
 						- _id = GUID a5c1abc1-c1bf-4425-b1ad-2129c0b3b6cd;
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -5526,9 +5340,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IEvent";
 						- _id = GUID e4c31f2e-4463-45c3-b6ea-3a9aa4639c8f;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID cb11ebab-29bc-4fb9-94a1-7fc22e322eb0;
@@ -5543,9 +5354,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "IEvent";
 						- _id = GUID 6c14f44f-683d-41f0-87c1-9f0ccf8a608f;
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -5562,9 +5370,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IEvent";
 						- _id = GUID 79d5a033-13d4-47a2-9db2-022dd6e6429c;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID 12ef780e-4558-4765-8dcd-30617f354a10;
@@ -5579,9 +5384,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- m_subject = { INObjectHandle 
 						- _m2Class = "IEvent";
 						- _id = GUID 134247dc-a333-4c1b-8c79-85f262f2b293;
-					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
 					}
 				}
 				{ IFileFragment 
@@ -5598,9 +5400,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IEvent";
 						- _id = GUID 8d63d372-75f4-41d3-83db-b529fda7b6ca;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 				{ IFileFragment 
 					- _id = GUID b0e1ee34-585a-458b-8169-5904c84ca401;
@@ -5616,9 +5415,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IEvent";
 						- _id = GUID c255cc72-85af-482b-b365-bb8737275e67;
 					}
-					- Fragments = { IRPYRawContainer 
-						- size = 0;
-					}
 				}
 			}
 		}
@@ -5632,9 +5428,9 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- _id = GUID a1bd937f-d49a-4655-9fb2-6fd4e1d15cbf;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- _modifiedTimeWeak = 6.28.2018::13:50:4;
+			- _modifiedTimeWeak = 6.28.2018::13:58:44;
 			- _lastID = 23;
-			- weakCGTime = 6.28.2018::13:50:4;
+			- weakCGTime = 6.28.2018::13:58:44;
 			- strongCGTime = 6.28.2018::13:50:4;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -6072,7 +5868,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
 				}
 			}
-			- _modifiedTimeWeak = 6.28.2018::13:50:4;
+			- _modifiedTimeWeak = 6.28.2018::20:58:33;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "Sensing_System.omd";
@@ -6082,7 +5878,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
 			}
 			- _lastID = 10;
-			- weakCGTime = 6.28.2018::13:50:4;
+			- weakCGTime = 6.28.2018::20:58:33;
 			- strongCGTime = 6.28.2018::13:50:4;
 			- Attrs = { IRPYRawContainer 
 				- size = 1;
@@ -9322,7 +9118,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- _id = GUID 8953614b-caa3-49d4-84f9-b53d8ff06f04;
 			}
 			- Associations = { IRPYRawContainer 
-				- size = 2;
+				- size = 3;
 				- value = 
 				{ IAssociationEnd 
 					- _id = GUID fe4f3dd6-a311-4082-816b-9e9d5045fbcb;
@@ -9360,6 +9156,24 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- _linkType = Assoc;
 					- _navigability = Navigable;
 				}
+				{ IAssociationEnd 
+					- _id = GUID f1fb7812-983f-44aa-9b7f-184c20cbcb4b;
+					- _myState = 10240;
+					- _name = "itsSmartMeetingRoom";
+					- _modifiedTimeWeak = 6.28.2018::20:58:33;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID c6ec8654-e5f6-44df-a1e3-5bc557fbd24e;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 8d9957c9-4d61-4b28-82ca-f8a0d535ffec;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
 			}
 			- _classModifier = Unspecified;
 		}
@@ -9379,7 +9193,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
 				}
 			}
-			- _modifiedTimeWeak = 6.28.2018::13:50:4;
+			- _modifiedTimeWeak = 6.28.2018::20:58:56;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "Sensing_System.omd";
@@ -9389,7 +9203,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
 			}
 			- _lastID = 1;
-			- weakCGTime = 6.28.2018::13:50:4;
+			- weakCGTime = 6.28.2018::20:58:56;
 			- strongCGTime = 6.28.2018::13:50:4;
 			- ComponentFiles = { IRPYRawContainer 
 				- size = 2;
@@ -9398,10 +9212,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- _id = GUID 653ff34a-7f83-400e-a1f5-eff500528d96;
 					- _myState = 139264;
 					- _name = "Authorization_security_system";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
-					- _modifiedTimeWeak = 6.28.2018::13:35:15;
+					- _modifiedTimeWeak = 6.28.2018::20:58:56;
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -9420,14 +9231,11 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 31f0bbb5-701c-49d7-b35f-05e54f1ed397;
 							- _name = "Authorization_security_system";
-							- _modifiedTimeWeak = 6.28.2018::13:35:15;
+							- _modifiedTimeWeak = 6.28.2018::20:58:56;
 							- m_type = implFragment;
 							- m_text = "";
 							- m_startRow = 24;
@@ -9506,9 +9314,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID d7e58370-da5b-4c3f-be1c-7c07feecf21b;
@@ -9575,9 +9380,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -9587,10 +9389,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- _id = GUID 1c443ee0-f143-40c9-b93b-6cc5951281e5;
 					- _myState = 139264;
 					- _name = "Authorization_security_system";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
-					- _modifiedTimeWeak = 6.28.2018::13:35:15;
+					- _modifiedTimeWeak = 6.28.2018::20:58:56;
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -9609,9 +9408,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 7a159c74-6495-4066-b2db-d2594da9c14e;
@@ -9625,9 +9421,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_endCol_Short = 45;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -9643,9 +9436,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 2638cd01-4b94-4470-b495-6e5807bd9967;
@@ -9659,9 +9449,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -9677,9 +9464,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 6dd7b0af-eb85-48eb-b13f-6481165d267c;
@@ -9693,9 +9477,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_endCol_Short = 21;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -9711,9 +9492,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID e87b23e4-256d-41d7-9c61-6e5a402d4ab6;
@@ -9727,9 +9505,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -9745,9 +9520,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 059b5dc7-a75f-4fce-815a-f7cf070bef7e;
@@ -9762,14 +9534,11 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 741ae21c-52de-49cb-a025-afe5d3337c4d;
 							- _name = "Authorization_security_system";
-							- _modifiedTimeWeak = 6.28.2018::13:35:15;
+							- _modifiedTimeWeak = 6.28.2018::20:58:56;
 							- Tags = { IRPYRawContainer 
 								- size = 2;
 								- value = 
@@ -9849,9 +9618,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 68fd4099-ce49-44a6-ba2c-638af3cfff6d;
@@ -9867,9 +9633,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 996b41bd-0fd1-40f6-85cc-edc533f3ee85;
@@ -9883,9 +9646,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 									- m_endCol_Short = 36;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -9901,9 +9661,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -9913,6 +9670,28 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID b7b60d9f-4bd9-4471-a9a2-f2862cc83da8;
+					- _myState = 10240;
+					- _name = "itsSmartMeetingRoom";
+					- _modifiedTimeWeak = 6.28.2018::20:58:56;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID c6ec8654-e5f6-44df-a1e3-5bc557fbd24e;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 440f5a6c-95f7-4772-bea5-6bb46d7c377c;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
 			}
 			- _classModifier = Unspecified;
 		}
@@ -9932,7 +9711,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
 				}
 			}
-			- _modifiedTimeWeak = 6.28.2018::13:50:4;
+			- _modifiedTimeWeak = 6.28.2018::20:59:0;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "Sensing_System.omd";
@@ -9941,7 +9720,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				- _name = "BDD";
 				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
 			}
-			- weakCGTime = 6.28.2018::13:50:4;
+			- weakCGTime = 6.28.2018::20:59:0;
 			- strongCGTime = 6.28.2018::13:50:4;
 			- ComponentFiles = { IRPYRawContainer 
 				- size = 2;
@@ -9950,10 +9729,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- _id = GUID 4fe64ac6-d5a4-47af-80db-ea5136346f41;
 					- _myState = 139264;
 					- _name = "Communication_system";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
-					- _modifiedTimeWeak = 6.28.2018::13:35:15;
+					- _modifiedTimeWeak = 6.28.2018::20:59:0;
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -9972,9 +9748,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 2b3571e0-024c-469f-aab9-f6d9f3e76be2;
@@ -9988,9 +9761,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_endCol_Short = 45;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -10006,9 +9776,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID d1197b45-b3c5-48ba-8bef-cec86fc0705d;
@@ -10022,9 +9789,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -10040,9 +9804,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID d0dbb6b1-b1bd-4add-b019-a339fc5a3ed4;
@@ -10056,9 +9817,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_endCol_Short = 21;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -10074,9 +9832,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 8f21f8bc-2c64-4f4f-80de-8c8e2c13d228;
@@ -10090,9 +9845,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -10108,9 +9860,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID ba14476b-3748-4654-a871-cfeea6a2baf8;
@@ -10125,14 +9874,11 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID d3d2c275-1402-4317-beed-58f615704cd6;
 							- _name = "Communication_system";
-							- _modifiedTimeWeak = 6.28.2018::13:35:15;
+							- _modifiedTimeWeak = 6.28.2018::20:59:0;
 							- Tags = { IRPYRawContainer 
 								- size = 2;
 								- value = 
@@ -10212,9 +9958,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 1b7f4b10-54cc-4794-95bf-10b7ce922cfa;
@@ -10230,9 +9973,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID c6fb34cd-6e98-47a1-a40a-ce76675b5f63;
@@ -10246,9 +9986,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 									- m_endCol_Short = 27;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -10264,9 +10001,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -10276,10 +10010,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 					- _id = GUID 9d6b4395-a3f9-4b3d-a4c2-595b6d9fc639;
 					- _myState = 139264;
 					- _name = "Communication_system";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
-					- _modifiedTimeWeak = 6.28.2018::13:35:15;
+					- _modifiedTimeWeak = 6.28.2018::20:59:0;
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -10298,14 +10029,11 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 9c5b1e02-ab3d-403b-a065-29f049c60948;
 							- _name = "Communication_system";
-							- _modifiedTimeWeak = 6.28.2018::13:35:15;
+							- _modifiedTimeWeak = 6.28.2018::20:59:0;
 							- m_type = implFragment;
 							- m_text = "";
 							- m_startRow = 24;
@@ -10384,9 +10112,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 820f4045-bfa9-4621-873d-f4a5a860d207;
@@ -10453,9 +10178,6 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -10465,6 +10187,28 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 1f9a775f-9735-40e2-831f-a6faa38c55e0;
+					- _myState = 10240;
+					- _name = "itsSmartMeetingRoom";
+					- _modifiedTimeWeak = 6.28.2018::20:59:0;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID c6ec8654-e5f6-44df-a1e3-5bc557fbd24e;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 3fb6c5e7-8a42-4da6-90f8-a3e9ed5bd779;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
 			}
 			- _classModifier = Unspecified;
 		}
@@ -16938,7 +16682,7 @@ return 0;";
 					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
 				}
 			}
-			- _modifiedTimeWeak = 6.28.2018::13:50:4;
+			- _modifiedTimeWeak = 6.28.2018::20:58:37;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "Sensing_System.omd";
@@ -16948,7 +16692,7 @@ return 0;";
 				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
 			}
 			- _lastID = 3;
-			- weakCGTime = 6.28.2018::13:50:4;
+			- weakCGTime = 6.28.2018::20:58:37;
 			- strongCGTime = 6.28.2018::13:50:4;
 			- Operations = { IRPYRawContainer 
 				- size = 1;
@@ -19746,7 +19490,7 @@ return 0;";
 				- _id = GUID 0489ac5d-19fb-4c05-903a-d4f94f644df3;
 			}
 			- Associations = { IRPYRawContainer 
-				- size = 1;
+				- size = 2;
 				- value = 
 				{ IAssociationEnd 
 					- _id = GUID 37ebbe00-c9b3-4de8-9a6a-46399548d6d0;
@@ -19761,6 +19505,24 @@ return 0;";
 					- _inverse = { IHandle 
 						- _m2Class = "IAssociationEnd";
 						- _id = GUID 0f23e738-6af7-4798-be0f-898da0e073d0;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 4b7fad95-10a3-4b6d-87d4-42844c1d8af4;
+					- _myState = 10240;
+					- _name = "itsSmartMeetingRoom";
+					- _modifiedTimeWeak = 6.28.2018::20:58:37;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID c6ec8654-e5f6-44df-a1e3-5bc557fbd24e;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 19033fb2-5c7f-4b26-a8ae-04d7ae2d0cc5;
 					}
 					- _linkName = "";
 					- _linkType = Assoc;
@@ -19785,7 +19547,7 @@ return 0;";
 					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
 				}
 			}
-			- _modifiedTimeWeak = 6.28.2018::13:50:4;
+			- _modifiedTimeWeak = 6.28.2018::20:58:8;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "Sensing_System.omd";
@@ -19794,7 +19556,7 @@ return 0;";
 				- _name = "BDD";
 				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
 			}
-			- weakCGTime = 6.28.2018::13:50:4;
+			- weakCGTime = 6.28.2018::20:58:8;
 			- strongCGTime = 6.28.2018::13:50:4;
 			- ComponentFiles = { IRPYRawContainer 
 				- size = 2;
@@ -19803,10 +19565,7 @@ return 0;";
 					- _id = GUID efca7748-05d8-4185-914e-a3f9e7a13793;
 					- _myState = 139264;
 					- _name = "Fire_sensor";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
-					- _modifiedTimeWeak = 6.28.2018::13:35:15;
+					- _modifiedTimeWeak = 6.28.2018::20:58:8;
 					- m_path = "";
 					- m_type = specFile;
 					- Fragments = { IRPYRawContainer 
@@ -19825,9 +19584,6 @@ return 0;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID d2f7d52f-80f9-483e-be5f-803d719df8ca;
@@ -19841,9 +19597,6 @@ return 0;";
 							- m_endCol_Short = 45;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -19859,9 +19612,6 @@ return 0;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 0b9da147-bdd3-4535-ae6a-376ca2146019;
@@ -19875,9 +19625,6 @@ return 0;";
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -19893,9 +19640,6 @@ return 0;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID b12a38ce-d983-4bc2-a4c0-3c77a0f3dace;
@@ -19909,9 +19653,6 @@ return 0;";
 							- m_endCol_Short = 21;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -19927,9 +19668,6 @@ return 0;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID dd4007e2-ddf6-47d3-ae29-c53d58a8e6e4;
@@ -19943,9 +19681,6 @@ return 0;";
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -19961,9 +19696,6 @@ return 0;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID efe5280c-6d27-4eb9-bd5e-9f2967e4b41d;
@@ -19978,14 +19710,11 @@ return 0;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 4e7ce210-05c7-4339-ac12-b32758448f4e;
 							- _name = "Fire_sensor";
-							- _modifiedTimeWeak = 6.28.2018::13:35:15;
+							- _modifiedTimeWeak = 6.28.2018::20:58:8;
 							- Tags = { IRPYRawContainer 
 								- size = 2;
 								- value = 
@@ -20065,9 +19794,6 @@ return 0;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID f830efc6-a773-4e2c-8609-cb2cc0de084a;
@@ -20083,9 +19809,6 @@ return 0;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID ef1c4566-7c15-44f4-8891-28f228975d3b;
@@ -20099,9 +19822,6 @@ return 0;";
 									- m_endCol_Short = 18;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -20117,9 +19837,6 @@ return 0;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -20129,10 +19846,7 @@ return 0;";
 					- _id = GUID 30b7bfdc-9618-4167-a663-cc49afec7acb;
 					- _myState = 139264;
 					- _name = "Fire_sensor";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
-					- _modifiedTimeWeak = 6.28.2018::13:35:15;
+					- _modifiedTimeWeak = 6.28.2018::20:58:8;
 					- m_path = "";
 					- m_type = implFile;
 					- Fragments = { IRPYRawContainer 
@@ -20151,14 +19865,11 @@ return 0;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 56440c52-9c2b-41ea-919d-70fb8078d442;
 							- _name = "Fire_sensor";
-							- _modifiedTimeWeak = 6.28.2018::13:35:15;
+							- _modifiedTimeWeak = 6.28.2018::20:58:8;
 							- m_type = implFragment;
 							- m_text = "";
 							- m_startRow = 24;
@@ -20237,9 +19948,6 @@ return 0;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 23ab316e-1021-4a1f-9448-d1f7661ae425;
@@ -20306,9 +20014,6 @@ return 0;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -20318,6 +20023,28 @@ return 0;";
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 2b880aa6-246a-42eb-bd7e-70469b382869;
+					- _myState = 10240;
+					- _name = "itsSmartMeetingRoom";
+					- _modifiedTimeWeak = 6.28.2018::20:58:8;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID c6ec8654-e5f6-44df-a1e3-5bc557fbd24e;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID b0f2aec6-4374-4b86-a42d-14204ab8c32f;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
 			}
 			- _classModifier = Unspecified;
 		}
@@ -20355,9 +20082,6 @@ return 0;";
 					- _id = GUID 94c1d32f-8f52-45ec-bba8-03a6e7ae4866;
 					- _myState = 139264;
 					- _name = "Security_system";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- _modifiedTimeWeak = 6.28.2018::13:35:15;
 					- m_path = "";
 					- m_type = specFile;
@@ -20377,9 +20101,6 @@ return 0;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 389bc112-f39e-4786-97bd-2491bc3b0be8;
@@ -20393,9 +20114,6 @@ return 0;";
 							- m_endCol_Short = 45;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -20411,9 +20129,6 @@ return 0;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 488019e6-a806-43f1-a773-99088f7b9f0f;
@@ -20427,9 +20142,6 @@ return 0;";
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -20445,9 +20157,6 @@ return 0;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 8aadf402-1421-4eef-914e-5b97f3c10b2b;
@@ -20461,9 +20170,6 @@ return 0;";
 							- m_endCol_Short = 21;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -20479,9 +20185,6 @@ return 0;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID bdd95554-6362-4047-a141-0fceb5c8ef76;
@@ -20495,9 +20198,6 @@ return 0;";
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -20513,9 +20213,6 @@ return 0;";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 827575be-4ece-4afb-904a-d0635af9d298;
@@ -20529,9 +20226,6 @@ return 0;";
 							- m_endCol_Short = 21;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -20617,9 +20311,6 @@ return 0;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID e988c117-2c24-45fc-9208-f066839ccb8c;
@@ -20635,9 +20326,6 @@ return 0;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 80a6f1e9-af8d-43ff-84df-47b0d6948e23;
@@ -20651,9 +20339,6 @@ return 0;";
 									- m_endCol_Short = 22;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -20669,9 +20354,6 @@ return 0;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -20681,9 +20363,6 @@ return 0;";
 					- _id = GUID 1f257fef-20a8-4d04-b616-555278b80bb1;
 					- _myState = 139264;
 					- _name = "Security_system";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- _modifiedTimeWeak = 6.28.2018::13:35:15;
 					- m_path = "";
 					- m_type = implFile;
@@ -20702,9 +20381,6 @@ return 0;";
 							- m_endCol_Short = 29;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -20789,9 +20465,6 @@ return 0;";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID e59bc7fb-a9ad-447e-8e7b-0ab4653a199f;
@@ -20857,9 +20530,6 @@ return 0;";
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 							}
@@ -22293,7 +21963,7 @@ b = setup_socket()";
 									}
 								}
 								- _version = 6.28.2018::15:29:58;
-								- _baseVersion = 1.1.1970::1:0:0;
+								- _baseVersion = 1.2.1990::0:0:0;
 								- _diagram = GUID d03f6d15-5968-4414-b665-5379eac71e5d;
 								- Views = { IRPYRawContainer 
 									- size = 1;
@@ -26007,9 +25677,6 @@ b = setup_socket()";
 					- _id = GUID da1d64dd-0786-4772-94b0-2136c9955cee;
 					- _myState = 139264;
 					- _name = "Pressure_sensor";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- _modifiedTimeWeak = 6.28.2018::13:35:15;
 					- m_path = "";
 					- m_type = specFile;
@@ -26029,9 +25696,6 @@ b = setup_socket()";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 7f261101-6bdb-4e22-b157-4e0d60854ed1;
@@ -26045,9 +25709,6 @@ b = setup_socket()";
 							- m_endCol_Short = 45;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -26063,9 +25724,6 @@ b = setup_socket()";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 0813ee0c-62e4-4abc-882f-5628e8d25928;
@@ -26079,9 +25737,6 @@ b = setup_socket()";
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -26097,9 +25752,6 @@ b = setup_socket()";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 92c8396f-baf9-410f-a8e3-c28d29b19ee7;
@@ -26113,9 +25765,6 @@ b = setup_socket()";
 							- m_endCol_Short = 21;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -26131,9 +25780,6 @@ b = setup_socket()";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 41e9b154-725b-45b0-aefb-a3cda26b4a44;
@@ -26147,9 +25793,6 @@ b = setup_socket()";
 							- m_endCol_Short = 22;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -26165,9 +25808,6 @@ b = setup_socket()";
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
 							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
-							}
 						}
 						{ IFileFragment 
 							- _id = GUID 2198af4c-9fa2-40fa-8a02-b8a2320767c3;
@@ -26181,9 +25821,6 @@ b = setup_socket()";
 							- m_endCol_Short = 21;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -26269,9 +25906,6 @@ b = setup_socket()";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID fa15006d-b4c4-4d78-8f16-5876552c067b;
@@ -26287,9 +25921,6 @@ b = setup_socket()";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID eb6943b5-2c41-4124-83af-4c4888a4de24;
@@ -26304,9 +25935,6 @@ b = setup_socket()";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID d44c0d25-4080-401c-990c-4edbb5aa3997;
@@ -26320,9 +25948,6 @@ b = setup_socket()";
 									- m_endCol_Short = 23;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -26339,9 +25964,6 @@ b = setup_socket()";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 1fe70783-700a-487d-b568-cd70b3ce9d78;
@@ -26356,9 +25978,6 @@ b = setup_socket()";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 1e8ea9ac-0e75-49f8-b913-a91ae21f2829;
@@ -26372,9 +25991,6 @@ b = setup_socket()";
 									- m_endCol_Short = 37;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -26391,9 +26007,6 @@ b = setup_socket()";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID ae07632f-27c9-449e-b854-dded4e67de1c;
@@ -26409,9 +26022,6 @@ b = setup_socket()";
 										- _m2Class = "IAttribute";
 										- _id = GUID 68f2396c-2f8d-46e1-aae7-a4ec3bd9eb48;
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 							}
 						}
@@ -26421,9 +26031,6 @@ b = setup_socket()";
 					- _id = GUID cb16cf7f-43a6-46b8-853a-0d1daaa46358;
 					- _myState = 139264;
 					- _name = "Pressure_sensor";
-					- Dependencies = { IRPYRawContainer 
-						- size = 0;
-					}
 					- _modifiedTimeWeak = 6.28.2018::13:35:15;
 					- m_path = "";
 					- m_type = implFile;
@@ -26442,9 +26049,6 @@ b = setup_socket()";
 							- m_endCol_Short = 29;
 							- m_subject = { INObjectHandle 
 								- _m2Class = "";
-							}
-							- Fragments = { IRPYRawContainer 
-								- size = 0;
 							}
 						}
 						{ IFileFragment 
@@ -26529,9 +26133,6 @@ b = setup_socket()";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID 0bfd5a12-197d-4370-b16e-45d0d8eeacbc;
@@ -26597,9 +26198,6 @@ b = setup_socket()";
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 								{ IFileFragment 
@@ -26667,9 +26265,6 @@ b = setup_socket()";
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
 									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
-									}
 								}
 								{ IFileFragment 
 									- _id = GUID cae23d61-e6b0-4f1d-9221-128cda709e34;
@@ -26735,9 +26330,6 @@ b = setup_socket()";
 									- m_endCol_Short = 1;
 									- m_subject = { INObjectHandle 
 										- _m2Class = "";
-									}
-									- Fragments = { IRPYRawContainer 
-										- size = 0;
 									}
 								}
 							}
@@ -29798,7 +29390,7 @@ b = setup_socket()";
 					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
 				}
 			}
-			- _modifiedTimeWeak = 6.28.2018::13:50:4;
+			- _modifiedTimeWeak = 6.28.2018::20:57:51;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "Sensing_System.omd";
@@ -29808,8 +29400,8 @@ b = setup_socket()";
 				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
 			}
 			- _lastID = 1;
-			- weakCGTime = 6.28.2018::13:50:4;
-			- strongCGTime = 6.28.2018::13:50:4;
+			- weakCGTime = 6.28.2018::20:57:51;
+			- strongCGTime = 6.28.2018::20:57:42;
 			- _multiplicity = "";
 			- StateCharts = { IRPYRawContainer 
 				- size = 1;
@@ -29818,10 +29410,10 @@ b = setup_socket()";
 					- _id = GUID 7bc2b55e-d386-4e18-acb1-c2de150ba9bf;
 					- _myState = 10240;
 					- _name = "statechart_0";
-					- _modifiedTimeWeak = 6.19.2018::21:2:24;
+					- _modifiedTimeWeak = 6.28.2018::20:57:42;
 					- _lastID = 10;
-					- weakCGTime = 6.19.2018::21:2:24;
-					- strongCGTime = 6.19.2018::20:57:40;
+					- weakCGTime = 6.28.2018::20:57:42;
+					- strongCGTime = 6.28.2018::20:57:42;
 					- _multiplicity = "";
 					- _itsStateChart = { IHandle 
 						- _m2Class = "";
@@ -31537,13 +31129,13 @@ b = setup_socket()";
 				- _id = GUID 7bc2b55e-d386-4e18-acb1-c2de150ba9bf;
 			}
 			- Associations = { IRPYRawContainer 
-				- size = 2;
+				- size = 3;
 				- value = 
 				{ IAssociationEnd 
 					- _id = GUID 9380f136-08d4-491d-b472-0f6f9e0eb5b2;
 					- _myState = 10240;
 					- _name = "itsVentilation";
-					- _modifiedTimeWeak = 6.19.2018::20:56:16;
+					- _modifiedTimeWeak = 6.28.2018::20:57:42;
 					- _multiplicity = "1";
 					- _otherClass = { IClassifierHandle 
 						- _m2Class = "IClass";
@@ -31561,7 +31153,7 @@ b = setup_socket()";
 					- _id = GUID 21107947-8926-4274-be36-9cac10e786c1;
 					- _myState = 10240;
 					- _name = "itsHumiditySensor";
-					- _modifiedTimeWeak = 6.19.2018::20:56:20;
+					- _modifiedTimeWeak = 6.28.2018::20:57:42;
 					- _multiplicity = "1";
 					- _otherClass = { IClassifierHandle 
 						- _m2Class = "IClass";
@@ -31570,6 +31162,24 @@ b = setup_socket()";
 					- _inverse = { IHandle 
 						- _m2Class = "IAssociationEnd";
 						- _id = GUID 2dce8964-7e30-4683-9028-df9a90609cd5;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 19f53410-2b15-407e-9a92-303b529258b0;
+					- _myState = 10240;
+					- _name = "itsSmartMeetingRoom";
+					- _modifiedTimeWeak = 6.28.2018::20:57:51;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID c6ec8654-e5f6-44df-a1e3-5bc557fbd24e;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID d5e5bdfc-f969-451e-8803-2032d01ce1d9;
 					}
 					- _linkName = "";
 					- _linkType = Assoc;
@@ -31694,13 +31304,13 @@ b = setup_socket()";
 					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
 				}
 			}
-			- _modifiedTimeWeak = 6.28.2018::13:59:1;
+			- _modifiedTimeWeak = 6.28.2018::20:59:0;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _id = GUID 3d8e80e6-888e-4658-8df1-0bd506d5bfeb;
 			}
 			- _lastID = 6;
-			- weakCGTime = 6.28.2018::13:59:1;
+			- weakCGTime = 6.28.2018::20:59:0;
 			- strongCGTime = 6.28.2018::13:50:4;
 			- Ports = { IRPYRawContainer 
 				- size = 3;
@@ -31721,7 +31331,7 @@ b = setup_socket()";
 							- _id = GUID b04e5e63-f5d7-4e3d-8000-2e07f5be4e8a;
 						}
 					}
-					- _modifiedTimeWeak = 6.28.2018::13:54:53;
+					- _modifiedTimeWeak = 6.28.2018::20:57:42;
 					- _multiplicity = "1";
 					- _otherClass = { IClassifierHandle 
 						- _m2Class = "IClass";
@@ -31748,7 +31358,7 @@ b = setup_socket()";
 							- _id = GUID b04e5e63-f5d7-4e3d-8000-2e07f5be4e8a;
 						}
 					}
-					- _modifiedTimeWeak = 6.28.2018::13:56:0;
+					- _modifiedTimeWeak = 6.28.2018::20:57:42;
 					- _multiplicity = "1";
 					- _otherClass = { IClassifierHandle 
 						- _m2Class = "IClass";
@@ -31775,7 +31385,7 @@ b = setup_socket()";
 							- _id = GUID b04e5e63-f5d7-4e3d-8000-2e07f5be4e8a;
 						}
 					}
-					- _modifiedTimeWeak = 6.28.2018::13:56:21;
+					- _modifiedTimeWeak = 6.28.2018::20:57:42;
 					- _multiplicity = "1";
 					- _otherClass = { IClassifierHandle 
 						- _m2Class = "IClass";
@@ -31792,13 +31402,13 @@ b = setup_socket()";
 				- _m2Class = "";
 			}
 			- Associations = { IRPYRawContainer 
-				- size = 1;
+				- size = 7;
 				- value = 
 				{ IAssociationEnd 
 					- _id = GUID c5fa7620-26aa-41ee-92a1-31cba0704d09;
 					- _myState = 10240;
 					- _name = "itsUser";
-					- _modifiedTimeWeak = 6.28.2018::13:59:1;
+					- _modifiedTimeWeak = 6.28.2018::20:57:42;
 					- _multiplicity = "1";
 					- _otherClass = { IClassifierHandle 
 						- _m2Class = "IActor";
@@ -31810,6 +31420,114 @@ b = setup_socket()";
 					}
 					- _linkName = "";
 					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID d5e5bdfc-f969-451e-8803-2032d01ce1d9;
+					- _myState = 10240;
+					- _name = "itsAirQualityController";
+					- _modifiedTimeWeak = 6.28.2018::20:57:51;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 77490d42-26de-440e-b151-c61ed8df8b51;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 19f53410-2b15-407e-9a92-303b529258b0;
+					}
+					- _linkName = "";
+					- _linkType = Aggreg;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID b0f2aec6-4374-4b86-a42d-14204ab8c32f;
+					- _myState = 10240;
+					- _name = "itsFire_sensor";
+					- _modifiedTimeWeak = 6.28.2018::20:58:8;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 7490dbff-1cc2-4e64-a41e-1be4cfddcdca;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 2b880aa6-246a-42eb-bd7e-70469b382869;
+					}
+					- _linkName = "";
+					- _linkType = Aggreg;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 8d9957c9-4d61-4b28-82ca-f8a0d535ffec;
+					- _myState = 10240;
+					- _name = "itsTemperatureController";
+					- _modifiedTimeWeak = 6.28.2018::20:58:33;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID e3de5109-742a-4b9f-8782-3b3e34af96aa;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID f1fb7812-983f-44aa-9b7f-184c20cbcb4b;
+					}
+					- _linkName = "";
+					- _linkType = Aggreg;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 19033fb2-5c7f-4b26-a8ae-04d7ae2d0cc5;
+					- _myState = 10240;
+					- _name = "itsLightingController";
+					- _modifiedTimeWeak = 6.28.2018::20:58:37;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID b3e3e0be-111c-4378-9048-7851205df723;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 4b7fad95-10a3-4b6d-87d4-42844c1d8af4;
+					}
+					- _linkName = "";
+					- _linkType = Aggreg;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 440f5a6c-95f7-4772-bea5-6bb46d7c377c;
+					- _myState = 10240;
+					- _name = "itsAuthorization_security_system";
+					- _modifiedTimeWeak = 6.28.2018::20:58:56;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID f1ca5a45-7791-4145-8577-e041d6fe4398;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID b7b60d9f-4bd9-4471-a9a2-f2862cc83da8;
+					}
+					- _linkName = "";
+					- _linkType = Aggreg;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 3fb6c5e7-8a42-4da6-90f8-a3e9ed5bd779;
+					- _myState = 10240;
+					- _name = "itsCommunication_system";
+					- _modifiedTimeWeak = 6.28.2018::20:59:0;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 14cc426e-7827-4a36-83a2-ad3389b597fc;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 1f9a775f-9735-40e2-831f-a6faa38c55e0;
+					}
+					- _linkName = "";
+					- _linkType = Aggreg;
 					- _navigability = Navigable;
 				}
 			}
@@ -32131,7 +31849,7 @@ b = setup_socket()";
 					- _id = GUID b2944aa1-daf4-4596-9707-d7ae5b2f2976;
 				}
 			}
-			- _modifiedTimeWeak = 6.28.2018::13:52:10;
+			- _modifiedTimeWeak = 6.28.2018::13:54:31;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _id = GUID 3d8e80e6-888e-4658-8df1-0bd506d5bfeb;
@@ -32228,7 +31946,7 @@ b = setup_socket()";
 					- _id = GUID b2944aa1-daf4-4596-9707-d7ae5b2f2976;
 				}
 			}
-			- _modifiedTimeWeak = 6.28.2018::13:52:12;
+			- _modifiedTimeWeak = 6.28.2018::13:56:45;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _id = GUID 3d8e80e6-888e-4658-8df1-0bd506d5bfeb;
@@ -32325,7 +32043,7 @@ b = setup_socket()";
 					- _id = GUID b2944aa1-daf4-4596-9707-d7ae5b2f2976;
 				}
 			}
-			- _modifiedTimeWeak = 6.28.2018::13:52:13;
+			- _modifiedTimeWeak = 6.28.2018::13:57:8;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _id = GUID 3d8e80e6-888e-4658-8df1-0bd506d5bfeb;

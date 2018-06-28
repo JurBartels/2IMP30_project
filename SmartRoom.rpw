@@ -33,14 +33,14 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 0 ;
 			- _DownRight = 1046 367 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 12;
+			- m_nDiagramIndex = 10;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
@@ -59,11 +59,11 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- _name = "BDD";
 				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
 			}
-			- _UpLeft = 64 0 ;
-			- _DownRight = 1110 367 ;
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1394 841 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 13;
-			- m_bIsActiveView = 0;
+			- m_nDiagramIndex = 0;
+			- m_bIsActiveView = 1;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -91,7 +91,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 0 ;
 			- _DownRight = 1046 367 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 11;
+			- m_nDiagramIndex = 9;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -120,7 +120,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 0 ;
 			- _DownRight = 1046 367 ;
 			- _instanceName = "AirQualityControllerPart";
-			- m_nDiagramIndex = 10;
+			- m_nDiagramIndex = 8;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -137,7 +137,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- m_nRight = 967;
 				- m_nBottom = 476;
 			}
-			- _wasOpenedOnCloseProject = 1;
+			- _wasOpenedOnCloseProject = 0;
 			- _theDiagram = { IHandle 
 				- _m2Class = "IStateChartDiagram";
 				- _filename = "Default.sbs";
@@ -149,7 +149,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 0 ;
 			- _DownRight = 826 312 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 1;
+			- m_nDiagramIndex = 0;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -178,7 +178,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 0 ;
 			- _DownRight = 1170 366 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 3;
+			- m_nDiagramIndex = 1;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -207,7 +207,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 -8 ;
 			- _DownRight = 1046 359 ;
 			- _instanceName = "LightingControllerPart";
-			- m_nDiagramIndex = 6;
+			- m_nDiagramIndex = 4;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -224,7 +224,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- m_nRight = 1259;
 				- m_nBottom = 548;
 			}
-			- _wasOpenedOnCloseProject = 1;
+			- _wasOpenedOnCloseProject = 0;
 			- _theDiagram = { IHandle 
 				- _m2Class = "IPanelDiagram";
 				- _filename = "Default.sbs";
@@ -236,14 +236,14 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 0 ;
 			- _DownRight = 1144 410 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 2;
+			- m_nDiagramIndex = 0;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 2;
-				- m_showCmd = 3;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
@@ -253,7 +253,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- m_nRight = 993;
 				- m_nBottom = 502;
 			}
-			- _wasOpenedOnCloseProject = 1;
+			- _wasOpenedOnCloseProject = 0;
 			- _theDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "Default.sbs";
@@ -262,11 +262,11 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- _name = "SystemContextDiagram";
 				- _id = GUID 3d8e80e6-888e-4658-8df1-0bd506d5bfeb;
 			}
-			- _UpLeft = 0 10 ;
-			- _DownRight = 1024 543 ;
+			- _UpLeft = 0 0 ;
+			- _DownRight = 705 266 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
-			- m_bIsActiveView = 1;
+			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -282,7 +282,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- m_nRight = 1239;
 				- m_nBottom = 583;
 			}
-			- _wasOpenedOnCloseProject = 1;
+			- _wasOpenedOnCloseProject = 0;
 			- _theDiagram = { IHandle 
 				- _m2Class = "IStateChartDiagram";
 				- _filename = "Default.sbs";
@@ -294,7 +294,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 0 ;
 			- _DownRight = 1046 367 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 14;
+			- m_nDiagramIndex = 0;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -323,7 +323,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 12 0 ;
 			- _DownRight = 1156 410 ;
 			- _instanceName = "ControlSystemPart";
-			- m_nDiagramIndex = 7;
+			- m_nDiagramIndex = 5;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -352,7 +352,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 0 ;
 			- _DownRight = 1092 516 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 4;
+			- m_nDiagramIndex = 2;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -381,7 +381,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 0 ;
 			- _DownRight = 1046 367 ;
 			- _instanceName = "VentilationPart";
-			- m_nDiagramIndex = 9;
+			- m_nDiagramIndex = 7;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -410,7 +410,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 -23 ;
 			- _DownRight = 1695 778 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 5;
+			- m_nDiagramIndex = 3;
 			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
@@ -439,11 +439,11 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 			- _UpLeft = 0 0 ;
 			- _DownRight = 1144 410 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 8;
+			- m_nDiagramIndex = 6;
 			- m_bIsActiveView = 0;
 		}
 	}
-	- _fullName = "C:\\Dev\\2IMP30_project\\SmartRoom";
+	- _fullName = "C:\\Users\\jlta\\Documents\\GitHub\\2IMP30_project\\SmartRoom";
 	- _selectedPerspective = "Advanced";
 	- m_SearchScopeList = { IRPYRawContainer 
 		- size = 0;
