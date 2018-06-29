@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Communication_system
-//!	Generated Date	: Thu, 28, Jun 2018  
+//!	Generated Date	: Fri, 29, Jun 2018  
 	File Path	: DefaultComponent\DefaultConfig\Communication_system.h
 *********************************************************************/
 

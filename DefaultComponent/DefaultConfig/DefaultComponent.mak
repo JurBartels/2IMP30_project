@@ -100,6 +100,11 @@ OBJS= \
   Ventilation.obj \
   AirQualityController.obj \
   PresenceSensor.obj \
+  ElectricitySource.obj \
+  SMR.obj \
+  ISP.obj \
+  WaterSource.obj \
+  User.obj \
   Default.obj
 
 
@@ -273,7 +278,37 @@ PresenceSensor.obj : PresenceSensor.cpp PresenceSensor.h    Default.h LightingCo
 
 
 
-Default.obj : Default.cpp Default.h    TemperatureController.h Authorization_security_system.h Communication_system.h TemperatureSensor.h LightingController.h Fire_sensor.h Security_system.h HVAC.h Pressure_sensor.h HumiditySensor.h Heating.h AirConditioning.h Ventilation.h AirQualityController.h PresenceSensor.h 
+ElectricitySource.obj : ElectricitySource.cpp ElectricitySource.h    Default.h SMR.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ElectricitySource.obj" "ElectricitySource.cpp" 
+
+
+
+SMR.obj : SMR.cpp SMR.h    Default.h User.h WaterSource.h ISP.h ElectricitySource.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SMR.obj" "SMR.cpp" 
+
+
+
+ISP.obj : ISP.cpp ISP.h    Default.h SMR.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ISP.obj" "ISP.cpp" 
+
+
+
+WaterSource.obj : WaterSource.cpp WaterSource.h    Default.h SMR.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"WaterSource.obj" "WaterSource.cpp" 
+
+
+
+User.obj : User.cpp User.h    Default.h SMR.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"User.obj" "User.cpp" 
+
+
+
+Default.obj : Default.cpp Default.h    TemperatureController.h Authorization_security_system.h Communication_system.h TemperatureSensor.h LightingController.h Fire_sensor.h Security_system.h HVAC.h Pressure_sensor.h HumiditySensor.h Heating.h AirConditioning.h Ventilation.h AirQualityController.h PresenceSensor.h ElectricitySource.h SMR.h ISP.h WaterSource.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Default.obj" "Default.cpp" 
 
@@ -321,6 +356,11 @@ clean:
 	if exist Ventilation.obj erase Ventilation.obj
 	if exist AirQualityController.obj erase AirQualityController.obj
 	if exist PresenceSensor.obj erase PresenceSensor.obj
+	if exist ElectricitySource.obj erase ElectricitySource.obj
+	if exist SMR.obj erase SMR.obj
+	if exist ISP.obj erase ISP.obj
+	if exist WaterSource.obj erase WaterSource.obj
+	if exist User.obj erase User.obj
 	if exist Default.obj erase Default.obj
 	if exist $(TARGET_MAIN)$(OBJ_EXT) erase $(TARGET_MAIN)$(OBJ_EXT)
 	if exist *$(OBJ_EXT) erase *$(OBJ_EXT)

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Default
-//!	Generated Date	: Thu, 28, Jun 2018  
+//!	Generated Date	: Fri, 29, Jun 2018  
 	File Path	: DefaultComponent\DefaultConfig\Default.h
 *********************************************************************/
 
@@ -44,6 +44,9 @@ class Authorization_security_system;
 class Communication_system;
 
 //## auto_generated
+class ElectricitySource;
+
+//## auto_generated
 class Fire_sensor;
 
 //## classInstance HVACPart
@@ -55,6 +58,9 @@ class Heating;
 //## classInstance HumiditySensorPart
 class HumiditySensor;
 
+//## auto_generated
+class ISP;
+
 //## classInstance LightingControllerPart
 class LightingController;
 
@@ -63,6 +69,9 @@ class PresenceSensor;
 
 //## auto_generated
 class Pressure_sensor;
+
+//## auto_generated
+class SMR;
 
 //## auto_generated
 class Security_system;
@@ -75,6 +84,9 @@ class TemperatureSensor;
 
 //## classInstance VentilationPart
 class Ventilation;
+
+//## auto_generated
+class WaterSource;
 
 //#[ ignore
 #define heatingOn_Default_id 18601

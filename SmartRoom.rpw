@@ -5,37 +5,8 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 	}
 	- isLoadOnDemand = 0;
 	- myViewsWithID = { IRPYRawContainer 
-		- size = 2;
+		- size = 6;
 		- value = 
-		{ CGEMdiDiagramParams 
-			- _placement = { CCommon_WINDOWPLACEMENT 
-				- m_nLength = 44;
-				- m_nFlags = 2;
-				- m_showCmd = 3;
-				- m_ptMinPositionX = -1;
-				- m_ptMinPositionY = -1;
-				- m_ptMaxPositionX = -8;
-				- m_ptMaxPositionY = -31;
-				- m_nLeft = 120;
-				- m_nTop = 41;
-				- m_nRight = 1245;
-				- m_nBottom = 636;
-			}
-			- _wasOpenedOnCloseProject = 1;
-			- _theDiagram = { IHandle 
-				- _m2Class = "IUCDiagram";
-				- _filename = "Default.sbs";
-				- _subsystem = "Default";
-				- _class = "";
-				- _name = "EnvironmentControl";
-				- _id = GUID 8014410c-21a4-433a-a790-5c55da4a4309;
-			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 1394 841 ;
-			- _instanceName = "";
-			- m_nDiagramIndex = 1;
-			- m_bIsActiveView = 1;
-		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
@@ -47,26 +18,171 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- m_ptMaxPositionY = -31;
 				- m_nLeft = 26;
 				- m_nTop = 26;
-				- m_nRight = 1155;
-				- m_nBottom = 602;
+				- m_nRight = 889;
+				- m_nBottom = 398;
 			}
 			- _wasOpenedOnCloseProject = 1;
 			- _theDiagram = { IHandle 
-				- _m2Class = "IUCDiagram";
+				- _m2Class = "IDiagram";
+				- _filename = "Sensing_System.omd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "BDD";
+				- _id = GUID 22103508-e15f-4a8d-831a-706521970cd7;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 826 312 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 5;
+			- m_bIsActiveView = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 104;
+				- m_nTop = 104;
+				- m_nRight = 967;
+				- m_nBottom = 476;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "HVAC";
+				- _name = "StatechartDiagram.ROOT.SocketSetup";
+				- _id = GUID d03f6d15-5968-4414-b665-5379eac71e5d;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 826 312 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 2;
+			- m_bIsActiveView = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 78;
+				- m_nTop = 78;
+				- m_nRight = 941;
+				- m_nBottom = 450;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "HVAC";
+				- _name = "StatechartDiagram";
+				- _id = GUID c528be85-fcd9-465b-987a-c076a65f0db9;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 826 312 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 3;
+			- m_bIsActiveView = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 130;
+				- m_nTop = 130;
+				- m_nRight = 1019;
+				- m_nBottom = 497;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IPanelDiagram";
 				- _filename = "Default.sbs";
 				- _subsystem = "Default";
 				- _class = "";
-				- _name = "Lighting";
-				- _id = GUID e325877a-e449-4699-bfdd-6a51b0bb9a37;
+				- _name = "Smartroom panel";
+				- _id = GUID 2c2c1882-b427-4c1d-849a-15c82f0ca063;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 1092 516 ;
+			- _DownRight = 846 301 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 0;
+			- m_nDiagramIndex = 1;
 			- m_bIsActiveView = 0;
 		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 52;
+				- m_nTop = 52;
+				- m_nRight = 915;
+				- m_nBottom = 424;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IActivityDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "TemperatureSensor";
+				- _name = "ActivityDiagram";
+				- _id = GUID 8b99808a-8c5b-4e93-ad86-d0caf2c6756d;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 826 312 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 4;
+			- m_bIsActiveView = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 104;
+				- m_nTop = 104;
+				- m_nRight = 967;
+				- m_nBottom = 476;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "SystemContext";
+				- _id = GUID 01459786-4a0d-4412-8a8f-f2b9abf15a33;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1024 533 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 0;
+			- m_bIsActiveView = 1;
+		}
 	}
-	- _fullName = "C:\\Users\\jlta\\Documents\\GitHub\\2IMP30_project\\SmartRoom";
+	- _fullName = "C:\\Dev\\2IMP30_project\\SmartRoom";
 	- _selectedPerspective = "Advanced";
 	- m_SearchScopeList = { IRPYRawContainer 
 		- size = 0;

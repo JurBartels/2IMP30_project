@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Default
-//!	Generated Date	: Thu, 28, Jun 2018  
+//!	Generated Date	: Fri, 29, Jun 2018  
 	File Path	: DefaultComponent\DefaultConfig\Default.cpp
 *********************************************************************/
 
@@ -44,6 +44,14 @@
 #include "Pressure_sensor.h"
 //## auto_generated
 #include "Security_system.h"
+//## auto_generated
+#include "ElectricitySource.h"
+//## auto_generated
+#include "ISP.h"
+//## auto_generated
+#include "SMR.h"
+//## auto_generated
+#include "WaterSource.h"
 //#[ ignore
 #define heatingOn_SERIALIZE OM_NO_OP
 
