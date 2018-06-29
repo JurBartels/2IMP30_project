@@ -177,7 +177,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- reqID = "SMR00";
 		}
 	}
-	- _modifiedTimeWeak = 6.29.2018::9:38:49;
+	- _modifiedTimeWeak = 6.29.2018::9:40:7;
 	- _lastID = 137;
 	- Declaratives = { IRPYRawContainer 
 		- size = 3;
@@ -5748,7 +5748,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			}
 		}
 	}
-	- weakCGTime = 6.29.2018::9:39:43;
+	- weakCGTime = 6.29.2018::9:40:7;
 	- strongCGTime = 6.29.2018::9:20:51;
 	- ComponentFiles = { IRPYRawContainer 
 		- size = 2;
@@ -8527,7 +8527,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 							- _durationTime = "100";
 						}
 					}
-					- _version = 6.29.2018::11:28:46;
+					- _version = 6.29.2018::11:40:55;
 					- _baseVersion = 1.2.1990::0:0:0;
 					- _diagram = GUID ccbe300d-0704-414b-adb1-861ebf5bd9d7;
 					- Views = { IRPYRawContainer 
@@ -17021,7 +17021,7 @@ return 0;";
 							}
 						}
 					}
-					- _version = 6.29.2018::11:28:46;
+					- _version = 6.29.2018::11:40:55;
 					- _baseVersion = 1.2.1990::0:0:0;
 					- _diagram = GUID 8b99808a-8c5b-4e93-ad86-d0caf2c6756d;
 					- Views = { IRPYRawContainer 
@@ -19614,7 +19614,7 @@ return 0;";
 							- _durationTime = "100";
 						}
 					}
-					- _version = 6.29.2018::11:28:46;
+					- _version = 6.29.2018::11:40:55;
 					- _baseVersion = 1.2.1990::0:0:0;
 					- _diagram = GUID 5947de7b-4255-4aae-a074-a5df61a1ae17;
 					- Views = { IRPYRawContainer 
@@ -32558,7 +32558,7 @@ b = setup_socket()";
 							- _durationTime = "1000";
 						}
 					}
-					- _version = 6.29.2018::11:28:46;
+					- _version = 6.29.2018::11:40:55;
 					- _baseVersion = 1.2.1990::0:0:0;
 					- _diagram = GUID 95a75170-2e92-4d97-9852-a727cf2bec94;
 					- Views = { IRPYRawContainer 
@@ -34181,8 +34181,8 @@ b = setup_socket()";
 		}
 		{ IClass 
 			- _id = GUID e2776fb0-8060-48d4-8efa-e50d021b0aca;
-			- _myState = 10240;
-			- _name = "block_130";
+			- _myState = 8192;
+			- _name = "ElectricitySource";
 			- Stereotypes = { IRPYRawContainer 
 				- size = 1;
 				- value = 
@@ -34195,7 +34195,7 @@ b = setup_socket()";
 					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
 				}
 			}
-			- _modifiedTimeWeak = 6.29.2018::9:39:20;
+			- _modifiedTimeWeak = 6.29.2018::9:40:7;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "";
@@ -34204,8 +34204,8 @@ b = setup_socket()";
 				- _name = "SystemContext";
 				- _id = GUID 01459786-4a0d-4412-8a8f-f2b9abf15a33;
 			}
-			- weakCGTime = 6.29.2018::9:39:20;
-			- strongCGTime = 6.29.2018::9:38:42;
+			- weakCGTime = 6.29.2018::9:40:7;
+			- strongCGTime = 6.29.2018::9:40:7;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
@@ -34217,7 +34217,7 @@ b = setup_socket()";
 					- _id = GUID 4202331d-1b39-48c0-9e2c-802b73dc30d8;
 					- _myState = 10240;
 					- _name = "itsSMR";
-					- _modifiedTimeWeak = 6.29.2018::9:39:10;
+					- _modifiedTimeWeak = 6.29.2018::9:40:7;
 					- _multiplicity = "1";
 					- _otherClass = { IClassifierHandle 
 						- _m2Class = "IClass";
@@ -34250,7 +34250,7 @@ b = setup_socket()";
 					- _id = GUID f685432f-691e-4ff1-be70-4d09d19457e1;
 				}
 			}
-			- _modifiedTimeWeak = 6.29.2018::9:39:51;
+			- _modifiedTimeWeak = 6.29.2018::9:40:7;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "";
@@ -34259,7 +34259,7 @@ b = setup_socket()";
 				- _name = "SystemContext";
 				- _id = GUID 01459786-4a0d-4412-8a8f-f2b9abf15a33;
 			}
-			- weakCGTime = 6.29.2018::9:39:51;
+			- weakCGTime = 6.29.2018::9:40:7;
 			- strongCGTime = 6.29.2018::9:39:10;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
@@ -34325,8 +34325,8 @@ b = setup_socket()";
 				{ IAssociationEnd 
 					- _id = GUID 89ed1bb9-7ca0-4bac-93ee-3e358836ff87;
 					- _myState = 10240;
-					- _name = "itsBlock_130";
-					- _modifiedTimeWeak = 6.29.2018::9:39:10;
+					- _name = "itsElectricitySource";
+					- _modifiedTimeWeak = 6.29.2018::9:40:7;
 					- _multiplicity = "1";
 					- _otherClass = { IClassifierHandle 
 						- _m2Class = "IClass";

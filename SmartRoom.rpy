@@ -232,7 +232,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 			- _id = GUID 052b8171-a32b-4f45-a829-5585f79f9deb;
 		}
 	}
-	- _modifiedTimeWeak = 6.29.2018::9:2:57;
+	- _modifiedTimeWeak = 6.29.2018::9:40:7;
 	- _lastID = 14;
 	- _UserColors = { IRPYRawContainer 
 		- size = 16;
@@ -8322,7 +8322,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 				}
 			}
 			- _modifiedTimeWeak = 1.2.1990::0:0:0;
-			- _lastModifiedTime = "6.29.2018::9:39:51";
+			- _lastModifiedTime = "6.29.2018::9:40:7";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID bad174c5-c3a6-4937-a2a4-a10cd5058480;
 				- m_type = 0;
@@ -8488,12 +8488,12 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _filename = "Default.sbs";
 						- _subsystem = "Default";
 						- _class = "";
-						- _name = "block_130";
+						- _name = "ElectricitySource";
 						- _id = GUID e2776fb0-8060-48d4-8efa-e50d021b0aca;
 					}
 					- m_pParent = GUID c5f01457-921a-4c1c-9272-72d5d2877b64;
 					- m_name = { CGIText 
-						- m_str = "block_130";
+						- m_str = "ElectricitySource";
 						- m_style = "Arial" 10 0 0 0 1 ;
 						- m_color = { IColor 
 							- m_fgColor = 0;
@@ -9507,7 +9507,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _m2Class = "IAssociationEnd";
 						- _filename = "Default.sbs";
 						- _subsystem = "Default";
-						- _class = "block_130";
+						- _class = "ElectricitySource";
 						- _name = "itsSMR";
 						- _id = GUID 4202331d-1b39-48c0-9e2c-802b73dc30d8;
 					}
@@ -9556,7 +9556,7 @@ I-Logix-RPY-Archive version 8.13.0 C++ 9794446
 						- _filename = "Default.sbs";
 						- _subsystem = "Default";
 						- _class = "SMR";
-						- _name = "itsBlock_130";
+						- _name = "itsElectricitySource";
 						- _id = GUID 89ed1bb9-7ca0-4bac-93ee-3e358836ff87;
 					}
 					- m_pInstance = { IObjectLinkHandle 

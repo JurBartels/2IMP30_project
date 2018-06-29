@@ -118,7 +118,7 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- _id = GUID 2c2c1882-b427-4c1d-849a-15c82f0ca063;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 846 301 ;
+			- _DownRight = 852 307 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 1;
 			- m_bIsActiveView = 0;
@@ -175,8 +175,8 @@ I-Logix-RPY-Archive version 8.13.0 * 9794446
 				- _name = "SystemContext";
 				- _id = GUID 01459786-4a0d-4412-8a8f-f2b9abf15a33;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 1024 533 ;
+			- _UpLeft = 0 -17 ;
+			- _DownRight = 1024 516 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
 			- m_bIsActiveView = 1;
